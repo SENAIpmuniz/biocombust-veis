@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html id="master" lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=11;IE=Edge,chrome=1">
+    <link rel="icon" href="Layout/Template/img/favicon.ico" />
+    <title>Senai</title> <!-- Config -->
+    <script src="Layout/Template/js/main.js" defer></script>
+    <link rel="stylesheet" href="Layout/Template/css/theme.css">
+    <link rel="stylesheet" href="Layout/Template/css/style.css"> <!-- JQuery-->
+    <script type="text/javascript" src="Layout/Template/bibliotecas/jQuery-3.6.3/jquery-3.6.3.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="Layout/Template/bibliotecas/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap Icons -->
+    <link href="Layout/Template/bibliotecas/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- uikit-->
+    <link rel="stylesheet" href="Layout/Template/bibliotecas/uikit/css/uikit.min.css" />
+    <script src="Layout/Template/bibliotecas/uikit/js/uikit.min.js"></script>
+    <script src="Layout/Template/bibliotecas/uikit/js/uikit-icons.min.js"></script> <!-- BoxIcons -->
+    <script src="Layout/Template/bibliotecas/boxicons/boxicons.js"></script>
+    <link href="Layout/Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'> <!-- Linguagem -->
+    <script type="text/javascript" src="Layout/linguagem.js"></script> <!-- GOOGLE TRANSLATE -->
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        type="text/javascript"></script> <!-- SCORM -->
+    <script src="Layout/Template/scorm/APIWrapper.js"></script>
+    <script src="Layout/Template/scorm/SCOFunctions.js"></script>
+</head>
+
+<body id="homePage" onunload="unloadPage()">
+    <header>
+        <div id="google_translate_element"></div>
+        <!-- Vlibras -->
+        <div vw class="enabled">
+            <div id="vlibras-show" vw-access-button class="#"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <!-- Menu -->
+        <nav class="navbar-dark bg-menu-color fixed-top nav-height">
+            <div class="d-flex bd-highlight align-items-center g-4 nav-height">
+                <div class="bd-highlight">
+
+                </div>
+                <div class="bd-highlight mx-auto">
+                    <object class="d-none d-lg-block img-fluid" style="margin-left:130px; max-width:180px"
+                        data="../Template/img/logo_senai.svg" type="image/svg+xml" alt="SENAI" title="SENAI">
+                    </object>
+                    <object class="d-md-block d-lg-none" style="margin-top: 5px;max-width: 130px;"
+                        data="../Template/img/logo_senai.svg" type="image/svg+xml" alt="SENAI" title="SENAI">
+                    </object>
+                </div>
+                <div class="bd-highlight">
+                    <div class="d-flex bd-highlight align-items-center nav-height">
+                        <div class="form-check form-check-inline switch-group" role="button" title="Temas">
+                            <input class="form-check-input d-none" type="checkbox" name="themeBtns" id="themeSwitcher"
+                                role="Toogle Temas">
+                            <label class="form-check-label" for="themeSwitcher">
+                                <div class="switch-darkmode">
+                                    <div class="icons"> <i class='bx bx-moon bx-tada-hover'></i> <i
+                                            class='bx bx-sun bx-spin-hover' style="color: aliceblue;"></i> </div>
+                                    <div class="circle"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class=" d-flex flex-row align-middle ms-2 me-2" onclick="vlibrashow()" role="Vlibras"
+                            title="Vlibras"> <i class='vlibras-show bx bx-universal-access' style="font-size:2rem"></i>
+                            <span class="ms-1 me-1 d-none d-lg-block menu" style="margin-top: 3px;"></span>
+                        </div>
+                        <div class="dropdown me-2">
+                            <button class="btn text-white me-2" type="button" id="Acessibilidade" title="Configurações"
+                                data-bs-toggle="dropdown" aria-expanded="false" aria-label="Configurações">
+                                <i class='bx bx-cog bx-spin-hover bx-sm'></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark menu-margin" aria-labelledby="Acessibilidade">
+                                <li class="dropdown-item" data-translate="acessibilidade">
+                                    <strong>Acessibilidade</strong>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li> <a class="dropdown-item">
+                                        <div class="mb-3 form-check form-switch">
+                                            <input class="form-check-input " type="checkbox" name="themeBtns"
+                                                id="graySwitcher" role="Modo Monocromatico">
+                                            <label class="form-check-label menu" for="graySwitcher"
+                                                data-translate="thema-linguagem-3">Modo
+                                                Monocromatico</label>
+                                        </div>
+                                    </a> </li>
+                                <li> <a class="dropdown-item">
+                                        <div class="mb-3 form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" name="themeBtns"
+                                                id="daltonicSwitcher" role="Modo Daltônico">
+                                            <label class="form-check-label menu" for="daltonicSwitcher"
+                                                data-translate="thema-linguagem-4">Modo
+                                                Daltônico</label>
+                                        </div>
+                                    </a> </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="dropdown-item"> <span class="menu" data-translate="tamanho-da-fonte">Tamanho
+                                        da Fonte</span> <br> <input type="range" class="form-range" min="50" max="115"
+                                        step="5" id="size"> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="google_translate_element"></div> <!-- Vlibras -->
+        <div vw class="enabled">
+            <div id="vlibras-show" vw-access-button class="#"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>            new window.VLibras.Widget('https://vlibras.gov.br/app');        </script>
+    </header>
+    <main data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-offset="0">
+        <section class="d-flex min-vh-100 flex-column justify-content-center">
+            <article class="container pt-5">
+                <div class="row">
+                    <div class="d-flex justify-content-center pt-5 pb-3">
+                        <h1>Desvendando biocombustíveis</h1>
+                    </div>
+                    <div class="mx-auto pb-4 pt-3">
+                        <p>
+
+                            Boas-vindas ao curso Desvendando biocombustíveis!
+                        </p>
+                        <p>
+                            Você sabe o que são biocombustíveis?
+                        </p>
+                        <p>
+                            São combustíveis produzidos a partir de biomassa, ou seja, de materiais orgânicos
+                            renováveis.
+                        </p>
+                        <p>
+                            Neste curso, você aprenderá detalhes de seus processos de produção e as diversas aplicações
+                            de uso.
+                        </p>
+                        <p>
+                            Bons estudos!
+                        </p>
+                        <p>
+                            <em>
+                                Clique nas aulas a seguir para navegar pelo conteúdo.
+                            </em>
+                        </p>
+                    </div>
+                </div>
+                <!-- Blocos -->
+                <article class="container pb-5">
+                    <div id="">
+                        <div class="row" id="progresso">
+                            <div class="col-4 border-end">
+                                <div class="text-center">
+                                    <p class="destaque-menu">
+                                        Progresso total
+                                    </p>
+                                    <h1 id="progressoGeral" class="d-inline destaque-menu"></h1>
+                                    <h3 class="d-inline destaque-menu">%</h3>
+                                </div>
+                            </div>
+                            <div class="col-4 border-end">
+                                <div class="text-center">
+                                    <p class="destaque-menu">
+                                        Respostas corretas
+                                    </p>
+                                    <h1 id="exerciciosCorretos" class="d-inline destaque-menu"></h1>
+                                    <h3 class="d-inline destaque-menu">%</h3>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="text-center">
+                                    <p class="destaque-menu">
+                                        Exercícios concluídos
+                                    </p>
+                                    <h1 id="exerciciosRealizados" class="d-inline destaque-menu"></h1>
+                                    <h3 id="totalExercicios" class="d-inline destaque-menu">/</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="blocos" class="row py-5"></div>
+                </article>
+            </article>
+        </section>
+    </main>
+    <footer class="border-top fixed-bottom bg-menu-color">
+        <div class="d-flex justify-content-evenly align-items-center container">
+            <div class="col-md-4 d-flex justify-content-end"> </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <p class="mx-auto mt-3">Escola Senai de Educação Online</p>
+            </div>
+            <div class="col-md-4 d-flex justify-content-start"> </div>
+        </div>
+    </footer>
+    <!-- Modal - SCORM -->
+    <div class="modal fade" id="resumeFromLastModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Aviso</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Parece que você já iniciou o curso, você pode:</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="resumeFromLastButton">Continuar de onde
+                        parou</button>
+                    <button type="button" class="btn btn-secondary" id="resumeFromBeginning"
+                        onclick="keepStudentProgress.firstPageModal.startFromTheBegining()">Iniciar
+                        novamente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Layout/Template/bibliotecas/bootstrap/js/bootstrap.bundle.min.js"></script><!-- SCORM -->
+<script type="text/javascript" src="Layout/Template/js/blocos_pt-br-t2k.js"></script>
+<script type="text/javascript" src="Layout/Template/js/blocos_pt-br.js"></script>
+<script type="text/javascript" src="Layout/Template/js/exercicios_pt-br.js"></script>
+<script src="Layout/Template/js/acoes.js"></script>
+<script src="Layout/Template/js/secao.js"></script>
+<script src="Layout/Template/js/configuracoes.js"></script>
+<script src="Layout/Template/js/blocos_pt-br.js"></script>
+
+</html>

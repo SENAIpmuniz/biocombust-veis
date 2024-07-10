@@ -1,0 +1,35 @@
+<!--  Script JQUERY-->
+<script type="text/javascript" src="Layout/Template/bibliotecas/jQuery-3.6.3/jquery-3.6.3.min.js"></script>
+<!-- SCORM -->
+<script src="Layout/Template/scorm/APIWrapper.js"></script>
+<script src="Layout/Template/scorm/SCOFunctions.js"></script>
+
+<!-- REDIRECIONAR INDEX -->
+<script>
+	loadPage();
+
+	if (doLMSGetValue("cmi.core.lesson_location") != "") {
+		var language = doLMSGetValue("cmi.core.lesson_location");
+
+		switch (language) {
+			default: document.location.href = "index_pt-br.html"; break;
+		}
+
+	} else {
+		var idioma = $("html", window.parent.document).attr("lang");
+
+		switch (idioma) {
+			case "pt-br":
+				document.location.href = "index_" + idioma + ".html";
+				doLMSSetValue("cmi.core.lesson_location", 1);
+				doLMSCommit();
+				break;
+			default:
+				document.location.href = "index_pt-br.html";
+				doLMSSetValue("cmi.core.lesson_location", 1);
+				doLMSCommit();
+				break;
+		}
+	}
+</script>
+

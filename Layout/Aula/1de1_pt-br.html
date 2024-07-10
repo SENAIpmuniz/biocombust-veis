@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html id="master" lang="pt-Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="../Template/img/favicon.ico" />
+  <title>Senai</title> <!-- Config -->
+  <script src="../Template/js/main.js" defer></script>
+  <link rel="stylesheet" href="../Template/css/theme.css">
+  <link rel="stylesheet" href="../Template/css/style.css">
+  <link rel="stylesheet" href="css/aula-1/add-style.css">
+  <link rel="stylesheet" href="../Template/bibliotecas/fancybox/fancybox.css"> <!-- JQuery-->
+  <script type="text/javascript" src="../Template/bibliotecas/jQuery-3.6.3/jquery-3.6.3.min.js"></script>
+  <!-- Bootstrap -->
+  <link href="../Template/bibliotecas/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap Icons -->
+  <link href="../Template/bibliotecas/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- UiKit-->
+  <link href="../Template/bibliotecas/uikit/css/uikit.min.css" rel="stylesheet" />
+  <script src="../Template/bibliotecas/uikit/js/uikit.min.js" async></script>
+  <script src="../Template/bibliotecas/uikit/js/uikit-icons.min.js" async></script> <!-- BoxIcons -->
+  <link href="../Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'>
+  <script src="../Template/bibliotecas/boxicons/boxicons.js" defer></script> <!-- GOOGLE TRANSLATE -->
+  <script src="../Template/js/google.js" type="text/javascript" defer></script> <!-- Grafico -->
+  <script src="../Template/bibliotecas/charts/chart.js"></script> <!-- SCORM -->
+  <script src="../Template/scorm/APIWrapper.js"></script>
+  <script src="../Template/scorm/SCOFunctions.js"></script> <!-- Prism -->
+  <script src="../Template/bibliotecas/prism/js/prism.js"></script>
+  <link href="../Template/bibliotecas/prism/css/prism.css" rel='stylesheet'> <!-- BoxIcons -->
+  <script src="../Template/bibliotecas/boxicons/boxicons.js"></script>
+  <link href="../Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'> <!-- VIDEO DO YOUTUBE -->
+  <link href="../Template/bibliotecas/youtube/css/youtube-chapters.min.css" rel="stylesheet" /> <!-- WEBTOUR -->
+  <link rel="stylesheet" href="../Template/bibliotecas/webtour/introjs.min.css">
+  <script src="/Layout/Template/bibliotecas/webtour/intro.min.js"></script>
+  <script src="../Template/js/menu.js"></script>
+</head>
+
+<body onunload="unloadPage()">
+  <header>
+    <div id="google_translate_element"></div>
+    <!-- Vlibras -->
+    <div vw class="enabled">
+      <div id="vlibras-show" vw-access-button class="#"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- Menu -->
+    <nav class="navbar-dark bg-menu-color fixed-top nav-height">
+      <div class="d-flex bd-highlight align-items-center g-4 nav-height">
+        <div class="bd-highlight">
+          <button class="btn align-items-center ms-2" data-bs-toggle="offcanvas" data-bs-target="#nav-menu-open-close" aria-controls="nav-menu-open-close" aria-label="Menu" title="Menu">
+            <i class='cor1 bx bx-menu bx-tada-hover'></i> </button>
+        </div>
+        <div class="bd-highlight mx-auto">
+          <object class="d-none d-lg-block img-fluid" style="margin-left:130px; max-width:180px" data="../Template/img/logo_senai.svg" type="image/svg+xml" alt="SENAI" title="SENAI">
+          </object>
+          <object class="d-md-block d-lg-none" style="margin-top: 5px;max-width: 130px;" data="../Template/img/logo_senai.svg" type="image/svg+xml" alt="SENAI" title="SENAI">
+          </object>
+        </div>
+        <div class="bd-highlight">
+          <div class="d-flex bd-highlight align-items-center nav-height">
+            <div class="form-check form-check-inline switch-group" role="button" title="Temas">
+              <input class="form-check-input d-none" type="checkbox" name="themeBtns" id="themeSwitcher" role="Toogle Temas">
+              <label class="form-check-label" for="themeSwitcher">
+                <div class="switch-darkmode">
+                  <div class="icons"> <i class='bx bx-moon bx-tada-hover'></i> <i class='bx bx-sun bx-spin-hover' style="color: aliceblue;"></i> </div>
+                  <div class="circle"></div>
+                </div>
+              </label>
+            </div>
+            <div class=" d-flex flex-row align-middle ms-2 me-2" onclick="vlibrashow()" role="Vlibras" title="Vlibras"> <i class='vlibras-show bx bx-universal-access' style="font-size:2rem"></i>
+              <span class="ms-1 me-1 d-none d-lg-block menu" style="margin-top: 3px;"></span>
+            </div>
+            <div class="dropdown me-2">
+              <button class="btn text-white me-2" type="button" id="Acessibilidade" title="Configurações" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Configurações">
+                <i class='bx bx-cog bx-spin-hover bx-sm'></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark menu-margin" aria-labelledby="Acessibilidade">
+                <li class="dropdown-item" data-translate="acessibilidade">
+                  <strong>Acessibilidade</strong>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li> <a class="dropdown-item">
+                    <div class="mb-3 form-check form-switch">
+                      <input class="form-check-input " type="checkbox" name="themeBtns" id="graySwitcher" role="Modo monocromatico">
+                      <label class="form-check-label menu" for="graySwitcher" data-translate="thema-linguagem-3">Modo Monocromatico</label>
+                    </div>
+                  </a> </li>
+                <li> <a class="dropdown-item">
+                    <div class="mb-3 form-check form-switch">
+                      <input class="form-check-input" type="checkbox" name="themeBtns" id="daltonicSwitcher" role="Modo Daltônico">
+                      <label class="form-check-label menu" for="daltonicSwitcher" data-translate="thema-linguagem-4">Modo
+                        Daltônico</label>
+                    </div>
+                  </a> </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li class="dropdown-item"> <span class="menu" data-translate="tamanho-da-fonte">Tamanho
+                    da Fonte</span> <br> <input type="range" class="form-range" min="50" max="115" step="5" id="size"> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-start" data-bs-backdrop="true" data-bs-backdrop="static" tabindex="-1" id="nav-menu-open-close" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header bg-menu-color">
+          <p class="offcanvas-title" id="staticBackdropLabel">Menu</p> <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+          <h3> <a href="../../index_pt-br.html"> <i class="bi bi-house"></i> Início</a> </h3>
+          <!-- Menu -->
+          <nav id="navbar-menu" class="flex-column align-items-stretch pe-4 my-5">
+            <nav class="nav nav-pills flex-column">
+              <div uk-accordion>
+                <!-- 1 -->
+                <li class="uk-open">
+                  <a class="nav-link uk-accordion-title">
+                    <i class="bi bi-pin-fill"></i>
+                    Módulo 1
+                  </a>
+                  <div class="uk-accordion-content">
+                    <div class="nav nav-pills flex-column">
+                      <ul class="icons-list">
+                        <li class="nav">
+                          <a class="nav-link my-1" href="1de1_pt-br.html#capa">Tema/Aula</a>
+                        </li>
+                        <div class="nav">
+                          <ul class="icons-list">
+                            <li> <a class="nav-link ms-3 my-1" href="1de1_pt-br.html#aula1-section-1">Apresentação da
+                                aula</a> </li>
+                            <li> <a class="nav-link ms-3 my-1" href="1de1_pt-br.html#aula1-section-2">Conteúdo</a>
+                            </li>
+                            <li> <a class="nav-link ms-3 my-1" href="1de1_pt-br.html#aula1-section-3">Praticando</a>
+                            </li>
+                            <li> <a class="nav-link ms-3 my-1" href="1de1_pt-br.html#aula1-section-4">Recapitulando</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!-- 2 -->
+                <li>
+                  <a class="nav-link uk-accordion-title">
+                    <i class="bi bi-pin-fill"></i>
+                    Módulo 2
+                  </a>
+                  <div class="uk-accordion-content">
+                    <div class="nav nav-pills flex-column">
+                      <ul class="icons-list">
+                        <li class="nav">
+                          <a class="nav-link my-1" href="2de1_pt-br.html#capa">Tema/Aula</a>
+                        </li>
+                        <div class="nav">
+                          <ul class="icons-list">
+                            <li> <a class="nav-link ms-3 my-1" href="2de1_pt-br.html#aula2-section-1">Apresentação da
+                                aula</a> </li>
+                            <li> <a class="nav-link ms-3 my-1" href="2de1_pt-br.html#aula2-section-2">Conteúdo</a>
+                            </li>
+                            <li> <a class="nav-link ms-3 my-1" href="2de1_pt-br.html#aula2-section-3">Praticando</a>
+                            </li>
+                            <li> <a class="nav-link ms-3 my-1" href="2de1_pt-br.html#aula2-section-4">Recapitulando</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!-- 3 -->
+                <li>
+                  <a class="nav-link uk-accordion-title">
+                    <i class="bi bi-pin-fill"></i>
+                    Módulo 3
+                  </a>
+                  <div class="uk-accordion-content">
+                    <div class="nav nav-pills flex-column">
+                      <ul class="icons-list">
+                        <li class="nav">
+                          <a class="nav-link my-1" href="3de1_pt-br.html#capa">Tema/Aula</a>
+                        </li>
+                        <div class="nav">
+                          <ul class="icons-list">
+                            <li> <a class="nav-link ms-3 my-1" href="3de1_pt-br.html#aula3-section-1">Apresentação da
+                                aula</a> </li>
+                            <li> <a class="nav-link ms-3 my-1" href="3de1_pt-br.html#aula3-section-2">Conteúdo</a>
+                            </li>
+                            <li> <a class="nav-link ms-3 my-1" href="3de1_pt-br.html#aula3-section-3">Praticando</a>
+                            </li>
+                            <li> <a class="nav-link ms-3 my-1" href="3de1_pt-br.html#aula3-section-4">Recapitulando</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <!-- 4 -->
+                <li>
+                  <a class="nav-link uk-accordion-title">
+                    <i class="bi bi-pin-fill"></i>
+                    Módulo 4
+                  </a>
+                  <div class="uk-accordion-content">
+                    <div class="nav nav-pills flex-column">
+                      <ul class="icons-list">
+                        <li class="nav">
+                          <a class="nav-link my-1" href="4de1_pt-br.html#capa">Tema/Aula</a>
+                        </li>
+                        <div class="nav">
+                          <ul class="icons-list">
+                            <li> <a class="nav-link ms-3 my-1" href="4de1_pt-br.html#aula4-section-1">Apresentação da
+                                aula</a> </li>
+                            <li> <a class="nav-link ms-3 my-1" href="4de1_pt-br.html#aula4-section-2">Conteúdo</a>
+                            </li>
+                            <li> <a class="nav-link ms-3 my-1" href="4de1_pt-br.html#aula4-section-3">Praticando</a>
+                            </li>
+                            <li> <a class="nav-link ms-3 my-1" href="4de1_pt-br.html#aula4-section-4">Recapitulando</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </div>
+            </nav>
+          </nav>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class=" pt-4" data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-offset="0">
+    <!-- Capa -->
+    <div id="capa" class="d-flex py-4 min-vh-100 flex-column justify-content-center uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('./../Template/img/capa_aula1_1.jpg');">
+      <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+        <div class="row mt-2">
+          <h1 class=" text-uppercase mt-5 pt-5 color2" uk-parallax="opacity: 1; y: -0,0; scale: 1.1,2; end: 0vh + 10%;">
+            Transição da matriz energética e seus impactos</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row position-absolute" style="bottom: 10%
+        ; left: 49.2%; transform: translateX(-50%)">
+          <div class="py-4 col-lg-1 mx-auto">
+            <div class="mouse"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%; animation: gradient 25s ease infinite;height:auto">
+      <br>
+    </section>
+    <!-- APRESENTACAO -->
+    <section class="d-flex py-4 min-vh-100 flex-column justify-content-center" id="aula1-section-1">
+      <article class="container">
+        <div class="align-self-start ">
+          <div class="section-level1">
+            <h1>Apresentação da aula</h1>
+          </div>
+        </div>
+        <div class="row">
+          <p>
+            Nesta aula, vamos falar sobre como chegamos em nossa matriz energética e qual é a importância de
+            fazer a transição para
+            uma matriz capaz de obter energia de fontes renováveis.
+          </p>
+        </div>
+      </article>
+    </section> <!-- lorem -->
+    <section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%;        animation: gradient 25s ease infinite;height:auto">
+      <br>
+    </section> <!-- lorem -->
+    <section class="d-flex min-vh-100 flex-column justify-content-center" id="aula1-section-2">
+      <article class="container py-4">
+        <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+          <div class="section-level1">
+            <h1>Transição da matriz energética</h1>
+          </div>
+        </div>
+        <div class="row">
+          <p>
+            A transição da matriz energética consiste na substituição de fontes não renováveis por
+            renováveis, visando mitigar as
+            mudanças climáticas e reduzir as emissões de gases de efeito estufa.
+          </p>
+          <p>
+            O sucesso dessa transição depende de políticas públicas eficazes, incentivos econômicos e
+            conscientização social sobre o
+            uso sustentável dos recursos energéticos.
+          </p>
+        </div>
+      </article>
+      <article class="container py-4">
+        <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+          <div class="section-level2">
+            <h2>Contexto histórico</h2>
+          </div>
+        </div>
+        <div class="row">
+          <p>
+            Desde a Segunda Revolução Industrial, quando começamos a efetivamente usar a energia para a
+            realização de trabalhos em
+            grande escala, especificamente entre meados do século XIX e início do século XX, ocorreu um
+            aumento no consumo dos
+            chamados combustíveis fósseis, como o carvão, o petróleo e o gás natural, que eram utilizados
+            como fonte de energia para
+            alimentar máquinas, locomotivas a vapor e atividades industriais.
+          </p>
+          <p>
+            O uso em grande escala da energia química contida nesse tipo de combustível impulsionou o
+            crescimento industrial, a
+            urbanização e a tecnologia, transformando a sociedade e a economia da época.
+          </p>
+          <p>
+            <em>
+              Clique em play no vídeo a seguir para acompanhar o percurso da matriz energética nos
+              contextos brasileiro e mundial.
+            </em>
+          </p>
+
+        </div>
+        <div class="col-lg-8 mx-auto">
+          <div class="ratio ratio-16x9 ">
+            <iframe class="rounded" src="https://play.sesisenai.videolib.live/index.html?token=13646ef8bb2544c4ab9d893f856e5c69" title="Apresentação" allowfullscreen uk-video=" autoplay:false;">
+            </iframe>
+          </div>
+        </div>
+      </article>
+      <article class="container py-4">
+        <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+          <div class="section-level2">
+            <h2>Matriz energética</h2>
+          </div>
+        </div>
+        <div class="row">
+          <p>
+            A matriz energética é a composição de todas as fontes de energia utilizadas por um país, uma
+            região ou um setor. Ela
+            também indica de forma proporcional quanto de cada tipo de energia (petróleo, gás natural,
+            carvão, energia nuclear,
+            hidrelétrica, eólica, solar, entre outros) é utilizado para atender às necessidades energéticas
+            de uma sociedade.
+          </p>
+          <p>
+            Podemos analisar, no gráfico a seguir, a distribuição das fontes de energia no Brasil de acordo
+            com o Balanço Energético
+            de 2023, do Ministério de Minas e Energia.
+          </p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="col-lg-6"> <a data-fancybox="zoom" data-src="../Aula/img/mod1/aula_1_1.png" data-caption=""> <img src="../Aula/img/mod1/aula_1_1.png" class="img-fluid py-4" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <p>
+            Este gráfico reflete o estado atual da matriz energética brasileira, com um mix entre fontes
+            renováveis e não renováveis, e aponta para tendências futuras de diversificação e aumento de
+            fontes mais limpas.
+          </p>
+          <p>
+            Uma matriz energética diversificada é importante para o atendimento das necessidades de uma
+            sociedade e para minimizar os impactos ambientais.
+
+          </p>
+          <p>
+            <em>
+              Clique nos itens do quadro a seguir para conferir os principais assuntos de
+              <strong>preocupação mundial</strong>.
+
+            </em>
+          </p>
+        </div>
+        <!-- accordion 1 -->
+        <div class="col-md-8 mx-auto py-4">
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="accordion" id="1-accordion">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="1-collapse-cabecalho-1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1-collapse-1" aria-expanded="false" aria-controls="1-collapse-1" aria-labelledby="Segurança energética"> Segurança
+                    energética
+                  </button>
+                </h4>
+                <div id="1-collapse-1" class="accordion-collapse collapse" data-bs-parent="#1-accordion">
+                  <div class="accordion-body">
+                    <p>Muitos países ainda dependem de energias não renováveis, como petróleo e gás
+                      natural, que podem ser suscetíveis a
+                      interrupções no fornecimento devido a instabilidades geopolíticas ou
+                      desastres naturais.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="1-collapse-cabecalho-2"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1-collapse-2" aria-expanded="false" aria-controls="1-collapse-2" aria-labelledby="Titulo 2">
+                    Sustentabilidade ambiental</button> </h4>
+                <div id="1-collapse-2" class="accordion-collapse collapse" data-bs-parent="#1-accordion">
+                  <div class="accordion-body">
+                    <p> Relacionada ao uso excessivo de combustíveis fósseis, como carvão, petróleo
+                      e gás natural, o que contribui
+                      significativamente para a poluição do ar, as emissões de gases de efeito
+                      estufa e, consequentemente, mudanças
+                      climáticas. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="1-collapse-cabecalho-3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1-collapse-3" aria-expanded="false" aria-controls="1-collapse-3" aria-labelledby="Titulo 1"> Mudanças
+                    climáticas</button>
+                </h4>
+                <div id="1-collapse-3" class="accordion-collapse collapse" data-bs-parent="#1-accordion">
+                  <div class="accordion-body">
+                    <p> Associada à queima de combustíveis fósseis, à emissão dos gases do efeito
+                      estufa (GEEs) e ao aumento de temperatura do
+                      planeta. Assim, a limitação do uso de combustíveis fósseis e a transição
+                      para uma matriz energética mais verde é vista
+                      como crucial para limitar o aumento da temperatura global e seus impactos
+                      associados, como o aumento do nível do mar,
+                      eventos climáticos extremos e perturbações nos ecossistemas. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="1-collapse-cabecalho-4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1-collapse-4" aria-expanded="false" aria-controls="1-collapse-4" aria-labelledby="Titulo 1"> Esgotamento de
+                    recursos naturais</button>
+                </h4>
+                <div id="1-collapse-4" class="accordion-collapse collapse" data-bs-parent="#1-accordion">
+                  <div class="accordion-body">
+                    <p>
+                      Os recursos não renováveis utilizados hoje estão sujeitos ao esgotamento em
+                      um futuro próximo, o que pode ocasionar
+                      aumento nos preços de energia e instabilidade econômica. A transição para
+                      fontes renováveis de energia é vista como uma
+                      maneira de garantir um suprimento de energia mais estável e sustentável a
+                      longo prazo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="1-collapse-cabecalho-5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1-collapse-5" aria-expanded="false" aria-controls="1-collapse-5" aria-labelledby="Titulo 1"> Poluição e saúde
+                    pública</button>
+                </h4>
+                <div id="1-collapse-5" class="accordion-collapse collapse" data-bs-parent="#1-accordion">
+                  <div class="accordion-body">
+                    <p>
+                      Além das emissões de gases de efeito estufa, a queima de combustíveis
+                      fósseis está associada à poluição do ar, que
+                      ocasiona sérios impactos na saúde humana, causando doenças respiratórias,
+                      cardiovasculares e outros problemas de saúde.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p>
+            No Brasil, as preocupações com sua matriz energética são semelhantes à global, porém com algumas
+            particularidades.
+
+          </p>
+          <p>
+            <em>
+              Clique nos itens do quadro a seguir para conhecê-las.
+
+            </em>
+          </p>
+        </div>
+
+        <!-- accordion 2 -->
+        <div class="col-md-8 mx-auto py-4">
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="accordion" id="accordion-2">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="2-collapse-cabecalho-1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#2-collapse-1" aria-expanded="false" aria-controls="#2-collapse-1" aria-labelledby="Titulo 1"> Desenvolvimento da
+                    indústria de energia renovável
+                  </button>
+                </h4>
+                <div id="2-collapse-1" class="accordion-collapse collapse" data-bs-parent="#accordion-2">
+                  <div class="accordion-body">
+                    <p>
+                      O Brasil tem um grande potencial para o desenvolvimento de energia
+                      renovável, especialmente solar e eólica, devido às
+                      suas vastas áreas de terras disponíveis e ao alto nível de irradiação solar
+                      e ventos favoráveis em muitas regiões.
+                      Promover políticas e incentivos para o desenvolvimento dessas fontes de
+                      energia é fundamental para diversificar a matriz
+                      energética.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="2-collapse-cabecalho-2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#2-collapse-2" aria-expanded="false" aria-controls="collapseTwo" aria-labelledby="Titulo 2">
+                    Integração energética regional
+                  </button>
+                </h4>
+                <div id="2-collapse-2" class="accordion-collapse collapse" aria-labelledby="2-collapse-2" data-bs-parent="#accordion-2">
+                  <div class="accordion-body">
+                    <p> O Brasil faz parte de iniciativas de integração energética regional, como o
+                      Mercado Comum do Sul (Mercosul) e a
+                      Iniciativa para a Integração da Infraestrutura Regional Sul-Americana
+                      (IIRSA), que visa à cooperação energética entre os
+                      países sul-americanos. Essa integração pode contribuir para a segurança
+                      energética e o desenvolvimento de fontes de
+                      energia mais limpas e sustentáveis na região.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p>
+            Existe a necessidade, no Brasil e no mundo, de fazer a troca da matriz energética para
+            aproveitarmos melhor os recursos
+            renováveis, diversificarmos a matriz energética, desenvolvermos tecnologias geradoras de energia
+            limpa e modernizarmos
+            redes elétricas para acomodar outras formas de energia.
+          </p>
+          <p>
+            Do ponto de vista mundial, a troca da matriz energética está focada em reduzir as emissões dos
+            gases do efeito estufa e
+            as mudanças climáticas, com a cooperação internacional no enfrentamento dos desafios globais em
+            relação ao
+            desenvolvimento de energias limpas e, principalmente, ao acesso à energia para todos.
+
+          </p>
+        </div>
+      </article>
+
+      <article class="container py-4">
+        <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+          <div class="section-level2">
+            <h2>Aspectos políticos e econômicos</h2>
+          </div>
+        </div>
+        <div class="row">
+          <p>
+            Em relação aos aspectos políticos e econômicos atrelados à matriz energética, temos a regulação
+            e as políticas
+            energéticas, em que os governos estabelecem regulamentações que controlam a produção, a
+            distribuição e o consumo de
+            energia, e incentivam o uso de energias renováveis estipulando metas para a redução de emissões
+            de carbono.
+          </p>
+          <p>
+            As relações internacionais desempenham um papel importante no acesso de recursos energéticos e
+            no uso compartilhado de
+            energia por países dependentes desses recursos, de modo que acordos bilaterais são formados para
+            garantir a segurança
+            energética desses locais.
+          </p>
+          <p>
+            Além disso, participação do setor privado e a opinião pública têm influência significativa no
+            financiamento da produção
+            de energias limpas e no apoio às decisões governamentais quanto ao uso de certas fontes de
+            energia.
+          </p>
+          <p>
+            Os aspectos econômicos, sem dúvida, são os mais desafiadores quando relacionados à transição da
+            matriz energética para
+            uma relação direta entre os custos energéticos e seus impactos na sociedade.
+          </p>
+          <p>
+            <em>
+              Clique nos itens do quadro a seguir para conhecer esses aspectos econômicos.
+            </em>
+          </p>
+        </div>
+
+        <!-- accordion 3 -->
+        <div class="col-md-8 mx-auto py-4">
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="accordion" id="3-accordion">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="3-collapse-cabecalho-1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#3-collapse-1" aria-expanded="false" aria-controls="3-collapse-1" aria-labelledby="Segurança energética">
+                    Custos de investimento e operação
+                  </button>
+                </h4>
+                <div id="3-collapse-1" class="accordion-collapse collapse" data-bs-parent="#3-accordion">
+                  <div class="accordion-body">
+                    <p>
+                      As decisões sobre a transição da matriz energética são influenciadas pelos
+                      custos de investimento inicial e operacional
+                      de diferentes fontes de energia, incluindo infraestrutura e manutenção.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="3-collapse-cabecalho-2"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#3-collapse-2" aria-expanded="false" aria-controls="3-collapse-2" aria-labelledby="Titulo 2">
+                    Impacto nos preços da energia
+                  </button>
+                </h4>
+                <div id="3-collapse-2" class="accordion-collapse collapse" data-bs-parent="#3-accordion">
+                  <div class="accordion-body">
+                    <p>
+                      A transição para fontes de energia renovável pode ter um impacto nos preços
+                      da energia para consumidores e empresas.
+                      Dependendo das políticas implementadas, os preços podem aumentar ou diminuir
+                      a curto e longo prazo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="3-collapse-cabecalho-3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#3-collapse-3" aria-expanded="false" aria-controls="3-collapse-3" aria-labelledby="Titulo 1">
+                    Criação de empregos e desenvolvimento econômico
+                  </button>
+                </h4>
+                <div id="3-collapse-3" class="accordion-collapse collapse" data-bs-parent="#3-accordion">
+                  <div class="accordion-body">
+                    <p>
+                      A indústria de energia emprega milhões de pessoas em todo o mundo. A
+                      transição para energias renováveis pode gerar novos
+                      empregos em setores como instalação de painéis solares, manutenção de
+                      turbinas eólicas e plantas de biorrefinarias, além
+                      de impulsionar o desenvolvimento econômico em áreas rurais.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="3-collapse-cabecalho-4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#3-collapse-4" aria-expanded="false" aria-controls="3-collapse-4" aria-labelledby="Titulo 1">
+                    Impactos macroeconômicos
+                  </button>
+                </h4>
+                <div id="3-collapse-4" class="accordion-collapse collapse" data-bs-parent="#3-accordion">
+                  <div class="accordion-body">
+                    <p>
+                      Mudanças na matriz energética podem ter impactos macroeconômicos
+                      significativos, incluindo o crescimento do PIB, a
+                      balança comercial e a competitividade global. Políticas que promovem a
+                      eficiência energética e a inovação podem
+                      impulsionar o crescimento econômico a longo prazo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="3-collapse-cabecalho-5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#3-collapse-5" aria-expanded="false" aria-controls="3-collapse-5" aria-labelledby="Titulo 1">
+                    Mercados de carbono e incentivos financeiros
+                  </button>
+                </h4>
+                <div id="3-collapse-5" class="accordion-collapse collapse" data-bs-parent="#3-accordion">
+                  <div class="accordion-body">
+                    <p>
+                      Mecanismos como mercados de carbono e incentivos fiscais podem influenciar o
+                      comportamento das empresas em relação à
+                      emissão de carbono e ao investimento em tecnologias de energia limpa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <p>
+            Todos esses aspectos devem ser estudados e trabalhados, pois estão interligados e moldam a forma
+            como a transição
+            energética deve ser planejada tanto em âmbito internacional como nacional.
+          </p>
+        </div>
+
+      </article>
+      <article class="container py-4">
+        <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+          <div class="section-level2">
+            <h2>Programas de incentivo à transição energética</h2>
+          </div>
+        </div>
+        <div class="row">
+          <p>
+            Em meados de 1975, no governo do presidente Ernesto Geisel, o Brasil promoveu um programa que
+            ficou conhecido como
+            Proálcool, que tinha como objetivo promover o uso do etanol como combustível, visando reduzir a
+            dependência de
+            combustíveis fósseis e enfrentar a crise energética relacionada ao petróleo.
+
+          </p>
+          <p>
+            Atualmente, existem diversos programas de incentivo à produção de energias renováveis.
+
+          </p>
+          <p>
+            <em>
+              Clique nas setas laterais para conhecê-los.
+            </em>
+          </p>
+
+        </div>
+        <!-- slider -->
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="row pt-4">
+              <div uk-slider>
+                <div class="uk-position-relative">
+                  <div class="uk-slider-container uk-light">
+                    <ul class="uk-slider-items ">
+                      <li>
+                        <div class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+                          <div class="uk-card-body">
+                            <h3> Programa de Incentivo às Fontes Alternativas de Energia
+                              (Proinfa)</h3>
+                            <p>
+                              É um programa brasileiro criado em 2002 com o objetivo de
+                              promover a diversificação da matriz energética do país,
+                              aumentar a participação de fontes de energia renovável e
+                              reduzir as emissões de gases de efeito estufa.
+                            </p>
+                            <p>
+                              Ele foi desenvolvido em resposta à necessidade de reduzir a
+                              dependência do Brasil de fontes de energia não renováveis,
+                              como o petróleo e o carvão, e aumentar a segurança
+                              energética do país.
+                            </p>
+                            <p>
+                              O Proinfa prioriza três fontes de energia renovável: energia
+                              eólica, biomassa (principalmente bagaço de cana de açúcar)
+                              e pequenas centrais hidrelétricas (PCHs).
+                            </p>
+                            <p>
+                              O programa oferece incentivos financeiros, como tarifas de
+                              compra menores para projetos de energia renovável
+                              selecionados, financiamento preferencial e isenção de
+                              impostos sobre equipamentos e componentes utilizados na
+                              geração de
+                              energia renovável. Isso torna os projetos de energia
+                              renovável mais competitivos em comparação com fontes
+                              tradicionais
+                              de energia.
+                            </p>
+                            <p>
+                              Ele foi implementado em fases, com metas específicas de
+                              capacidade instalada para cada fonte de energia. Desde sua
+                              implementação, tem contribuído significativamente para o
+                              aumento da participação de fontes de energia renovável na
+                              matriz energética brasileira e para o desenvolvimento do
+                              setor de energias renováveis no país.
+                            </p>
+                            <p>
+                              Saiba mais em: https://proinfa.enbpar.gov.br/
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+                          <div class="uk-card-body">
+                            <h3>Lei do Bem </h3>
+                            <p>
+                              É uma legislação brasileira que instituiu benefícios fiscais
+                              para empresas que investem em pesquisa e desenvolvimento
+                              (P&D) de inovação tecnológica. O objetivo principal é
+                              incentivar o desenvolvimento científico e tecnológico no
+                              país,
+                              estimulando as empresas a investirem em atividades de P&D e,
+                              assim, promoverem a competitividade e o crescimento
+                              econômico sustentável.
+                            </p>
+                            <p>
+                              Foi instituída pela Lei nº 11.196/2005 e, posteriormente,
+                              alterada e complementada por outras legislações.
+                            </p>
+                            <p>
+                              Entre os principais benefícios fiscais oferecidos pela Lei
+                              do Bem estão:
+                            </p>
+                            <ul>
+                              <li>
+                                dedução de despesas de P&D: as empresas podem deduzir
+                                como despesas operacionais até 160% do valor investido
+                                em
+                                atividades de pesquisa e desenvolvimento, aumentando,
+                                assim, a base de cálculo do Imposto de Renda e da
+                                Contribuição
+                                Social sobre o Lucro Líquido (CSLL);
+                              </li>
+                              <li>
+                                depreciação acelerada de bens de informática e
+                                automação: a Lei do Bem permite a depreciação acelerada
+                                de bens
+                                utilizados em atividades de informática e automação,
+                                como computadores, equipamentos de automação industrial,
+                                entre
+                                outros;
+                              </li>
+                              <li>
+                                amortização acelerada de intangíveis: permite a
+                                amortização acelerada de investimentos em ativos
+                                intangíveis, como
+                                softwares desenvolvidos internamente ou adquiridos de
+                                terceiros para uso exclusivo nas atividades de pesquisa
+                                e
+                                desenvolvimento;
+                              </li>
+                              <li>
+                                incentivo à contratação de mão de obra qualificada:
+                                empresas que contratam profissionais com titulação
+                                mínima de
+                                mestrado ou doutorado para atividades de pesquisa e
+                                desenvolvimento podem deduzir parte dos salários como
+                                despesas
+                                operacionais.
+                              </li>
+                            </ul>
+                            <p>
+                              Saiba mais em:
+                              https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/lei-do-bem/paginas/o-que-e-a-lei-do-bem
+
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+                          <div class="uk-card-body">
+                            <h3>Lei n° 9.991/2000</h3>
+                            <p>
+                              É uma lei brasileira que estabelece mecanismos de incentivo
+                              para o desenvolvimento e a expansão da geração de energia
+                              elétrica a partir de fontes renováveis e alternativas. Seu
+                              principal objetivo é promover a diversificação da matriz
+                              energética do país, aumentando a participação de fontes
+                              limpas e sustentáveis na produção de eletricidade.
+                            </p>
+                            <p>
+                              Entre os principais pontos e mecanismos previstos dessa lei
+                              estão:
+                            </p>
+                            <ul>
+                              <li>
+                                obrigatoriedade de investimento em pesquisa e
+                                desenvolvimento (P&D): as concessionárias e
+                                permissionárias
+                                de
+                                distribuição de energia elétrica são obrigadas a
+                                investir
+                                uma porcentagem de sua receita operacional líquida em
+                                projetos
+                                de pesquisa e desenvolvimento no setor energético,
+                                incluindo
+                                iniciativas relacionadas a fontes alternativas de
+                                energia;
+                              </li>
+                              <li>
+                                programas de eficiência energética: as concessionárias e
+                                permissionárias também são obrigadas a destinar uma
+                                parte de
+                                sua receita operacional líquida para programas e
+                                projetos de
+                                eficiência energética, visando reduzir o consumo de
+                                energia
+                                e promover o uso racional dos recursos energéticos;
+                              </li>
+                              <li>
+                                fomento à geração distribuída: a legislação também prevê
+                                incentivos para a geração de energia elétrica a partir
+                                de
+                                fontes renováveis em sistemas de geração distribuída,
+                                como
+                                sistemas fotovoltaicos (energia solar), pequenas
+                                hidrelétricas, eólicas, biomassa, entre outras;
+                              </li>
+                              <li>
+                                desenvolvimento de tecnologias sustentáveis: a Lei de
+                                Incentivo às Fontes Alternativas de Energia visa
+                                estimular o
+                                desenvolvimento e a adoção de tecnologias sustentáveis e
+                                inovadoras para a geração, transmissão e distribuição de
+                                energia elétrica.
+                              </li>
+                            </ul>
+
+                            <p>
+                              Saiba mais em:
+                              https://www2.camara.leg.br/legin/fed/lei/2000/lei-9991-24-julho-2000-359823-publicacaooriginal-1-pl.html
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+                          <div class="uk-card-body">
+                            <h3> Regime Especial de Incentivos para o Desenvolvimento da
+                              Infraestrutura (Reidi)</h3>
+                            <p>
+                              É um programa brasileiro que oferece benefícios fiscais para
+                              empresas que investem em projetos de infraestrutura no
+                              país. Criado pela Lei nº 11.488/2007 e regulamentado pelo
+                              Decreto nº 6.144/2007, visa estimular o desenvolvimento de
+                              projetos que contribuam para a expansão e modernização da
+                              infraestrutura nacional.
+                            </p>
+                            <p>
+                              Os principais benefícios do Reidi incluem:
+                            </p>
+                            <ul>
+                              <li>
+                                suspensão da contribuição para o PIS/Pasep e da
+                                Cofins: as empresas que aderem ao Reidi podem suspender
+                                a incidência
+                                da contribuição para o PIS/Pasep e da Cofins sobre as
+                                receitas decorrentes das atividades relacionadas ao
+                                projeto de
+                                infraestrutura durante o período de construção;
+                              </li>
+                              <li>
+                                suspensão da Contribuição Previdenciária sobre a
+                                Receita Bruta (CPRB): além da suspensão da contribuição
+                                para o
+                                PIS/Pasep e da COFINS, as empresas podem suspender a
+                                CPRB incidente sobre as receitas provenientes das
+                                atividades
+                                relacionadas ao projeto;
+                              </li>
+                              <li>
+                                amortização acelerada de bens: o Reidi permite que as
+                                empresas amortizem aceleradamente os investimentos em
+                                bens e
+                                direitos utilizados no projeto de infraestrutura,
+                                acelerando a dedução dos custos para efeitos fiscais;
+                              </li>
+                              <li>
+                                certificado de incentivo: após a conclusão do projeto,
+                                as empresas podem solicitar um certificado de incentivo
+                                para
+                                comprovar a adesão ao Reidi e usufruir dos benefícios
+                                fiscais. Esse certificado pode ser utilizado para
+                                compensar
+                                impostos federais devidos pela empresa.
+                              </li>
+                            </ul>
+                            <p>
+                              Os projetos elegíveis para o Reidi incluem infraestrutura
+                              nos
+                              setores de transportes, energia, saneamento, irrigação,
+                              telecomunicações, entre outros. Esses projetos devem ser
+                              aprovados pelo Ministério da Fazenda e atender a requisitos
+                              específicos estabelecidos pela legislação.
+                            </p>
+                            <p>
+                              Saiba mais em:
+                              https://www.gov.br/mdr/pt-br/assuntos/fundos-regionais-e-incentivos-fiscais/reidi
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="uk-hidden@s uk-light"> <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a> <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a> </div>
+                  <div class="uk-visible@s"> <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a> <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a> </div>
+                </div>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%;        animation: gradient 25s ease infinite;height:auto">
+      <br>
+    </section>
+    <section class="d-flex min-vh-100 flex-column justify-content-center exercicios py-3" id="exercicios">
+      <article class="container py-4">
+        <div class="border rounded">
+          <h1 class="p-4">Praticando</h1>
+          <div class="row">
+
+          </div>
+        </div>
+      </article>
+    </section>
+    <hr class="uk-divider-icon">
+    <!-- Recapitulando -->
+    <section class="d-flex flex-column justify-content-center" id="recapitulando">
+      <article class="container py-4">
+        <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+          <div class="section-level1">
+            <h2>Recapitulando</h2>
+          </div>
+        </div>
+        <div class="row">
+          <p>
+            Nesta aula, nós estudamos a linha do tempo da matriz energética mundial e brasileira e
+            entendemos que nossa matriz
+            energética precisa ser menos dependente de combustíveis fósseis, sendo necessário gerar energia
+            por vias sustentáveis e
+            renováveis.
+          </p>
+        </div>
+      </article>
+    </section>
+    <!-- lorem -->
+    <hr class="uk-divider-icon">
+    <section class="pb-4" id="11">
+      <article class="container pb-4">
+        <div class="pb-4" id="content">
+          <div class="row" id="progresso">
+            <div class="col-lg-4 uk-text-center ">
+              <div class="legenda" style="font-size: 1rem;">Progresso do curso
+              </div>
+              <div class="copyright">
+                <div class="progress-circle"></div>
+                <span id="progressoGeral" class="fonte-plus"></span> <span class="text-color1">%</span>
+              </div>
+            </div>
+            <div class="col-lg-4 uk-text-center ">
+              <div class="legenda" style="font-size: 1rem;">Respostas corretas
+              </div>
+              <div class="copyright">
+
+                <span id="exerciciosCorretos" class="fonte-plus"></span><span class="text-color1">%</span>
+              </div>
+            </div>
+            <div class="col-lg-4 uk-text-center ">
+              <div class="legenda" style="font-size: 1rem;">Exercícios
+                concluídos</div>
+              <div class="copyright">
+                <span id="exerciciosRealizados" class="fonte-plus"></span>
+                <span id="totalExercicios">/</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="border-top fixed-bottom bg-menu-color">
+    <div class="progress_section">
+      <div class="progress_bar_wrap">
+        <div class="progress_bar"></div>
+      </div>
+      <div class="progress_num"> </div>
+    </div>
+    <div class="d-flex justify-content-evenly align-items-center justify-content-center">
+      <div class="col-sm-12 d-flex justify-content-center">
+        <div class="d-flex justify-content-evenly align-items-center">
+          <div class="col-sm-2 d-flex justify-content-end"> </div>
+          <div class="col-sm-8 d-flex justify-content-center ">
+            <p class="mx-auto mt-4 ">© SENAI <span id="year"></span></p>
+          </div>
+          <div class="col-sm-2 d-flex justify-content-start">
+            <a href="1de2_pt-br.html" aria-label="Próximo" title="Próximo">
+              <i class='bx mt-3 bx-fade-riht-hover bxs-right-arrow-circle bx-md copyright px-3'></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body><!-- SCORM -->
+<script src="../Template/js/acoes.js"></script>
+<script type="text/javascript" src="../Template/js/blocos_pt-br-t2k.js"></script>
+<script type="text/javascript" src="../Template/js/blocos_pt-br.js"></script>
+<script type="text/javascript" src="../Template/js/exercicios_pt-br.js"></script><!-- CONFIGURAÇÕES -->
+<script src="../Template/js/configuracoes.js"></script>
+<script src="../Template/js/main.js"></script>
+<script src="../Template/bibliotecas/youtube/js/youtube-chapters.min.js"></script>
+<script src="../Template/bibliotecas/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../Template/bibliotecas/fancybox/fancybox.umd.js"></script>
+<script>
+  Fancybox.bind('[data-fancybox="zoom"]', {});
+</script>
+<script>
+  window.addEventListener('load', () => {
+    const date = new Date();
+    document.querySelector('#year').textContent = `${date.getFullYear()}`
+  })
+</script>
+
+</html>
