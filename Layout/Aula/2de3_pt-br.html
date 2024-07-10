@@ -2,1359 +2,1458 @@
 <html id="master" lang="pt-Br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="../Template/img/favicon.ico" />
-    <title>Senai</title> <!-- Config -->
-    <script src="../Template/js/main.js" defer></script>
-    <link rel="stylesheet" href="../Template/css/theme.css">
-    <link rel="stylesheet" href="../Template/css/style.css">
-    <link rel="stylesheet" href="css/aula-1/add-style.css">
-    <link rel="stylesheet" href="../Template/bibliotecas/fancybox/fancybox.css"> <!-- JQuery-->
-    <script type="text/javascript" src="../Template/bibliotecas/jQuery-3.6.3/jquery-3.6.3.min.js"></script>
-    <!-- Bootstrap -->
-    <link href="../Template/bibliotecas/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap Icons -->
-    <link href="../Template/bibliotecas/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- UiKit-->
-    <link href="../Template/bibliotecas/uikit/css/uikit.min.css" rel="stylesheet" />
-    <script src="../Template/bibliotecas/uikit/js/uikit.min.js" async></script>
-    <script src="../Template/bibliotecas/uikit/js/uikit-icons.min.js" async></script> <!-- BoxIcons -->
-    <link href="../Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'>
-    <script src="../Template/bibliotecas/boxicons/boxicons.js" defer></script> <!-- GOOGLE TRANSLATE -->
-    <script src="../Template/js/google.js" type="text/javascript" defer></script> <!-- Grafico -->
-    <script src="../Template/bibliotecas/charts/chart.js"></script> <!-- SCORM -->
-    <script src="../Template/scorm/APIWrapper.js"></script>
-    <script src="../Template/scorm/SCOFunctions.js"></script> <!-- Prism -->
-    <script src="../Template/bibliotecas/prism/js/prism.js"></script>
-    <link href="../Template/bibliotecas/prism/css/prism.css" rel='stylesheet'> <!-- BoxIcons -->
-    <script src="../Template/bibliotecas/boxicons/boxicons.js"></script>
-    <link href="../Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'> <!-- VIDEO DO YOUTUBE -->
-    <link href="../Template/bibliotecas/youtube/css/youtube-chapters.min.css" rel="stylesheet" /> <!-- WEBTOUR -->
-    <link rel="stylesheet" href="../Template/bibliotecas/webtour/introjs.min.css">
-    <script src="/Layout/Template/bibliotecas/webtour/intro.min.js"></script>
-    <script src="../Template/js/menu.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="../Template/img/favicon.ico" />
+	<title>Senai</title> <!-- Config -->
+	<script src="../Template/js/main.js" defer></script>
+	<link rel="stylesheet" href="../Template/css/theme.css">
+	<link rel="stylesheet" href="../Template/css/style.css">
+	<link rel="stylesheet" href="css/aula-1/add-style.css">
+	<link rel="stylesheet" href="../Template/bibliotecas/fancybox/fancybox.css"> <!-- JQuery-->
+	<script type="text/javascript" src="../Template/bibliotecas/jQuery-3.6.3/jquery-3.6.3.min.js"></script>
+	<!-- Bootstrap -->
+	<link href="../Template/bibliotecas/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap Icons -->
+	<link href="../Template/bibliotecas/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- UiKit-->
+	<link href="../Template/bibliotecas/uikit/css/uikit.min.css" rel="stylesheet" />
+	<script src="../Template/bibliotecas/uikit/js/uikit.min.js" async></script>
+	<script src="../Template/bibliotecas/uikit/js/uikit-icons.min.js" async></script> <!-- BoxIcons -->
+	<link href="../Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'>
+	<script src="../Template/bibliotecas/boxicons/boxicons.js" defer></script> <!-- GOOGLE TRANSLATE -->
+	<script src="../Template/js/google.js" type="text/javascript" defer></script> <!-- Grafico -->
+	<script src="../Template/bibliotecas/charts/chart.js"></script> <!-- SCORM -->
+	<script src="../Template/scorm/APIWrapper.js"></script>
+	<script src="../Template/scorm/SCOFunctions.js"></script> <!-- Prism -->
+	<script src="../Template/bibliotecas/prism/js/prism.js"></script>
+	<link href="../Template/bibliotecas/prism/css/prism.css" rel='stylesheet'> <!-- BoxIcons -->
+	<script src="../Template/bibliotecas/boxicons/boxicons.js"></script>
+	<link href="../Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'> <!-- VIDEO DO YOUTUBE -->
+	<script src="../Template/js/menu.js"></script>
 </head>
 
 <body onunload="unloadPage()">
-    <header>
-        <div id="google_translate_element"></div>
-        <!-- Vlibras -->
-        <div vw class="enabled">
-            <div id="vlibras-show" vw-access-button class="#"></div>
-            <div vw-plugin-wrapper>
-                <div class="vw-plugin-top-wrapper"></div>
-            </div>
-        </div>
-        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-        <script>      new window.VLibras.Widget('https://vlibras.gov.br/app');    </script>
-        <!-- Menu -->
-        <nav class="navbar-dark bg-menu-color fixed-top nav-height">
-            <div class="d-flex bd-highlight align-items-center g-4 nav-height">
-                <div class="bd-highlight">
-                    <button class="btn align-items-center ms-2" data-bs-toggle="offcanvas"
-                        data-bs-target="#nav-menu-open-close" aria-controls="nav-menu-open-close" aria-label="Menu"
-                        title="Menu">
-                        <i class='cor1 bx bx-menu bx-tada-hover'></i> </button>
-                </div>
-                <div class="bd-highlight mx-auto">
-                    <object class="d-none d-lg-block img-fluid" style="margin-left:130px; max-width:180px"
-                        data="../Template/img/logo_senai.svg" type="image/svg+xml" alt="SENAI" title="SENAI">
-                    </object>
-                    <object class="d-md-block d-lg-none" style="margin-top: 5px;max-width: 130px;"
-                        data="../Template/img/logo_senai.svg" type="image/svg+xml" alt="SENAI" title="SENAI">
-                    </object>
-                </div>
-                <div class="bd-highlight">
-                    <div class="d-flex bd-highlight align-items-center nav-height">
-                        <div class="form-check form-check-inline switch-group" role="button" title="Temas">
-                            <input class="form-check-input d-none" type="checkbox" name="themeBtns" id="themeSwitcher"
-                                role="Toogle Temas">
-                            <label class="form-check-label" for="themeSwitcher">
-                                <div class="switch-darkmode">
-                                    <div class="icons"> <i class='bx bx-moon bx-tada-hover'></i> <i
-                                            class='bx bx-sun bx-spin-hover' style="color: aliceblue;"></i> </div>
-                                    <div class="circle"></div>
-                                </div>
-                            </label>
-                        </div>
-                        <div class=" d-flex flex-row align-middle ms-2 me-2" onclick="vlibrashow()" role="Vlibras"
-                            title="Vlibras"> <i class='vlibras-show bx bx-universal-access' style="font-size:2rem"></i>
-                            <span class="ms-1 me-1 d-none d-lg-block menu" style="margin-top: 3px;"></span>
-                        </div>
-                        <div class="dropdown me-2">
-                            <button class="btn text-white me-2" type="button" id="Acessibilidade" title="Configurações"
-                                data-bs-toggle="dropdown" aria-expanded="false" aria-label="Configurações">
-                                <i class='bx bx-cog bx-spin-hover bx-sm'></i>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-dark menu-margin" aria-labelledby="Acessibilidade">
-                                <li class="dropdown-item" data-translate="acessibilidade">
-                                    <strong>Acessibilidade</strong>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li> <a class="dropdown-item">
-                                        <div class="mb-3 form-check form-switch">
-                                            <input class="form-check-input " type="checkbox" name="themeBtns"
-                                                id="graySwitcher" role="Modo monocromatico">
-                                            <label class="form-check-label menu" for="graySwitcher"
-                                                data-translate="thema-linguagem-3">Modo Monocromatico</label>
-                                        </div>
-                                    </a> </li>
-                                <li> <a class="dropdown-item">
-                                        <div class="mb-3 form-check form-switch">
-                                            <input class="form-check-input" type="checkbox" name="themeBtns"
-                                                id="daltonicSwitcher" role="Modo Daltônico">
-                                            <label class="form-check-label menu" for="daltonicSwitcher"
-                                                data-translate="thema-linguagem-4">Modo
-                                                Daltônico</label>
-                                        </div>
-                                    </a> </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li class="dropdown-item"> <span class="menu" data-translate="tamanho-da-fonte">Tamanho
-                                        da Fonte</span> <br> <input type="range" class="form-range" min="50" max="115"
-                                        step="5" id="size"> </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="offcanvas offcanvas-start" data-bs-backdrop="true" data-bs-backdrop="static" tabindex="-1"
-                id="nav-menu-open-close" aria-labelledby="staticBackdropLabel">
-                <div class="offcanvas-header bg-menu-color">
-                    <p class="offcanvas-title" id="staticBackdropLabel">Menu</p> <button type="button"
-                        class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body ">
-                    <h3> <a href="../../index_pt-br.html"> <i class="bi bi-house"></i> Início</a> </h3>
-                    <!-- Menu -->
-                    <nav id="navbar-menu" class="flex-column align-items-stretch pe-4 my-5">
-                        <nav class="nav nav-pills flex-column">
-                            <div uk-accordion>
-                                <!-- 1 -->
-                                <li class="uk-open">
-                                    <a class="nav-link uk-accordion-title">
-                                        <i class="bi bi-pin-fill"></i>
-                                        Módulo 1
-                                    </a>
-                                    <div class="uk-accordion-content">
-                                        <div class="nav nav-pills flex-column">
-                                            <ul class="icons-list">
-                                                <li class="nav">
-                                                    <a class="nav-link my-1" href="1de1_pt-br.html#capa">Tema/Aula</a>
-                                                </li>
-                                                <div class="nav">
-                                                    <ul class="icons-list">
-                                                        <li> <a class="nav-link ms-3 my-1"
-                                                                href="1de1_pt-br.html#aula1-section-1">Apresentação da
-                                                                aula</a> </li>
-                                                        <li> <a class="nav-link ms-3 my-1"
-                                                                href="1de1_pt-br.html#aula1-section-2">Conteúdo</a>
-                                                        </li>
-                                                        <li> <a class="nav-link ms-3 my-1"
-                                                                href="1de1_pt-br.html#aula1-section-3">Praticando</a>
-                                                        </li>
-                                                        <li> <a class="nav-link ms-3 my-1"
-                                                                href="1de1_pt-br.html#aula1-section-4">Recapitulando</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <!-- 2 -->
-                                <li>
-                                    <a class="nav-link uk-accordion-title">
-                                        <i class="bi bi-pin-fill"></i>
-                                        Módulo 2
-                                    </a>
-                                    <div class="uk-accordion-content">
-                                        <div class="nav nav-pills flex-column">
-                                            <ul class="icons-list">
-                                                <li class="nav">
-                                                    <a class="nav-link my-1" href="2de1_pt-br.html#capa">Tema/Aula</a>
-                                                </li>
-                                                <div class="nav">
-                                                    <ul class="icons-list">
-                                                        <li> <a class="nav-link ms-3 my-1"
-                                                                href="2de1_pt-br.html#aula2-section-1">Apresentação da
-                                                                aula</a> </li>
-                                                        <li> <a class="nav-link ms-3 my-1"
-                                                                href="2de1_pt-br.html#aula2-section-2">Conteúdo</a>
-                                                        </li>
-                                                        <li> <a class="nav-link ms-3 my-1"
-                                                                href="2de1_pt-br.html#aula2-section-3">Praticando</a>
-                                                        </li>
-                                                        <li> <a class="nav-link ms-3 my-1"
-                                                                href="2de1_pt-br.html#aula2-section-4">Recapitulando</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <!-- 3 -->
-                                <li>
-                                    <a class="nav-link uk-accordion-title">
-                                        <i class="bi bi-pin-fill"></i>
-                                        Módulo 3
-                                    </a>
-                                    <div class="uk-accordion-content">
-                                        <div class="nav nav-pills flex-column">
-                                            <ul class="icons-list">
-                                                <li class="nav">
-                                                    <a class="nav-link my-1" href="3de1_pt-br.html#capa">Tema/Aula</a>
-                                                </li>
-                                                <div class="nav">
-                                                    <ul class="icons-list">
-                                                        <li> <a class="nav-link ms-3 my-1"
-                                                                href="3de1_pt-br.html#aula3-section-1">Apresentação da
-                                                                aula</a> </li>
-                                                        <li> <a class="nav-link ms-3 my-1"
-                                                                href="3de1_pt-br.html#aula3-section-2">Conteúdo</a>
-                                                        </li>
-                                                        <li> <a class="nav-link ms-3 my-1"
-                                                                href="3de1_pt-br.html#aula3-section-3">Praticando</a>
-                                                        </li>
-                                                        <li> <a class="nav-link ms-3 my-1"
-                                                                href="3de1_pt-br.html#aula3-section-4">Recapitulando</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                                <!-- 4 -->
-                                <li>
-                                    <a class="nav-link uk-accordion-title">
-                                        <i class="bi bi-pin-fill"></i>
-                                        Módulo 4
-                                    </a>
-                                    <div class="uk-accordion-content">
-                                        <div class="nav nav-pills flex-column">
-                                            <ul class="icons-list">
-                                                <li class="nav">
-                                                    <a class="nav-link my-1" href="4de1_pt-br.html#capa">Tema/Aula</a>
-                                                </li>
-                                                <div class="nav">
-                                                    <ul class="icons-list">
-                                                        <li> <a class="nav-link ms-3 my-1"
-                                                                href="4de1_pt-br.html#aula4-section-1">Apresentação da
-                                                                aula</a> </li>
-                                                        <li> <a class="nav-link ms-3 my-1"
-                                                                href="4de1_pt-br.html#aula4-section-2">Conteúdo</a>
-                                                        </li>
-                                                        <li> <a class="nav-link ms-3 my-1"
-                                                                href="4de1_pt-br.html#aula4-section-3">Praticando</a>
-                                                        </li>
-                                                        <li> <a class="nav-link ms-3 my-1"
-                                                                href="4de1_pt-br.html#aula4-section-4">Recapitulando</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </li>
-                            </div>
-                        </nav>
-                    </nav>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main class=" pt-4" data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-offset="0">
-        <!-- Capa -->
-        <div id="capa"
-            class="d-flex py-4 min-vh-100 flex-column justify-content-center uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
-            style="background-image: url('./../Template/img/capa_aula2_3.jpg');">
-            <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-                <div class="row mt-2">
-                    <h1 class=" text-uppercase mt-5 pt-5 color2"
-                        uk-parallax="opacity: 1; y: -0,0; scale: 1.1,2; end: 0vh + 10%;">
-                        Biomassa aquática
-                    </h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="row position-absolute" style="bottom: 10%
+	<header>
+		<div id="google_translate_element"></div>
+		<!-- Vlibras -->
+		<div vw class="enabled">
+			<div id="vlibras-show" vw-access-button class="#"></div>
+			<div vw-plugin-wrapper>
+				<div class="vw-plugin-top-wrapper"></div>
+			</div>
+		</div>
+		<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+		<script>      new window.VLibras.Widget('https://vlibras.gov.br/app');    </script>
+		<!-- Menu -->
+		<nav class="navbar-dark bg-menu-color fixed-top nav-height">
+			<div class="d-flex bd-highlight align-items-center g-4 nav-height">
+				<div class="bd-highlight">
+					<button class="btn align-items-center ms-2" data-bs-toggle="offcanvas"
+						data-bs-target="#nav-menu-open-close" aria-controls="nav-menu-open-close" aria-label="Menu"
+						title="Menu">
+						<i class='cor1 bx bx-menu bx-tada-hover'></i> </button>
+				</div>
+				<div class="bd-highlight mx-auto">
+					<object class="d-none d-lg-block img-fluid" style="margin-left:130px; max-width:180px"
+						data="../Template/img/logo_senai.svg" type="image/svg+xml" alt="SENAI" title="SENAI">
+					</object>
+					<object class="d-md-block d-lg-none" style="margin-top: 5px;max-width: 130px;"
+						data="../Template/img/logo_senai.svg" type="image/svg+xml" alt="SENAI" title="SENAI">
+					</object>
+				</div>
+				<div class="bd-highlight">
+					<div class="d-flex bd-highlight align-items-center nav-height">
+						<div class="form-check form-check-inline switch-group" role="button" title="Temas">
+							<input class="form-check-input d-none" type="checkbox" name="themeBtns" id="themeSwitcher"
+								role="Toogle Temas">
+							<label class="form-check-label" for="themeSwitcher">
+								<div class="switch-darkmode">
+									<div class="icons"> <i class='bx bx-moon bx-tada-hover'></i> <i
+											class='bx bx-sun bx-spin-hover' style="color: aliceblue;"></i> </div>
+									<div class="circle"></div>
+								</div>
+							</label>
+						</div>
+						<div class=" d-flex flex-row align-middle ms-2 me-2" onclick="vlibrashow()" role="Vlibras"
+							title="Vlibras"> <i class='vlibras-show bx bx-universal-access' style="font-size:2rem"></i>
+							<span class="ms-1 me-1 d-none d-lg-block menu" style="margin-top: 3px;"></span>
+						</div>
+						<div class="dropdown me-2">
+							<button class="btn text-white me-2" type="button" id="Acessibilidade" title="Configurações"
+								data-bs-toggle="dropdown" aria-expanded="false" aria-label="Configurações">
+								<i class='bx bx-cog bx-spin-hover bx-sm'></i>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-dark menu-margin" aria-labelledby="Acessibilidade">
+								<li class="dropdown-item" data-translate="acessibilidade">
+									<strong>Acessibilidade</strong>
+								</li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li> <a class="dropdown-item">
+										<div class="mb-3 form-check form-switch">
+											<input class="form-check-input " type="checkbox" name="themeBtns"
+												id="graySwitcher" role="Modo monocromatico">
+											<label class="form-check-label menu" for="graySwitcher"
+												data-translate="thema-linguagem-3">Modo Monocromatico</label>
+										</div>
+									</a> </li>
+								<li> <a class="dropdown-item">
+										<div class="mb-3 form-check form-switch">
+											<input class="form-check-input" type="checkbox" name="themeBtns"
+												id="daltonicSwitcher" role="Modo Daltônico">
+											<label class="form-check-label menu" for="daltonicSwitcher"
+												data-translate="thema-linguagem-4">Modo
+												Daltônico</label>
+										</div>
+									</a> </li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li class="dropdown-item"> <span class="menu" data-translate="tamanho-da-fonte">Tamanho
+										da Fonte</span> <br> <input type="range" class="form-range" min="50" max="115"
+										step="5" id="size"> </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="offcanvas offcanvas-start" data-bs-backdrop="true" data-bs-backdrop="static" tabindex="-1"
+				id="nav-menu-open-close" aria-labelledby="staticBackdropLabel">
+				<div class="offcanvas-header bg-menu-color">
+					<p class="offcanvas-title" id="staticBackdropLabel">Menu</p> <button type="button"
+						class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body ">
+					<h3> <a href="../../index_pt-br.html"> <i class="bi bi-house"></i> Início</a> </h3>
+					<!-- Menu -->
+					<nav id="navbar-menu" class="flex-column align-items-stretch pe-4 my-5">
+						<nav class="nav nav-pills flex-column">
+							<div uk-accordion>
+								<!-- 1 -->
+								<li class="uk-open">
+									<a class="nav-link uk-accordion-title">
+										<i class="bi bi-pin-fill"></i>
+										Módulo 1
+									</a>
+									<div class="uk-accordion-content">
+										<div class="nav nav-pills flex-column">
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="1de1_pt-br.html#capa">Tema/Aula</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-1">Apresentação da
+																aula</a> </li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-2">Conteúdo</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-3">Praticando</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-4">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<!-- 2 -->
+								<li>
+									<a class="nav-link uk-accordion-title">
+										<i class="bi bi-pin-fill"></i>
+										Módulo 2
+									</a>
+									<div class="uk-accordion-content">
+										<div class="nav nav-pills flex-column">
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="2de1_pt-br.html#capa">Tema/Aula</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#aula2-section-1">Apresentação da
+																aula</a> </li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#aula2-section-2">Conteúdo</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#aula2-section-3">Praticando</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#aula2-section-4">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<!-- 3 -->
+								<li>
+									<a class="nav-link uk-accordion-title">
+										<i class="bi bi-pin-fill"></i>
+										Módulo 3
+									</a>
+									<div class="uk-accordion-content">
+										<div class="nav nav-pills flex-column">
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="3de1_pt-br.html#capa">Tema/Aula</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#aula3-section-1">Apresentação da
+																aula</a> </li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#aula3-section-2">Conteúdo</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#aula3-section-3">Praticando</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#aula3-section-4">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<!-- 4 -->
+								<li>
+									<a class="nav-link uk-accordion-title">
+										<i class="bi bi-pin-fill"></i>
+										Módulo 4
+									</a>
+									<div class="uk-accordion-content">
+										<div class="nav nav-pills flex-column">
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="4de1_pt-br.html#capa">Tema/Aula</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li> <a class="nav-link ms-3 my-1"
+																href="4de1_pt-br.html#aula4-section-1">Apresentação da
+																aula</a> </li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="4de1_pt-br.html#aula4-section-2">Conteúdo</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="4de1_pt-br.html#aula4-section-3">Praticando</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="4de1_pt-br.html#aula4-section-4">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</div>
+						</nav>
+					</nav>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class=" pt-4" data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-offset="0">
+		<!-- Capa -->
+		<div id="capa"
+			class="d-flex py-4 min-vh-100 flex-column justify-content-center uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+			style="background-image: url('./../Template/img/capa_aula2_3.jpeg');">
+			<div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+				<div class="row mt-2">
+					<h1 class=" text-uppercase mt-5 pt-5 color2"
+						uk-parallax="opacity: 1; y: -0,0; scale: 1.1,2; end: 0vh + 10%;">
+						Biomassa aquática
+					</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row position-absolute" style="bottom: 10%
         ; left: 49.2%; transform: translateX(-50%)">
-                    <div class="py-4 col-lg-1 mx-auto">
-                        <div class="mouse"></div>
-                    </div>
+					<div class="py-4 col-lg-1 mx-auto">
+						<div class="mouse"></div>
+					</div>
 
-                </div>
-            </div>
-        </div>
-        <section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
-            style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%; animation: gradient 25s ease infinite;height:auto">
-            <br>
-        </section>
-        <!-- APRESENTACAO -->
-        <section class="d-flex py-4 min-vh-100 flex-column justify-content-center" id="aula1-section-1">
-            <article class="container">
-                <div class="row">
-                    <p>
-                        Nesta aula, abordaremos a biomassa aquática, explorando as micro e macroalgas e seu potencial na
-                        produção de energia
-                        renovável. Vamos analisar suas características únicas, métodos de cultivo e os biocombustíveis
-                        derivados delas.
-                    </p>
-                </div>
-            </article>
-        </section> <!-- lorem -->
-        <section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
-            style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%;        animation: gradient 25s ease infinite;height:auto">
-            <br>
-        </section> <!-- lorem -->
-        <section class="d-flex min-vh-100 flex-column justify-content-center" id="aula1-section-2">
-            <article class="container py-4">
-                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
-                    <div class="section-level1">
-                        <h2>
-                            Biomassa aquática: macro e microalgas
-                        </h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <p>
-                        Você sabe o que é biomassa aquática? Trata-se de uma fonte abundante e renovável de
-                        matéria-prima para a produção de
-                        biocombustíveis e outros produtos bioquímicos.
-                    </p>
-                    <p>
-                        Nos últimos tempos, o petróleo tem sido usado indiscriminadamente devido ao aumento substancial
-                        no setor de transportes,
-                        à expansão da urbanização e ao modo de produção, levando ao consumo excessivo. Por essas razões,
-                        muitas nações estão
-                        prestes a atingir seu "pico" na produção de petróleo. Além disso, seu consumo excessivo resultou
-                        em outros problemas
-                        globais, como poluição do ar, aumento das quantidades de gases de efeito estufa, aquecimento
-                        global e mudanças
-                        climáticas, causando sérios problemas na agricultura, o que tem repercussões na segurança
-                        alimentar e na economia
-                        global.
-                    </p>
-                    <p>
-                        Questões geopolíticas e econômicas associadas à aquisição de petróleo, se tratadas
-                        inadvertidamente, podem resultar em
-                        uma situação de crise para os países. Uma dessas crises, na década de 1970, levou à exploração
-                        global de novas reservas
-                        de petróleo, fontes de energia não convencionais e combustíveis alternativos para operar
-                        veículos.
-                    </p>
-                    <p>
-                        Baseando-se na proposição de alguns cientistas sobre a presença de óleos vegetais em microalgas
-                        e métodos em constante
-                        evolução para extraí-los e utilizá-los, o Departamento de Energia dos EUA iniciou um projeto
-                        denominado "Programa de
-                        Espécies Aquáticas". Este programa tinha como objetivo descobrir se alguma espécie aquática,
-                        particularmente algas,
-                        poderia ajudar a mitigar a crise de combustíveis no futuro, oferecer segurança energética global
-                        e solucionar problemas
-                        relacionados ao petróleo.
-                    </p>
-                    <p>
-                        Este programa identificou muitas espécies de algas que podem acumular lipídios em até 80% de seu
-                        peso, sob condições
-                        variadas. Essas algas podem ser exploradas para aumento de escala e produção industrial de
-                        combustíveis líquidos como o
-                        bioetanol. Avanços em pesquisa e desenvolvimento para a síntese de combustíveis gasosos, como
-                        bio-hidrogênio e
-                        bioeletricidade, também estão em andamento. Os biocombustíveis à base de algas reduzem
-                        significativamente as emissões de
-                        gases de efeito estufa em comparação com outros combustíveis convencionais.
-                    </p>
-                    <p>
-                        Confira na imagem a seguir como é o processo de produção de biocombustível a partir de biomassa
-                        de algas. As microalgas
-                        e macroalgas são a matéria-prima para o processo. As algas são coletadas e passam pelo
-                        pré-tratamento, onde são
-                        preparadas para as próximas etapas. Uma das opções é a conversão termoquímica, a conversão
-                        química ou a conversão
-                        biológica. Finalmente, as tecnologias de conversão levam à produção de biocombustível.
-                    </p>
-                </div>
-                <div>
-                    <img src="#" alt="">
-                </div>
-                <div class="row">
-                    <p>
-                        Há um entendimento geral de que a produção de alimentos, rações e biocombustíveis competem por
-                        recursos finitos como
-                        água, terra e capital humano, sendo necessárias novas estratégias para mitigar a competição pela
-                        produção de biomassa e
-                        evitar o ônus imposto aos ecossistemas. Uma estratégia para alcançar uma solução sustentável
-                        para a produção de resíduos
-                        levou à implementação de uma bioeconomia circular.
-                    </p>
-                    <p>
-                        Nesse sentido, o plano de ação de bioeconomia circular foca na preservação de alimentos e
-                        biorrecursos a longo prazo,
-                        minimizando o desperdício nas linhas de produção, impulsionando e criando um processo integrado
-                        e sustentável para
-                        benefício social, econômico e ambiental.
-                    </p>
-                    <p>
-                        Nesse contexto, os biocombustíveis de algas têm sido reconhecidos como recursos de energia
-                        renovável promissores para o
-                        desenvolvimento sustentável. Comercialmente viáveis e econômicos, os biocombustíveis de algas
-                        não exigem terras
-                        adicionais, demandam baixo consumo de água e reduzem as emissões de gases de efeito estufa na
-                        atmosfera. No entanto,
-                        devido à baixa concentração dessa biomassa e aos altos custos, a produção comercial de
-                        biocombustíveis de algas ainda
-                        está em seus estágios iniciais.
+				</div>
+			</div>
+		</div>
+		<section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+			style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%; animation: gradient 25s ease infinite;height:auto">
+			<br>
+		</section>
+		<!-- APRESENTACAO -->
+		<section class="d-flex py-4 min-vh-100 flex-column justify-content-center" id="aula1-section-1">
+			<article class="container">
+				<div class="row">
+					<div class="align-self-start ">
+						<div class="section-level1">
+							<h1>Apresentação da aula</h1>
+						</div>
+					</div>
+					<p>
+						Nesta aula, abordaremos a biomassa aquática, explorando as micro e macroalgas e seu potencial na
+						produção de energia
+						renovável. Vamos analisar suas características únicas, métodos de cultivo e os biocombustíveis
+						derivados delas.
+					</p>
+				</div>
+			</article>
+		</section> <!-- lorem -->
+		<section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+			style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%;        animation: gradient 25s ease infinite;height:auto">
+			<br>
+		</section> <!-- lorem -->
+		<section class="d-flex min-vh-100 flex-column justify-content-center" id="aula1-section-2">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h2>
+							Biomassa aquática: macro e microalgas
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						Você sabe o que é biomassa aquática? Trata-se de uma fonte abundante e renovável de
+						matéria-prima para a produção de
+						biocombustíveis e outros produtos bioquímicos.
+					</p>
+					<p>
+						Nos últimos tempos, o petróleo tem sido usado indiscriminadamente devido ao aumento substancial
+						no setor de transportes,
+						à expansão da urbanização e ao modo de produção, levando ao consumo excessivo. Por essas razões,
+						muitas nações estão
+						prestes a atingir seu "pico" na produção de petróleo. Além disso, seu consumo excessivo resultou
+						em outros problemas
+						globais, como poluição do ar, aumento das quantidades de gases de efeito estufa, aquecimento
+						global e mudanças
+						climáticas, causando sérios problemas na agricultura, o que tem repercussões na segurança
+						alimentar e na economia
+						global.
+					</p>
+					<p>
+						Questões geopolíticas e econômicas associadas à aquisição de petróleo, se tratadas
+						inadvertidamente, podem resultar em
+						uma situação de crise para os países. Uma dessas crises, na década de 1970, levou à exploração
+						global de novas reservas
+						de petróleo, fontes de energia não convencionais e combustíveis alternativos para operar
+						veículos.
+					</p>
+					<p>
+						Baseando-se na proposição de alguns cientistas sobre a presença de óleos vegetais em microalgas
+						e métodos em constante
+						evolução para extraí-los e utilizá-los, o Departamento de Energia dos EUA iniciou um projeto
+						denominado "Programa de
+						Espécies Aquáticas". Este programa tinha como objetivo descobrir se alguma espécie aquática,
+						particularmente algas,
+						poderia ajudar a mitigar a crise de combustíveis no futuro, oferecer segurança energética global
+						e solucionar problemas
+						relacionados ao petróleo.
+					</p>
+					<p>
+						Este programa identificou muitas espécies de algas que podem acumular lipídios em até 80% de seu
+						peso, sob condições
+						variadas. Essas algas podem ser exploradas para aumento de escala e produção industrial de
+						combustíveis líquidos como o
+						bioetanol. Avanços em pesquisa e desenvolvimento para a síntese de combustíveis gasosos, como
+						bio-hidrogênio e
+						bioeletricidade, também estão em andamento. Os biocombustíveis à base de algas reduzem
+						significativamente as emissões de
+						gases de efeito estufa em comparação com outros combustíveis convencionais.
+					</p>
+					<p>
+						Confira na imagem a seguir como é o processo de produção de biocombustível a partir de biomassa
+						de algas. As microalgas
+						e macroalgas são a matéria-prima para o processo. As algas são coletadas e passam pelo
+						pré-tratamento, onde são
+						preparadas para as próximas etapas. Uma das opções é a conversão termoquímica, a conversão
+						química ou a conversão
+						biológica. Finalmente, as tecnologias de conversão levam à produção de biocombustível.
+					</p>
+				</div>
+				<div class="col-lg-6 py-4 mx-auto">
+					<a data-fancybox="zoom" data-src="../Aula/img/mod2/24042-Desv-Biocombustiveis-m2-a3_01-algas.png"
+						data-caption="">
+						<img src="../Aula/img/mod2/24042-Desv-Biocombustiveis-m2-a3_01-algas.png"
+							class="img-fluid rounded"
+							alt="A imagem representa o processo de produção de biocombustível a partir de biomassa de algas.  
 
-                    </p>
-                </div>
-                <!-- Saiba mais... -->
-                <div class="col-lg-10 mx-auto py-4">
-                    <div class="box saibamais">
-                        <div class="d-flex justify-content-center d-sm-none mx-auto"> <i
-                                class="bx bi bi bi-search verde-saibamais bx-tada"></i> </div>
-                        <div class="d-flex  align-items-center container">
-                            <div class="col-lg-10 p-2">
-                                <h3>Saiba mais</h3>
-                                <p>
-                                    As biorrefinarias são uma solução sustentável que converte biomassa em produtos de
-                                    alto valor, alinhando-se aos
-                                    princípios de uma bioeconomia circular e focando no uso eficiente de recursos
-                                    limitados. Utilizando processos
-                                    termoquímicos e bioquímicos, essas instalações produzem biocombustíveis e outros
-                                    produtos valiosos dentro de uma
-                                    estrutura ambientalmente correta.
-                                </p>
-                            </div>
-                            <div class="col-lg-2">
-                                <div class="d-flex d-none d-sm-block d-md-block d-lg-block"> <i
-                                        class="bx bi bi bi-search verde-saibamais bx-tada"></i> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <p>
-                        Diante disso, tanto as microalgas quanto as macroalgas têm ganhado muito interesse como uma nova
-                        fonte de biomassa para
-                        a produção de fontes renováveis de energia. As algas possuem um rendimento de biomassa
-                        significativo que não pode ser
-                        alcançado por outros tipos de organismos, incluindo uma alta quantidade de óleo e amido por
-                        unidade de luz e área.
-                    </p>
-                    <p>
-                        Além disso, o cultivo de biomassa algal não requer requisitos especiais, como água doce, terra
-                        arável ou outros
-                        suplementos, pois elas podem ser cultivadas em sistemas de resíduos, esgotos e água do mar. De
-                        fato, lagoas abertas,
-                        fotobiorreatores e sistemas fechados podem servir como reatores industriais para a produção de
-                        biomassa algal em larga
-                        escala. Além disso, as algas podem crescer em quase todas as condições climáticas e sazonais.
-                    </p>
-                    <p>
-                        Essas algas podem produzir uma gama diversificada de moléculas orgânicas, como carboidratos e
-                        lipídios, que podem ser
-                        usadas para a extração e produção de biocombustível. As microalgas possuem características
-                        multicelulares e
-                        unicelulares, com comportamento autotrófico; e espécies de microalgas têm criado oportunidades
-                        para a geração de
-                        inúmeros tipos de fontes renováveis de energia na forma de biocombustível, incluindo metano,
-                        biodiesel e bio-hidrogênio,
-                        que são produzidos por respostas fotobiológicas e mecanismos de bioprocessos.
-                    </p>
-                </div>
-            </article>
-            <article class="container py-4">
-                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
-                    <div class="section-level1">
-                        <h2>
-                            Características químicas e físicas
-                        </h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <p>
-                        Nos últimos anos, o cultivo de algas para o tratamento de águas residuais tornou-se popular como
-                        método para reduzir a
-                        poluição proveniente de setores como têxtil, laticínios, farmacêutico e municipal.
-                    </p>
-                    <p>
-                        Essa prática é economicamente viável, apresenta baixo risco para a saúde e reduz as chances de
-                        poluição secundária. Além
-                        disso, abre caminho para o aproveitamento econômico de matéria-prima na produção de bioenergia,
-                        como biocombustíveis.
-                    </p>
-                    <p>
-                        <em>
-                            Clique nos itens do quadro a seguir para conhecer as características químicas e físicas das
-                            macroalgas e microalgas.
-                        </em>
-                    </p>
-                </div>
-                <!-- accordion 1 -->
-                <div class="col-md-8 mx-auto py-4">
-                    <div class="bd-example-snippet bd-code-snippet">
-                        <div class="accordion" id="1-accordion">
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="1-collapse-cabecalho-1">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#1-collapse-1" aria-expanded="false"
-                                        aria-controls="1-collapse-1" aria-labelledby="Segurança energética">
-                                        Tamanho e estrutura
-                                    </button>
-                                </h4>
-                                <div id="1-collapse-1" class="accordion-collapse collapse"
-                                    data-bs-parent="#1-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            As macroalgas são organismos multicelulares e visíveis a olho nu, podendo
-                                            crescer até tamanhos consideráveis, enquanto
-                                            as microalgas são unicelulares e microscópicas, impossíveis de serem
-                                            observadas sem auxílio de equipamentos.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="1-collapse-cabecalho-2"> <button
-                                        class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#1-collapse-2" aria-expanded="false"
-                                        aria-controls="1-collapse-2" aria-labelledby="Titulo 2">
-                                        Composição química
-                                    </button> </h4>
-                                <div id="1-collapse-2" class="accordion-collapse collapse"
-                                    data-bs-parent="#1-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            Ambos os tipos de algas são ricos em nutrientes essenciais, como proteínas,
-                                            carboidratos, lipídios, vitaminas e
-                                            minerais. As macroalgas tendem a ter uma composição mais variada, enquanto
-                                            as microalgas geralmente possuem um alto teor
-                                            de lipídios.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="1-collapse-cabecalho-3">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#1-collapse-3" aria-expanded="false"
-                                        aria-controls="1-collapse-3" aria-labelledby="Titulo 1">
-                                        Crescimento e propagação
-                                    </button>
-                                </h4>
-                                <div id="1-collapse-3" class="accordion-collapse collapse"
-                                    data-bs-parent="#1-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            As macroalgas são frequentemente encontradas em ambientes marinhos
-                                            costeiros, onde podem se fixar em substratos sólidos
-                                            e crescer verticalmente. Por outro lado, as microalgas são mais versáteis e
-                                            podem crescer em diversos ambientes,
-                                            incluindo água doce, salobra e salgada, além de serem capazes de se
-                                            reproduzir rapidamente em condições ideais.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="1-collapse-cabecalho-4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#1-collapse-4" aria-expanded="false"
-                                        aria-controls="1-collapse-4" aria-labelledby="Titulo 1">
-                                        Adaptação ambiental
-                                    </button>
-                                </h4>
-                                <div id="1-collapse-4" class="accordion-collapse collapse"
-                                    data-bs-parent="#1-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            Ambos os tipos de algas são altamente adaptáveis a uma ampla gama de
-                                            condições ambientais, incluindo variações de
-                                            temperatura, salinidade e luminosidade. Essa capacidade de adaptação
-                                            torna-as fonte de biomassa confiável em diversas
-                                            regiões do mundo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+							As “fontes de algas” (microalgas e macroalgas), à esquerda da imagem, são a matéria-prima para o processo. 
+							
+							A seta aponta para “colheita”. Nessa etapa, as algas são coletadas. 
+							
+							As algas passam pelo “pré-tratamento”, em que são preparadas para as próximas etapas. 
+							
+							A seta seguinte leva à “biomassa algal”. Isso representa a massa de algas tratadas. 
+							
+							Uma das opções é a conversão termoquímica. 
+							
+							Outra opção é a conversão química. 
+							
+							A terceira opção é a conversão biológica. 
+							
+							Finalmente, as tecnologias de conversão levam à produção de biocombustível, que é representada por um tanque de combustível sendo preenchido. ">
+					</a>
+				</div>
+				<div class="row">
+					<p>
+						Há um entendimento geral de que a produção de alimentos, rações e biocombustíveis competem por
+						recursos finitos como
+						água, terra e capital humano, sendo necessárias novas estratégias para mitigar a competição pela
+						produção de biomassa e
+						evitar o ônus imposto aos ecossistemas. Uma estratégia para alcançar uma solução sustentável
+						para a produção de resíduos
+						levou à implementação de uma <strong>bioeconomia circular</strong>.
+					</p>
+					<p>
+						Nesse sentido, o plano de ação de bioeconomia circular foca na preservação de alimentos e
+						biorrecursos a longo prazo,
+						minimizando o desperdício nas linhas de produção, impulsionando e criando um processo integrado
+						e sustentável para
+						benefício social, econômico e ambiental.
+					</p>
+					<p>
+						Nesse contexto, os biocombustíveis de algas têm sido reconhecidos como recursos de energia
+						renovável promissores para o
+						desenvolvimento sustentável. Comercialmente viáveis e econômicos, os biocombustíveis de algas
+						não exigem terras
+						adicionais, demandam baixo consumo de água e reduzem as emissões de gases de efeito estufa na
+						atmosfera. No entanto,
+						devido à baixa concentração dessa biomassa e aos altos custos, a produção comercial de
+						biocombustíveis de algas ainda
+						está em seus estágios iniciais.
 
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="1-collapse-cabecalho-5">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#1-collapse-5" aria-expanded="false"
-                                        aria-controls="1-collapse-5" aria-labelledby="Titulo 1">
-                                        Eficiência fotossintética
-                                    </button>
-                                </h4>
-                                <div id="1-collapse-5" class="accordion-collapse collapse"
-                                    data-bs-parent="#1-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            As microalgas são conhecidas por sua alta eficiência fotossintética, capazes
-                                            de converter a energia solar em biomassa de
-                                            forma mais eficaz do que as plantas terrestres. Isso as torna uma excelente
-                                            fonte de matéria-prima para a produção de
-                                            biocombustíveis.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="1-collapse-cabecalho-6">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#1-collapse-6" aria-expanded="false"
-                                        aria-controls="1-collapse-6" aria-labelledby="Titulo 1">
-                                        Ciclo de vida
-                                    </button>
-                                </h4>
-                                <div id="1-collapse-6" class="accordion-collapse collapse"
-                                    data-bs-parent="#1-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            As macroalgas possuem ciclos de vida mais complexos, com alternância entre
-                                            fases sexuais e assexuais, enquanto as
-                                            microalgas geralmente se reproduzem assexuadamente por divisão celular.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <p>
-                        Essas características físicas e químicas das macro e microalgas fazem com que sejam fontes
-                        promissoras de biomassa para
-                        a produção sustentável de biocombustíveis e outros produtos biotecnológicos.
-                    </p>
-                </div>
-            </article>
-            <article class="container py-4">
-                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
-                    <div class="section-level1">
-                        <h2>
-                            Características das microalgas
-                        </h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <p>
-                        As microalgas são organismos unicelulares ou multicelulares capazes de realizar fotossíntese, o
-                        que lhes permite
-                        converter energia solar em energia química. Com base em suas características nutricionais e
-                        metabólicas, as microalgas
-                        podem ser classificadas em diferentes grupos.
-                    </p>
-                    <p>
-                        <em>
-                            Clique nos itens a seguir para conhecer esses grupos.
-                        </em>
-                    </p>
-                </div>
-                <!-- accordion 2 -->
-                <div class="col-md-8 mx-auto py-4">
-                    <div class="bd-example-snippet bd-code-snippet">
-                        <div class="accordion" id="2-accordion">
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="2-collapse-cabecalho-1">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#2-collapse-1" aria-expanded="false"
-                                        aria-controls="2-collapse-1" aria-labelledby="Segurança energética">
-                                        Diversidade e classificação
-                                    </button>
-                                </h4>
-                                <div id="2-collapse-1" class="accordion-collapse collapse"
-                                    data-bs-parent="#2-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            Existem entre 70.000 e 1.000.000 de espécies de microalgas, mas apenas cerca
-                                            de 44.000 foram estudadas e caracterizadas
-                                            até o momento. Elas podem ser classificadas como autotróficas, fototróficas,
-                                            ou até mesmo mixotróficas, dependendo de
-                                            sua capacidade de crescer com ou sem luz e com fontes orgânicas de carbono.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="2-collapse-cabecalho-2"> <button
-                                        class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#2-collapse-2" aria-expanded="false"
-                                        aria-controls="2-collapse-2" aria-labelledby="Titulo 2">
-                                        Importância biológica e industrial
-                                    </button> </h4>
-                                <div id="2-collapse-2" class="accordion-collapse collapse"
-                                    data-bs-parent="#2-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            As microalgas desempenham papéis cruciais nos ecossistemas aquáticos como
-                                            fontes de alimento e são altamente valorizadas
-                                            na indústria devido à sua capacidade de produzir uma variedade de compostos
-                                            úteis, como produtos farmacêuticos,
-                                            cosméticos, aditivos alimentares, fertilizantes, suplementos de saúde e
-                                            biocombustíveis.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="2-collapse-cabecalho-3">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#2-collapse-3" aria-expanded="false"
-                                        aria-controls="2-collapse-3" aria-labelledby="Titulo 1">
-                                        Fixação de carbono
-                                    </button>
-                                </h4>
-                                <div id="2-collapse-3" class="accordion-collapse collapse"
-                                    data-bs-parent="#2-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            As microalgas são conhecidas por sua habilidade de fixar o CO2 atmosférico,
-                                            o que as torna uma ferramenta potencialmente
-                                            importante na mitigação das emissões de carbono e no uso de fontes de
-                                            carbono como resíduos industriais ou águas
-                                            residuais para o seu crescimento.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="2-collapse-cabecalho-4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#2-collapse-4" aria-expanded="false"
-                                        aria-controls="2-collapse-4" aria-labelledby="Titulo 1">
-                                        Composição lipídica e potencial para biocombustíveis
-                                    </button>
-                                </h4>
-                                <div id="2-collapse-4" class="accordion-collapse collapse"
-                                    data-bs-parent="#2-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            As microalgas são uma fonte rica em lipídios, incluindo triglicerídeos (TGs)
-                                            e ácidos graxos, que são a principal
-                                            matéria-prima para a produção de biodiesel em escala industrial. Vários
-                                            gêneros de microalgas, como Chlorella,
-                                            Nannochloropsis e Scenedesmus, têm sido extensivamente estudados devido a
-                                            seu alto teor lipídico e potencial para a
-                                            produção de biocombustíveis.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Saiba mais... -->
-                <div class="col-lg-10 mx-auto py-4">
-                    <div class="box saibamais">
-                        <div class="d-flex justify-content-center d-sm-none mx-auto"> <i
-                                class="bx bi bi bi-search verde-saibamais bx-tada"></i> </div>
-                        <div class="d-flex  align-items-center container">
-                            <div class="col-lg-10 p-2">
-                                <h3>Saiba mais</h3>
-                                <h3>
-                                    Conheça mais detalhes sobre as classificações das microalgas
-                                </h3>
-                                <p>
-                                    <strong>
-                                        Autotróficas</strong>: podem produzir seu próprio alimento a partir de
-                                    componentes inorgânicos, como água, dióxido de carbono e
-                                    luz solar. Elas utilizam a fotossíntese para converter esses componentes em energia
-                                    orgânica, principalmente
-                                    carboidratos, que servem como fonte de energia para seu crescimento e
-                                    desenvolvimento.
-                                </p>
-                                <p>
-                                    <strong>Fototróficas</strong>: são microalgas que dependem exclusivamente da luz
-                                    solar como fonte de energia para realizar a
-                                    fotossíntese. Elas são capazes de crescer e se reproduzir em ambientes iluminados,
-                                    onde podem capturar a energia solar e
-                                    convertê-la em energia química para sustentar suas atividades metabólicas.
-                                </p>
-                                <p>
-                                    <strong>
-                                        Mixotróficas</strong>: são microalgas que têm a capacidade de crescer tanto em
-                                    condições autotróficas, utilizando apenas luz
-                                    solar e nutrientes inorgânicos, quanto em condições heterotróficas, onde também
-                                    podem utilizar compostos orgânicos como
-                                    fonte de carbono. Essa flexibilidade metabólica permite que as microalgas
-                                    mixotróficas se adaptem a uma ampla variedade
-                                    de ambientes e condições nutricionais.
-                                </p>
-                            </div>
-                            <div class="col-lg-2">
-                                <div class="d-flex d-none d-sm-block d-md-block d-lg-block"> <i
-                                        class="bx bi bi bi-search verde-saibamais bx-tada"></i> </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="container py-4">
-                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
-                    <div class="section-level1">
-                        <h2>
-                            Características das macroalgas
-                        </h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <p>
-                        As macroalgas são um grupo valioso de organismos marinhos. Estima-se que existam milhares de
-                        espécies de macroalgas, com
-                        uma vasta diversidade ainda pouco explorada.
-                    </p>
-                    <p>
-                        <em>
-                            Clique nos itens a seguir para saber mais.
-                        </em>
-                    </p>
-                </div>
-                <!-- accordion 3 -->
-                <div class="col-md-8 mx-auto py-4">
-                    <div class="bd-example-snippet bd-code-snippet">
-                        <div class="accordion" id="3-accordion">
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="3-collapse-cabecalho-1">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#3-collapse-1" aria-expanded="false"
-                                        aria-controls="3-collapse-1" aria-labelledby="Segurança energética">
-                                        Diversidade e classificação
-                                    </button>
-                                </h4>
-                                <div id="3-collapse-1" class="accordion-collapse collapse"
-                                    data-bs-parent="#3-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            Elas podem ser classificadas em diferentes grupos com base em suas
-                                            características morfológicas e fisiológicas,
-                                            oferecendo uma variedade de formas e tamanhos. São classificadas em três
-                                            principais grupos: Chlorophyta (algas verdes),
-                                            Phaphycophyta (algas marrons) e Rhodophycophyta (algas vermelhas)
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="3-collapse-cabecalho-2"> <button
-                                        class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#3-collapse-2" aria-expanded="false"
-                                        aria-controls="3-collapse-2" aria-labelledby="Titulo 2">
-                                        Importância biológica e industrial
-                                    </button>
-                                </h4>
-                                <div id="3-collapse-2" class="accordion-collapse collapse"
-                                    data-bs-parent="#3-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            Elas desempenham um papel crucial na saúde dos ecossistemas marinhos,
-                                            fornecendo habitat e alimento para uma variedade
-                                            de organismos oceânicos. Além disso, as macroalgas têm importantes
-                                            aplicações industriais, sendo cultivadas para
-                                            produção de alimentos, fertilizantes e extração de hidrocoloides em várias
-                                            partes do mundo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="3-collapse-cabecalho-3">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#3-collapse-3" aria-expanded="false"
-                                        aria-controls="3-collapse-3" aria-labelledby="Titulo 1">
-                                        Fixação de carbono
-                                    </button>
-                                </h4>
-                                <div id="3-collapse-3" class="accordion-collapse collapse"
-                                    data-bs-parent="#3-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            Assim como as microalgas, as macroalgas desempenham um papel importante na
-                                            fixação de carbono, ajudando a mitigar as
-                                            emissões de CO2 e contribuindo para a saúde dos ecossistemas marinhos. Seu
-                                            cultivo em larga escala pode ser uma
-                                            estratégia promissora para combater as mudanças climáticas e promover a
-                                            sustentabilidade ambiental.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="3-collapse-cabecalho-4">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#3-collapse-4" aria-expanded="false"
-                                        aria-controls="3-collapse-4" aria-labelledby="Titulo 1">
-                                        Composição lipídica e potencial para biocombustíveis
-                                    </button>
-                                </h4>
-                                <div id="3-collapse-4" class="accordion-collapse collapse"
-                                    data-bs-parent="#3-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            As macroalgas são compostas principalmente por carboidratos, como celulose e
-                                            amido, além de polímeros específicos, como
-                                            carragenana e ágar, que têm importantes aplicações industriais. No entanto,
-                                            o teor de lipídios nas macroalgas é baixo, o
-                                            que limita seu potencial para produção de biodiesel em grande escala. Apesar
-                                            disso, as macroalgas apresentam potencial
-                                            para produção de biogás, bioetanol e bio-óleos por meio de técnicas como
-                                            digestão anaeróbica, fermentação,
-                                            transesterificação, liquefação e pirólise.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <p>
-                        Em resumo, as macroalgas representam uma fonte abundante de biomassa com importantes aplicações
-                        biológicas e
-                        industriais. Seu potencial para produção de biocombustíveis ainda está sendo explorado, mas há
-                        evidências de que elas
-                        podem desempenhar um papel significativo na transição para uma economia mais sustentável e
-                        baseada em energia renovável.
-                    </p>
-                </div>
-                <div>
-                    <img src="#" alt="">
-                </div>
-            </article>
-            <article class="container py-4">
-                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
-                    <div class="section-level1">
-                        <h2>
-                            Características de cultivo
-                        </h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <p>
-                        Existem diversos métodos de cultivo de microalgas e macroalgas, cada um com suas
-                        características, vantagens e desafios.
-                        Aqui, vamos explorar os três principais tipos de cultivo: <strong>ambientes aquáticos</strong>,
-                        <strong>lagoas</strong> e
-                        <strong></strong>fotobiorreatores.
-                    </p>
-                </div><!-- accordion 4 -->
-                <div class="col-md-8 mx-auto py-4">
-                    <div class="bd-example-snippet bd-code-snippet">
-                        <div class="accordion" id="4-accordion">
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="4-collapse-cabecalho-1">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#4-collapse-1" aria-expanded="false"
-                                        aria-controls="4-collapse-1" aria-labelledby="Segurança energética">
-                                        Ambientes aquáticos
-                                    </button>
-                                </h4>
-                                <div id="4-collapse-1" class="accordion-collapse collapse"
-                                    data-bs-parent="#4-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            Os ambientes aquáticos incluem corpos naturais de água, como lagos, rios,
-                                            oceanos e
-                                            reservatórios. Tanto microalgas
-                                            quanto macroalgas podem ser encontradas crescendo naturalmente neles. O
-                                            cultivo não
-                                            controlado nessas áreas depende das
-                                            condições naturais, como luz solar, temperatura, nutrientes e pH da água.
-                                            Embora seja um
-                                            método de baixo custo inicial,
-                                            o cultivo em ambientes aquáticos pode ser menos eficiente devido à
-                                            competição com outras
-                                            espécies de algas, dificuldade
-                                            de controle das condições de crescimento e risco de contaminação.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="4-collapse-cabecalho-2"> <button
-                                        class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#4-collapse-2" aria-expanded="false"
-                                        aria-controls="4-collapse-2" aria-labelledby="Titulo 2">
-                                        Lagoas
-                                    </button> </h4>
-                                <div id="4-collapse-2" class="accordion-collapse collapse"
-                                    data-bs-parent="#4-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            As lagoas de cultivo são sistemas semi-controlados, construídos
-                                            especificamente para o
-                                            cultivo de microalgas e
-                                            macroalgas. Elas consistem em bacias rasas, geralmente revestidas com
-                                            plástico ou argila,
-                                            onde as algas são cultivadas
-                                            em suspensão e expostas à luz solar. As lagoas oferecem uma área de cultivo
-                                            extensa e são
-                                            mais fáceis de operar e manter
-                                            do que os ambientes aquáticos naturais. No entanto, elas podem ser
-                                            suscetíveis a variações
-                                            climáticas e sazonais, e o
-                                            controle preciso das condições de crescimento pode ser desafiador.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h4 class="accordion-header" id="4-collapse-cabecalho-3">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#4-collapse-3" aria-expanded="false"
-                                        aria-controls="4-collapse-3" aria-labelledby="Titulo 1">
-                                        Fotobiorreatores
-                                    </button>
-                                </h4>
-                                <div id="4-collapse-3" class="accordion-collapse collapse"
-                                    data-bs-parent="#4-accordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            Os fotobiorreatores são sistemas fechados e altamente controlados,
-                                            projetados para otimizar
-                                            as condições de crescimento
-                                            de microalgas e macroalgas. Consistem em tanques ou tubos transparentes nos
-                                            quais as algas
-                                            são cultivadas em suspensão,
-                                            com a entrada controlada de luz, nutrientes e dióxido de carbono. Os
-                                            fotobiorreatores
-                                            permitem um controle preciso das
-                                            condições de crescimento, incluindo temperatura, pH, concentração de
-                                            nutrientes e densidade
-                                            celular. Isso resulta em
-                                            maior produtividade e pureza das algas, além de facilitar o monitoramento e
-                                            a prevenção de
-                                            contaminações. No entanto, os
-                                            fotobiorreatores tendem a ser mais caros de construir e operar do que outros
-                                            métodos de
-                                            cultivo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <p>
-                        Cada tipo de cultivo tem suas próprias aplicações e é escolhido com base nas necessidades
-                        específicas do
-                        projeto, tais
-                        como volume de produção, pureza do produto, disponibilidade de recursos e custos operacionais.
-                    </p>
-                    <p>
-                        A escolha do método de cultivo adequado é essencial para o sucesso na produção de microalgas e
-                        macroalgas para
-                        diversos
-                        fins, incluindo alimentos, rações, produtos químicos, biocombustíveis e tratamento de águas
-                        residuais.
-                    </p>
-                </div>
-            </article>
-            <article class="container py-4">
-                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
-                    <div class="section-level1">
-                        <h2>
-                            Pré-tratamentos
-                        </h2>
-                    </div>
-                    <div class="row">
-                        <p>
-                            A biomassa de algas, após a transformação, encontra uma ampla gama de aplicações em diversos
-                            setores, incluindo produtos
-                            farmacêuticos, alimentos, nutrientes químicos e energia. Os principais componentes da
-                            biomassa algal, como carboidratos,
-                            lipídios e proteínas, podem ser convertidos em diversos biocombustíveis, como bioetanol,
-                            biodiesel, biogás,
-                            bio-hidrogênio e gás de síntese, por meio de diferentes processos de conversão.
-                        </p>
-                        <p>
-                            Clique no fluxograma a seguir para conhecer os tipos de conversões e obter mais informações
-                            sobre elas.
-                        </p>
-                    </div>
-                    <div>
-                        <img src="#" alt="Processos de conversão de biomassa algal e os produtos">
-                        <p>
-                            Processos de conversão de biomassa algal e os produtos
-                        </p>
-                        <p>
-                            <strong>Pirólise</strong> > Nesse processo, a biomassa algal é aquecida em uma faixa de
-                            temperatura específica, geralmente entre 400°C e
-                            600°C, em condições anaeróbias. Isso resulta na produção de bio-óleo, gás e biocarvão. O
-                            bio-óleo é rico em
-                            hidrocarbonetos de lipídios e compostos nitrogenados, com alto poder calorífico. O biocarvão
-                            produzido pode ser
-                            utilizado para melhorar a fertilidade do solo.
-                        </p>
-                        <p>
-                            <strong>Liquefação</strong> > Na liquefação, a biomassa algal é aquecida a temperaturas mais
-                            baixas, geralmente entre 300°C e 350°C, em
-                            uma faixa de pressão de 5 a 20 Mpa (mega Pascal), na presença de um catalisador e solvente.
-                            Esse processo pode produzir
-                            bio-óleo e gases como produtos, sendo que o bio-óleo possui alto poder calorífico.
-                        </p>
-                        <p>
-                            <strong>Gaseificação</strong> > A gaseificação converte a biomassa de microalgas em gases
-                            combustíveis, como H2, CO e CH4, em
-                            temperaturas elevadas (800°C a 1000°C) e condições insuficientes de oxigênio. Esses gases
-                            podem ser utilizados como
-                            fonte de energia.
-                        </p>
-                        <p>
-                            <strong>Digestão anaeróbia</strong> > Nesse processo, a biomassa de microalgas é decomposta
-                            por microrganismos em condições anaeróbias,
-                            produzindo biogás rico em metano e dióxido de carbono. É necessário um pré-tratamento da
-                            biomassa para aumentar a
-                            produção de biogás.
-                        </p>
-                        <p>
-                            <strong>Fermentação</strong> > A fermentação é utilizada para produzir bioetanol a partir
-                            dos carboidratos presentes na biomassa algal.
-                            Após o pré-tratamento e hidrólise enzimática, microrganismos fermentam os açúcares para
-                            produzir biocombustíveis como
-                            etanol e bio-hidrogênio.
-                        </p>
-                        <p>
-                            <strong>Transesterificação</strong> > A transesterificação é um processo químico no qual os
-                            lipídios presentes na biomassa algal são
-                            convertidos em biodiesel. Este processo envolve a reação dos lipídios com um álcool na
-                            presença de um catalisador,
-                            produzindo ésteres metílicos de ácidos graxos (FAME) e glicerol.
-                        </p>
-                    </div>
-                    <div class="row">
-                        <p>
-                            Cada técnica de conversão apresenta suas próprias características, vantagens e desafios, e a
-                            escolha da melhor abordagem
-                            depende das condições específicas do processo, do tipo de biomassa algal utilizada e das
-                            necessidades de produção de
-                            biocombustíveis.
-                        </p>
-                    </div>
-                    <div>
-                        <img src="#" alt="">
-                    </div>
-                </div>
-            </article>
-            <article class="container py-4">
-                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
-                    <div class="section-level1">
-                        <h2>
-                            Aplicações e perspectivas
-                        </h2>
-                    </div>
-                    <div class="row">
-                        <p>
-                            O uso de micro e macroalgas para a produção de biocombustíveis representa uma área de
-                            pesquisa promissora com
-                            perspectivas futuras empolgantes e com diversas aplicações.
+					</p>
+				</div>
+				<!-- Saiba mais... -->
+				<div class="col-lg-10 mx-auto py-4">
+					<div class="box saibamais">
+						<div class="d-flex justify-content-center d-sm-none mx-auto"> <i
+								class="bx bi bi bi-search verde-saibamais bx-tada"></i> </div>
+						<div class="d-flex  align-items-center container">
+							<div class="col-lg-10 p-2">
+								<h3>Saiba mais</h3>
+								<p>
+									As biorrefinarias são uma solução sustentável que converte biomassa em produtos de
+									alto valor, alinhando-se aos
+									princípios de uma bioeconomia circular e focando no uso eficiente de recursos
+									limitados. Utilizando processos
+									termoquímicos e bioquímicos, essas instalações produzem biocombustíveis e outros
+									produtos valiosos dentro de uma
+									estrutura ambientalmente correta.
+								</p>
 
+								<div class="col-md-6 py-4 mx-auto">
+									<a data-fancybox="zoom" data-src="../Aula/img/mod2/aula_3_2.jpeg" data-caption="">
+										<img src="../Aula/img/mod2/aula_3_2.jpeg" class="img-fluid rounded" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-2">
+								<div class="d-flex d-none d-sm-block d-md-block d-lg-block"> <i
+										class="bx bi bi bi-search verde-saibamais bx-tada"></i> </div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-                        </p>
-                        <p>
-                            <em>
-                                Clique em play no vídeo a seguir para conhecer as diferentes aplicações da biomassa
-                                aquática na obtenção de
-                                combustíveis.
-                            </em>
-                        </p>
-                    </div>
-                    <div class="col-lg-8 mx-auto">
-                        <div class="ratio ratio-16x9 ">
-                            <iframe class="rounded"
-                                src="https://play.sesisenai.videolib.live/index.html?token=13646ef8bb2544c4ab9d893f856e5c69"
-                                title="Apresentação" allowfullscreen uk-video=" autoplay:false;">
-                            </iframe>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <p>
-                            A seguir, clique em play no podcast para conhecer as perspectivas futuras para a biomassa
-                            aquática.
-                        </p>
-                    </div>
-                    <div class="row py-2">
-                        <i class="bi bi-mic-fill cor1 d-flex justify-content-center" style="font-size:3rem; "></i>
-                    </div>
-                    <div class="mx-auto">
-                        <audio class="uk-align-center" controls controlslist="nodownload">
-                            <source src="https://redirect.sp.senai.br/lk.php?link=28981034696667d92c629b19"
-                                type="audio/mp3">
-                        </audio>
-                    </div>
-                    <div class="mx-auto">
-                        <button class="uk-button-default rounded uk-align-center ativo" type="button"
-                            uk-toggle="target: #audio-1; animation:  uk-animation-slide-left, uk-animation-slide-bottom"
-                            aria-expanded="false">
-                            <h3 class="m-3">Transcrição</h3>
-                        </button>
-                        <div id="audio-1" class="uk-card uk-card-default uk-card-body uk-margin-small rounded py-5"
-                            hidden="">
-                            <p>
-                                #
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <p>
-                            Ao encerrarmos nossa aula sobre o uso de micro e macroalgas na produção de biocombustíveis,
-                            podemos refletir sobre o
-                            potencial promissor desses organismos como fonte de energia renovável. Exploramos como as
-                            microalgas oferecem vantagens
-                            significativas, desde sua alta eficiência na absorção de CO₂ até sua capacidade de
-                            crescimento em ambientes variados.
-                        </p>
-                        <p>
-                            Além disso, destacamos a importância de continuarmos a pesquisa e o desenvolvimento nessa
-                            área, buscando soluções cada
-                            vez mais sustentáveis e eficientes para as demandas energéticas do futuro.
-                        </p>
-                    </div>
-                </div>
-            </article>
+				<div class="row">
+					<p>
+						Diante disso, tanto as microalgas quanto as macroalgas têm ganhado muito interesse como uma nova
+						fonte de biomassa para
+						a produção de fontes renováveis de energia. As algas possuem um rendimento de biomassa
+						significativo que não pode ser
+						alcançado por outros tipos de organismos, incluindo uma alta quantidade de óleo e amido por
+						unidade de luz e área.
+					</p>
+					<p>
+						Além disso, o cultivo de biomassa algal não requer requisitos especiais, como água doce, terra
+						arável ou outros
+						suplementos, pois elas podem ser cultivadas em sistemas de resíduos, esgotos e água do mar. De
+						fato, lagoas abertas,
+						fotobiorreatores e sistemas fechados podem servir como reatores industriais para a produção de
+						biomassa algal em larga
+						escala. Além disso, as algas podem crescer em quase todas as condições climáticas e sazonais.
+					</p>
+					<p>
+						Essas algas podem produzir uma gama diversificada de moléculas orgânicas, como carboidratos e
+						lipídios, que podem ser
+						usadas para a extração e produção de biocombustível. As microalgas possuem características
+						multicelulares e
+						unicelulares, com comportamento autotrófico; e espécies de microalgas têm criado oportunidades
+						para a geração de
+						inúmeros tipos de fontes renováveis de energia na forma de biocombustível, incluindo metano,
+						biodiesel e bio-hidrogênio,
+						que são produzidos por respostas fotobiológicas e mecanismos de bioprocessos.
+					</p>
 
+					<div class="col-lg-6 py-4 mx-auto">
+						<a data-fancybox="zoom"
+							data-src="../Aula/img/mod2/24042-Desv-Biocombustiveis-m2-a3-info1_Artboard.png"
+							data-caption="">
+							<img src="../Aula/img/mod2/24042-Desv-Biocombustiveis-m2-a3-info1_Artboard.png"
+								class="img-fluid rounded" alt="">
+						</a>
+					</div>
+				</div>
+			</article>
 
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>
+							Características químicas e físicas
+						</h1>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						Nos últimos anos, o cultivo de algas para o tratamento de águas residuais tornou-se popular como
+						método para reduzir a
+						poluição proveniente de setores como têxtil, laticínios, farmacêutico e municipal.
+					</p>
+					<p>
+						Essa prática é economicamente viável, apresenta baixo risco para a saúde e reduz as chances de
+						poluição secundária. Além
+						disso, abre caminho para o aproveitamento econômico de matéria-prima na produção de bioenergia,
+						como biocombustíveis.
+					</p>
+					<p>
+						<em>
+							Clique nos itens do quadro a seguir para conhecer as características químicas e físicas das
+							macroalgas e microalgas.
+						</em>
+					</p>
+				</div>
+				<!-- accordion 1 -->
+				<div class="col-md-8 mx-auto py-4">
+					<div class="bd-example-snippet bd-code-snippet">
+						<div class="accordion" id="1-accordion">
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="1-collapse-cabecalho-1">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#1-collapse-1" aria-expanded="false"
+										aria-controls="1-collapse-1" aria-labelledby="Segurança energética">
+										Tamanho e estrutura
+									</button>
+								</h4>
+								<div id="1-collapse-1" class="accordion-collapse collapse"
+									data-bs-parent="#1-accordion">
+									<div class="accordion-body">
+										<p>
+											As macroalgas são organismos multicelulares e visíveis a olho nu, podendo
+											crescer até tamanhos consideráveis, enquanto
+											as microalgas são unicelulares e microscópicas, impossíveis de serem
+											observadas sem auxílio de equipamentos.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="1-collapse-cabecalho-2"> <button
+										class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#1-collapse-2" aria-expanded="false"
+										aria-controls="1-collapse-2" aria-labelledby="Titulo 2">
+										Composição química
+									</button> </h4>
+								<div id="1-collapse-2" class="accordion-collapse collapse"
+									data-bs-parent="#1-accordion">
+									<div class="accordion-body">
+										<p>
+											Ambos os tipos de algas são ricos em nutrientes essenciais, como proteínas,
+											carboidratos, lipídios, vitaminas e
+											minerais. As macroalgas tendem a ter uma composição mais variada, enquanto
+											as microalgas geralmente possuem um alto teor
+											de lipídios.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="1-collapse-cabecalho-3">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#1-collapse-3" aria-expanded="false"
+										aria-controls="1-collapse-3" aria-labelledby="Titulo 1">
+										Crescimento e propagação
+									</button>
+								</h4>
+								<div id="1-collapse-3" class="accordion-collapse collapse"
+									data-bs-parent="#1-accordion">
+									<div class="accordion-body">
+										<p>
+											As macroalgas são frequentemente encontradas em ambientes marinhos
+											costeiros, onde podem se fixar em substratos sólidos
+											e crescer verticalmente. Por outro lado, as microalgas são mais versáteis e
+											podem crescer em diversos ambientes,
+											incluindo água doce, salobra e salgada, além de serem capazes de se
+											reproduzir rapidamente em condições ideais.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="1-collapse-cabecalho-4">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#1-collapse-4" aria-expanded="false"
+										aria-controls="1-collapse-4" aria-labelledby="Titulo 1">
+										Adaptação ambiental
+									</button>
+								</h4>
+								<div id="1-collapse-4" class="accordion-collapse collapse"
+									data-bs-parent="#1-accordion">
+									<div class="accordion-body">
+										<p>
+											Ambos os tipos de algas são altamente adaptáveis a uma ampla gama de
+											condições ambientais, incluindo variações de
+											temperatura, salinidade e luminosidade. Essa capacidade de adaptação
+											torna-as fonte de biomassa confiável em diversas
+											regiões do mundo.
+										</p>
+									</div>
+								</div>
+							</div>
 
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="1-collapse-cabecalho-5">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#1-collapse-5" aria-expanded="false"
+										aria-controls="1-collapse-5" aria-labelledby="Titulo 1">
+										Eficiência fotossintética
+									</button>
+								</h4>
+								<div id="1-collapse-5" class="accordion-collapse collapse"
+									data-bs-parent="#1-accordion">
+									<div class="accordion-body">
+										<p>
+											As microalgas são conhecidas por sua alta eficiência fotossintética, capazes
+											de converter a energia solar em biomassa de
+											forma mais eficaz do que as plantas terrestres. Isso as torna uma excelente
+											fonte de matéria-prima para a produção de
+											biocombustíveis.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="1-collapse-cabecalho-6">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#1-collapse-6" aria-expanded="false"
+										aria-controls="1-collapse-6" aria-labelledby="Titulo 1">
+										Ciclo de vida
+									</button>
+								</h4>
+								<div id="1-collapse-6" class="accordion-collapse collapse"
+									data-bs-parent="#1-accordion">
+									<div class="accordion-body">
+										<p>
+											As macroalgas possuem ciclos de vida mais complexos, com alternância entre
+											fases sexuais e assexuais, enquanto as
+											microalgas geralmente se reproduzem assexuadamente por divisão celular.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						Essas características físicas e químicas das macro e microalgas fazem com que sejam fontes
+						promissoras de biomassa para
+						a produção sustentável de biocombustíveis e outros produtos biotecnológicos.
+					</p>
+				</div>
+			</article>
 
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level2">
+						<h2>
+							Características das microalgas
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						As microalgas são organismos unicelulares ou multicelulares capazes de realizar fotossíntese, o
+						que lhes permite
+						converter energia solar em energia química. Com base em suas características nutricionais e
+						metabólicas, as microalgas
+						podem ser classificadas em diferentes grupos.
+					</p>
+					<p>
+						<em>
+							Clique nos itens a seguir para conhecer esses grupos.
+						</em>
+					</p>
+				</div>
+				<!-- accordion 2 -->
+				<div class="col-md-8 mx-auto py-4">
+					<div class="bd-example-snippet bd-code-snippet">
+						<div class="accordion" id="2-accordion">
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="2-collapse-cabecalho-1">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#2-collapse-1" aria-expanded="false"
+										aria-controls="2-collapse-1" aria-labelledby="Segurança energética">
+										Diversidade e classificação
+									</button>
+								</h4>
+								<div id="2-collapse-1" class="accordion-collapse collapse"
+									data-bs-parent="#2-accordion">
+									<div class="accordion-body">
+										<p>
+											Existem entre 70.000 e 1.000.000 de espécies de microalgas, mas apenas cerca
+											de 44.000 foram estudadas e caracterizadas
+											até o momento. Elas podem ser classificadas como autotróficas, fototróficas,
+											ou até mesmo mixotróficas, dependendo de
+											sua capacidade de crescer com ou sem luz e com fontes orgânicas de carbono.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="2-collapse-cabecalho-2"> <button
+										class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#2-collapse-2" aria-expanded="false"
+										aria-controls="2-collapse-2" aria-labelledby="Titulo 2">
+										Importância biológica e industrial
+									</button> </h4>
+								<div id="2-collapse-2" class="accordion-collapse collapse"
+									data-bs-parent="#2-accordion">
+									<div class="accordion-body">
+										<p>
+											As microalgas desempenham papéis cruciais nos ecossistemas aquáticos como
+											fontes de alimento e são altamente valorizadas
+											na indústria devido à sua capacidade de produzir uma variedade de compostos
+											úteis, como produtos farmacêuticos,
+											cosméticos, aditivos alimentares, fertilizantes, suplementos de saúde e
+											biocombustíveis.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="2-collapse-cabecalho-3">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#2-collapse-3" aria-expanded="false"
+										aria-controls="2-collapse-3" aria-labelledby="Titulo 1">
+										Fixação de carbono
+									</button>
+								</h4>
+								<div id="2-collapse-3" class="accordion-collapse collapse"
+									data-bs-parent="#2-accordion">
+									<div class="accordion-body">
+										<p>
+											As microalgas são conhecidas por sua habilidade de fixar o CO2 atmosférico,
+											o que as torna uma ferramenta potencialmente
+											importante na mitigação das emissões de carbono e no uso de fontes de
+											carbono como resíduos industriais ou águas
+											residuais para o seu crescimento.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="2-collapse-cabecalho-4">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#2-collapse-4" aria-expanded="false"
+										aria-controls="2-collapse-4" aria-labelledby="Titulo 1">
+										Composição lipídica e potencial para biocombustíveis
+									</button>
+								</h4>
+								<div id="2-collapse-4" class="accordion-collapse collapse"
+									data-bs-parent="#2-accordion">
+									<div class="accordion-body">
+										<p>
+											As microalgas são uma fonte rica em lipídios, incluindo triglicerídeos (TGs)
+											e ácidos graxos, que são a principal
+											matéria-prima para a produção de biodiesel em escala industrial. Vários
+											gêneros de microalgas, como Chlorella,
+											Nannochloropsis e Scenedesmus, têm sido extensivamente estudados devido a
+											seu alto teor lipídico e potencial para a
+											produção de biocombustíveis.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<!-- Saiba mais... -->
+				<div class="col-lg-10 mx-auto py-4">
+					<div class="box saibamais">
+						<div class="d-flex justify-content-center d-sm-none mx-auto"> <i
+								class="bx bi bi bi-search verde-saibamais bx-tada"></i> </div>
+						<div class="d-flex  align-items-center container">
+							<div class="col-lg-10 p-2">
+								<h3>Saiba mais</h3>
+								<p class="py-3">
+									<strong>
+										Conheça mais detalhes sobre as classificações das microalgas
+									</strong>
+								</p>
+								<p>
+									<strong>
+										Autotróficas</strong>: podem produzir seu próprio alimento a partir de
+									componentes inorgânicos, como água, dióxido de carbono e
+									luz solar. Elas utilizam a fotossíntese para converter esses componentes em energia
+									orgânica, principalmente
+									carboidratos, que servem como fonte de energia para seu crescimento e
+									desenvolvimento.
+								</p>
+								<p>
+									<strong>Fototróficas</strong>: são microalgas que dependem exclusivamente da luz
+									solar como fonte de energia para realizar a
+									fotossíntese. Elas são capazes de crescer e se reproduzir em ambientes iluminados,
+									onde podem capturar a energia solar e
+									convertê-la em energia química para sustentar suas atividades metabólicas.
+								</p>
+								<p>
+									<strong>
+										Mixotróficas</strong>: são microalgas que têm a capacidade de crescer tanto em
+									condições autotróficas, utilizando apenas luz
+									solar e nutrientes inorgânicos, quanto em condições heterotróficas, onde também
+									podem utilizar compostos orgânicos como
+									fonte de carbono. Essa flexibilidade metabólica permite que as microalgas
+									mixotróficas se adaptem a uma ampla variedade
+									de ambientes e condições nutricionais.
+								</p>
+							</div>
+							<div class="col-lg-2">
+								<div class="d-flex d-none d-sm-block d-md-block d-lg-block"> <i
+										class="bx bi bi bi-search verde-saibamais bx-tada"></i> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
 
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level2">
+						<h2>
+							Características das macroalgas
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						As macroalgas são um grupo valioso de organismos marinhos. Estima-se que existam milhares de
+						espécies de macroalgas, com
+						uma vasta diversidade ainda pouco explorada.
+					</p>
+					<p>
+						<em>
+							Clique nos itens a seguir para saber mais.
+						</em>
+					</p>
+				</div>
+				<!-- accordion 3 -->
+				<div class="col-md-8 mx-auto py-4">
+					<div class="bd-example-snippet bd-code-snippet">
+						<div class="accordion" id="3-accordion">
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="3-collapse-cabecalho-1">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#3-collapse-1" aria-expanded="false"
+										aria-controls="3-collapse-1" aria-labelledby="Segurança energética">
+										Diversidade e classificação
+									</button>
+								</h4>
+								<div id="3-collapse-1" class="accordion-collapse collapse"
+									data-bs-parent="#3-accordion">
+									<div class="accordion-body">
+										<p>
+											Elas podem ser classificadas em diferentes grupos com base em suas
+											características morfológicas e fisiológicas,
+											oferecendo uma variedade de formas e tamanhos. São classificadas em três
+											principais grupos: Chlorophyta (algas verdes),
+											Phaphycophyta (algas marrons) e Rhodophycophyta (algas vermelhas)
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="3-collapse-cabecalho-2"> <button
+										class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#3-collapse-2" aria-expanded="false"
+										aria-controls="3-collapse-2" aria-labelledby="Titulo 2">
+										Importância biológica e industrial
+									</button>
+								</h4>
+								<div id="3-collapse-2" class="accordion-collapse collapse"
+									data-bs-parent="#3-accordion">
+									<div class="accordion-body">
+										<p>
+											Elas desempenham um papel crucial na saúde dos ecossistemas marinhos,
+											fornecendo habitat e alimento para uma variedade
+											de organismos oceânicos. Além disso, as macroalgas têm importantes
+											aplicações industriais, sendo cultivadas para
+											produção de alimentos, fertilizantes e extração de hidrocoloides em várias
+											partes do mundo.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="3-collapse-cabecalho-3">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#3-collapse-3" aria-expanded="false"
+										aria-controls="3-collapse-3" aria-labelledby="Titulo 1">
+										Fixação de carbono
+									</button>
+								</h4>
+								<div id="3-collapse-3" class="accordion-collapse collapse"
+									data-bs-parent="#3-accordion">
+									<div class="accordion-body">
+										<p>
+											Assim como as microalgas, as macroalgas desempenham um papel importante na
+											fixação de carbono, ajudando a mitigar as
+											emissões de CO2 e contribuindo para a saúde dos ecossistemas marinhos. Seu
+											cultivo em larga escala pode ser uma
+											estratégia promissora para combater as mudanças climáticas e promover a
+											sustentabilidade ambiental.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="3-collapse-cabecalho-4">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#3-collapse-4" aria-expanded="false"
+										aria-controls="3-collapse-4" aria-labelledby="Titulo 1">
+										Composição lipídica e potencial para biocombustíveis
+									</button>
+								</h4>
+								<div id="3-collapse-4" class="accordion-collapse collapse"
+									data-bs-parent="#3-accordion">
+									<div class="accordion-body">
+										<p>
+											As macroalgas são compostas principalmente por carboidratos, como celulose e
+											amido, além de polímeros específicos, como
+											carragenana e ágar, que têm importantes aplicações industriais. No entanto,
+											o teor de lipídios nas macroalgas é baixo, o
+											que limita seu potencial para produção de biodiesel em grande escala. Apesar
+											disso, as macroalgas apresentam potencial
+											para produção de biogás, bioetanol e bio-óleos por meio de técnicas como
+											digestão anaeróbica, fermentação,
+											transesterificação, liquefação e pirólise.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						Em resumo, as macroalgas representam uma fonte abundante de biomassa com importantes aplicações
+						biológicas e
+						industriais. Seu potencial para produção de biocombustíveis ainda está sendo explorado, mas há
+						evidências de que elas
+						podem desempenhar um papel significativo na transição para uma economia mais sustentável e
+						baseada em energia renovável.
+					</p>
 
+					<div class="col-lg-6 py-4 mx-auto">
+						<a data-fancybox="zoom"
+							data-src="../Aula/img/mod2/24042-Desv-Biocombustiveis-m2-a3-info2_Artboard.png"
+							data-caption="">
+							<img src="../Aula/img/mod2/24042-Desv-Biocombustiveis-m2-a3-info2_Artboard.png"
+								class="img-fluid rounded" alt="">
+						</a>
+					</div>
+				</div>
+			</article>
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level2">
+						<h2>
+							Características de cultivo
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						Existem diversos métodos de cultivo de microalgas e macroalgas, cada um com suas
+						características, vantagens e desafios.
+						Aqui, vamos explorar os três principais tipos de cultivo: <strong>ambientes aquáticos</strong>,
+						<strong>lagoas</strong> e
+						<strong>fotobiorreatores</strong>.
+					</p>
+				</div>
+				<!-- accordion 4 -->
+				<div class="col-md-8 mx-auto py-4">
+					<div class="bd-example-snippet bd-code-snippet">
+						<div class="accordion" id="4-accordion">
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="4-collapse-cabecalho-1">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#4-collapse-1" aria-expanded="false"
+										aria-controls="4-collapse-1" aria-labelledby="Segurança energética">
+										Ambientes aquáticos
+									</button>
+								</h4>
+								<div id="4-collapse-1" class="accordion-collapse collapse"
+									data-bs-parent="#4-accordion">
+									<div class="accordion-body">
+										<p>
+											Os ambientes aquáticos incluem corpos naturais de água, como lagos, rios,
+											oceanos e
+											reservatórios. Tanto microalgas
+											quanto macroalgas podem ser encontradas crescendo naturalmente neles. O
+											cultivo não
+											controlado nessas áreas depende das
+											condições naturais, como luz solar, temperatura, nutrientes e pH da água.
+											Embora seja um
+											método de baixo custo inicial,
+											o cultivo em ambientes aquáticos pode ser menos eficiente devido à
+											competição com outras
+											espécies de algas, dificuldade
+											de controle das condições de crescimento e risco de contaminação.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="4-collapse-cabecalho-2"> <button
+										class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#4-collapse-2" aria-expanded="false"
+										aria-controls="4-collapse-2" aria-labelledby="Titulo 2">
+										Lagoas
+									</button> </h4>
+								<div id="4-collapse-2" class="accordion-collapse collapse"
+									data-bs-parent="#4-accordion">
+									<div class="accordion-body">
+										<p>
+											As lagoas de cultivo são sistemas semi-controlados, construídos
+											especificamente para o
+											cultivo de microalgas e
+											macroalgas. Elas consistem em bacias rasas, geralmente revestidas com
+											plástico ou argila,
+											onde as algas são cultivadas
+											em suspensão e expostas à luz solar. As lagoas oferecem uma área de cultivo
+											extensa e são
+											mais fáceis de operar e manter
+											do que os ambientes aquáticos naturais. No entanto, elas podem ser
+											suscetíveis a variações
+											climáticas e sazonais, e o
+											controle preciso das condições de crescimento pode ser desafiador.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="4-collapse-cabecalho-3">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#4-collapse-3" aria-expanded="false"
+										aria-controls="4-collapse-3" aria-labelledby="Titulo 1">
+										Fotobiorreatores
+									</button>
+								</h4>
+								<div id="4-collapse-3" class="accordion-collapse collapse"
+									data-bs-parent="#4-accordion">
+									<div class="accordion-body">
+										<p>
+											Os fotobiorreatores são sistemas fechados e altamente controlados,
+											projetados para otimizar
+											as condições de crescimento
+											de microalgas e macroalgas. Consistem em tanques ou tubos transparentes nos
+											quais as algas
+											são cultivadas em suspensão,
+											com a entrada controlada de luz, nutrientes e dióxido de carbono. Os
+											fotobiorreatores
+											permitem um controle preciso das
+											condições de crescimento, incluindo temperatura, pH, concentração de
+											nutrientes e densidade
+											celular. Isso resulta em
+											maior produtividade e pureza das algas, além de facilitar o monitoramento e
+											a prevenção de
+											contaminações. No entanto, os
+											fotobiorreatores tendem a ser mais caros de construir e operar do que outros
+											métodos de
+											cultivo.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<div class="row">
+					<p>
+						Cada tipo de cultivo tem suas próprias aplicações e é escolhido com base nas necessidades
+						específicas do
+						projeto, tais
+						como volume de produção, pureza do produto, disponibilidade de recursos e custos operacionais.
+					</p>
+					<p>
+						A escolha do método de cultivo adequado é essencial para o sucesso na produção de microalgas e
+						macroalgas para
+						diversos
+						fins, incluindo alimentos, rações, produtos químicos, biocombustíveis e tratamento de águas
+						residuais.
+					</p>
+				</div>
+			</article>
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>
+							Pré-tratamentos
+						</h1>
+					</div>
+					<div class="row">
+						<p>
+							A biomassa de algas, após a transformação, encontra uma ampla gama de aplicações em diversos
+							setores, incluindo produtos
+							farmacêuticos, alimentos, nutrientes químicos e energia. Os principais componentes da
+							biomassa algal, como carboidratos,
+							lipídios e proteínas, podem ser convertidos em diversos biocombustíveis, como bioetanol,
+							biodiesel, biogás,
+							bio-hidrogênio e gás de síntese, por meio de diferentes processos de conversão.
+						</p>
+						<p>
+							Clique no fluxograma a seguir para conhecer os tipos de conversões e obter mais informações
+							sobre elas.
+						</p>
+					</div>
 
+					<div class="col-lg-6 py-4 mx-auto">
+						<a data-fancybox="zoom"
+							data-src="../Aula/img/mod2/24042-Desv-Biocombustiveis-m2-a3_01-Fluxograma.png"
+							data-caption="">
+							<img src="../Aula/img/mod2/24042-Desv-Biocombustiveis-m2-a3_01-Fluxograma.png"
+								class="img-fluid rounded" alt="">
+						</a>
+					</div>
 
+					<div class="row">
+						<h3 class="text-center">Processos de conversão de biomassa algal e os produtos</h3>
+						<p>
+							<strong>Pirólise</strong> &rarr; Nesse processo, a biomassa algal é aquecida em uma faixa de
+							temperatura específica, geralmente entre 400°C e
+							600°C, em condições anaeróbias. Isso resulta na produção de bio-óleo, gás e biocarvão. O
+							bio-óleo é rico em
+							hidrocarbonetos de lipídios e compostos nitrogenados, com alto poder calorífico. O biocarvão
+							produzido pode ser
+							utilizado para melhorar a fertilidade do solo.
+						</p>
+						<p>
+							<strong>Liquefação</strong> &rarr; Na liquefação, a biomassa algal é aquecida a temperaturas
+							mais
+							baixas, geralmente entre 300°C e 350°C, em
+							uma faixa de pressão de 5 a 20 Mpa (mega Pascal), na presença de um catalisador e solvente.
+							Esse processo pode produzir
+							bio-óleo e gases como produtos, sendo que o bio-óleo possui alto poder calorífico.
+						</p>
+						<p>
+							<strong>Gaseificação</strong> &rarr; A gaseificação converte a biomassa de microalgas em
+							gases
+							combustíveis, como H2, CO e CH4, em
+							temperaturas elevadas (800°C a 1000°C) e condições insuficientes de oxigênio. Esses gases
+							podem ser utilizados como
+							fonte de energia.
+						</p>
+						<p>
+							<strong>Digestão anaeróbia</strong> &rarr; Nesse processo, a biomassa de microalgas é
+							decomposta
+							por microrganismos em condições anaeróbias,
+							produzindo biogás rico em metano e dióxido de carbono. É necessário um pré-tratamento da
+							biomassa para aumentar a
+							produção de biogás.
+						</p>
+						<p>
+							<strong>Fermentação</strong> &rarr; A fermentação é utilizada para produzir bioetanol a
+							partir
+							dos carboidratos presentes na biomassa algal.
+							Após o pré-tratamento e hidrólise enzimática, microrganismos fermentam os açúcares para
+							produzir biocombustíveis como
+							etanol e bio-hidrogênio.
+						</p>
+						<p>
+							<strong>Transesterificação</strong> &rarr; A transesterificação é um processo químico no
+							qual os
+							lipídios presentes na biomassa algal são
+							convertidos em biodiesel. Este processo envolve a reação dos lipídios com um álcool na
+							presença de um catalisador,
+							produzindo ésteres metílicos de ácidos graxos (FAME) e glicerol.
+						</p>
+					</div>
+					<div class="row">
+						<p>
+							Cada técnica de conversão apresenta suas próprias características, vantagens e desafios, e a
+							escolha da melhor abordagem
+							depende das condições específicas do processo, do tipo de biomassa algal utilizada e das
+							necessidades de produção de
+							biocombustíveis.
+						</p>
+					</div>
+				</div>
+			</article>
 
+		</section>
 
+		<section class="container-fluid" id="parallax">
+			<article class="py-4">
+				<div class="row py-4">
+					<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+						style="background-image: url('img/mod2/aula_3_parallax_1.jpeg');">
+						<div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
 
+		<section class="d-flex min-vh-100 flex-column justify-content-center">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>
+							Aplicações e perspectivas
+						</h1>
+					</div>
+					<div class="row">
+						<p>
+							O uso de micro e macroalgas para a produção de biocombustíveis representa uma área de
+							pesquisa promissora com
+							perspectivas futuras empolgantes e com diversas aplicações.
+						</p>
+						<p>
+							<em>
+								Clique em play no vídeo a seguir para conhecer as diferentes aplicações da biomassa
+								aquática na obtenção de
+								combustíveis.
+							</em>
+						</p>
+					</div>
+					<div class="col-lg-8 mx-auto">
+						<div class="ratio ratio-16x9 ">
+							<iframe class="rounded"
+								src="https://play.sesisenai.videolib.live/index.html?token=13646ef8bb2544c4ab9d893f856e5c69"
+								title="Apresentação" allowfullscreen uk-video=" autoplay:false;">
+							</iframe>
+						</div>
+					</div>
+					<div class="row py-4">
+						<p>
+							A seguir, clique em play no podcast para conhecer as perspectivas futuras para a biomassa
+							aquática.
+						</p>
+					</div>
+					<!-- <div class="row py-2">
+						<i class="bi bi-mic-fill cor1 d-flex justify-content-center" style="font-size:3rem; "></i>
+					</div>
+					<div class="mx-auto">
+						<audio class="uk-align-center" controls controlslist="nodownload">
+							<source src="https://redirect.sp.senai.br/lk.php?link=28981034696667d92c629b19"
+								type="audio/mp3">
+						</audio>
+					</div> -->
+					<div class="col-lg-8 mx-auto py-3">
+						<div class="ratio ratio-16x9 ">
+							<iframe class="rounded"
+								src="https://play.sesisenai.videolib.live/index.html?token=b9af0a0a092f489ba43a0e0c14084143"
+								title="Podcast 1" allowfullscreen uk-video=" autoplay:false;">
+							</iframe>
+						</div>
+					</div>
+					<div class="mx-auto">
+						<button class="uk-button-default rounded uk-align-center ativo" type="button"
+							uk-toggle="target: #audio-1; animation:  uk-animation-slide-left, uk-animation-slide-bottom"
+							aria-expanded="false">
+							<h3 class="m-3">Transcrição</h3>
+						</button>
+						<div id="audio-1" class="uk-card uk-card-default uk-card-body uk-margin-small rounded py-5"
+							hidden="">
+							<p><strong>Jefferson:</strong> Olá, ouvintes! Bem-vindos ao nosso podcast. Vamos explorar as
+								perspectivas futuras para o desenvolvimento e utilização da biomassa aquática. Para
+								isso, tenho mais uma especialista no assunto aqui comigo. Bem-vinda, Bruna!</p>
+							<p><strong>Bruna:</strong> Obrigada Jefferson! É um prazer estar aqui.</p>
+							<p><strong>Jefferson:</strong> Vamos começar falando sobre as perspectivas futuras para a
+								biomassa aquática. Bruna, quais são as principais áreas de pesquisa e desenvolvimento
+								nesse campo?</p>
+							<p><strong>Bruna:</strong> As pesquisas estão focadas principalmente em melhorar a
+								eficiência de cultivo das micro e macroalgas. Tecnologias inovadoras, como
+								fotobiorreatores e sistemas de cultivo controlados, estão sendo desenvolvidas para
+								otimizar as condições de crescimento e aumentar a produtividade dessa biomassa.</p>
+							<p><strong>Bruna:</strong> Além disso, a engenharia genética está desempenhando um papel
+								importante. Estamos trabalhando na criação de cepas de algas com características
+								desejáveis, como maior teor de lipídios e resistência a condições ambientais adversas.
+								Isso pode resultar em cultivos mais eficientes e economicamente viáveis para a produção
+								de biocombustíveis.</p>
+							<p><strong>Jefferson:</strong> Muito interessante! E quanto ao desenvolvimento de processos
+								de conversão? O que está sendo feito para tornar esses processos mais eficientes?</p>
+							<p><strong>Bruna:</strong> Pesquisas contínuas estão focadas no desenvolvimento de processos
+								de conversão mais eficientes, como pirólise, gaseificação, fermentação e
+								transesterificação. Esses avanços visam aumentar os rendimentos e reduzir os custos de
+								produção dos biocombustíveis a partir de algas.</p>
+							<p><strong>Bruna:</strong> Além disso, estamos explorando o uso de resíduos e subprodutos
+								das algas para a produção de biocombustíveis. Isso inclui a utilização de
+								polissacarídeos e lignina, que podem ser convertidos em combustíveis ou produtos de alto
+								valor agregado. Essa abordagem ajuda a maximizar o aproveitamento da biomassa e a
+								minimizar os desperdícios.</p>
+							<p><strong>Jefferson:</strong> Isso faz muito sentido. E quais são as vantagens de integrar
+								a produção de biocombustíveis a partir de algas com outros setores?</p>
+							<p><strong>Bruna:</strong> A integração com setores como aquicultura, agricultura e
+								tratamento de águas residuais pode oferecer benefícios adicionais, como a redução de
+								resíduos e a reciclagem de nutrientes. Essa sinergia operacional pode melhorar a
+								eficiência e a sustentabilidade dos processos de produção de biocombustíveis.</p>
+							<p><strong>Bruna:</strong> Além disso, essa integração pode ajudar a mitigar os impactos
+								ambientais, garantindo que a produção de biocombustíveis a partir de algas seja
+								sustentável e tenha um balanço energético positivo. Avaliações completas do ciclo de
+								vida e considerações sobre os aspectos sociais e econômicos também são essenciais para
+								alcançar esse objetivo.</p>
+							<p><strong>Jefferson:</strong> Quais são os desafios que ainda enfrentamos para a
+								implementação dessas tecnologias em larga escala?</p>
+							<p><strong>Bruna:</strong> Um dos principais desafios é o custo de produção. A tecnologia
+								ainda está em desenvolvimento, e os processos precisam ser otimizados para serem
+								competitivos no mercado. Também precisamos aumentar a concentração de biomassa algal e
+								melhorar os métodos de cultivo e extração de óleo.</p>
+							<p><strong>Bruna:</strong> Outro desafio é garantir a sustentabilidade ambiental dos
+								processos. Precisamos avaliar continuamente os impactos ambientais e desenvolver
+								estratégias para mitigá-los, garantindo que a produção de biocombustíveis a partir de
+								algas seja uma solução realmente sustentável para as demandas energéticas futuras.</p>
+							<p><strong>Jefferson:</strong> Muito obrigado, Bruna, por essas informações tão
+								esclarecedoras. É muito bom saber que há tanto potencial na biomassa aquática para um
+								futuro energético mais sustentável.</p>
+							<p><strong>Bruna:</strong> Por nada, Jefferson. E é isso, estamos apenas começando a
+								explorar todas as possibilidades que essa tecnologia pode nos proporcionar.</p>
+							<p><strong>Jefferson:</strong> Bom, nosso podcast chegou ao fim! Obrigado a você, ouvinte,
+								por nos acompanhar até aqui. Até a próxima!</p>
 
+						</div>
+					</div>
+					<div class="row">
+						<p>
+							Ao encerrarmos nossa aula sobre o uso de micro e macroalgas na produção de biocombustíveis,
+							podemos refletir sobre o
+							potencial promissor desses organismos como fonte de energia renovável. Exploramos como as
+							microalgas oferecem vantagens
+							significativas, desde sua alta eficiência na absorção de CO₂ até sua capacidade de
+							crescimento em ambientes variados.
+						</p>
+						<p>
+							Além disso, destacamos a importância de continuarmos a pesquisa e o desenvolvimento nessa
+							área, buscando soluções cada
+							vez mais sustentáveis e eficientes para as demandas energéticas do futuro.
+						</p>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+			style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%;        animation: gradient 25s ease infinite;height:auto">
+			<br>
+		</section>
+		<section class="d-flex min-vh-100 flex-column justify-content-center exercicios py-3" id="exercicios">
+			<article class="container py-4">
+				<div class="border rounded">
+					<h1 class="p-4">Praticando</h1>
+					<div class="row"></div>
+				</div>
+			</article>
+		</section>
+		<hr class="uk-divider-icon">
+		<!-- Recapitulando -->
+		<section class="d-flex flex-column justify-content-center" id="recapitulando">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h2>Recapitulando</h2>
+					</div>
+				</div>
+				<div class="row">
+					<p>Ao encerrarmos nossa aula sobre o uso de micro e macroalgas na produção de biocombustíveis,
+						podemos refletir sobre o potencial promissor desses organismos como fonte de energia renovável.
+						Exploramos como as microalgas oferecem vantagens significativas, desde sua alta eficiência na
+						absorção de CO₂ até sua capacidade de crescimento em ambientes variados. </p>
 
+					<p>Além disso, destacamos a importância de continuarmos a pesquisa e o desenvolvimento nessa área,
+						buscando soluções cada vez mais sustentáveis e eficientes para as demandas energéticas do
+						futuro.</p>
+				</div>
 
+			</article>
+		</section>
+		<!-- lorem -->
+		<hr class="uk-divider-icon">
+		<section class="pb-4" id="11">
+			<article class="container pb-4">
+				<div class="pb-4" id="content">
+					<div class="row" id="progresso">
+						<div class="col-lg-4 uk-text-center ">
+							<div class="legenda" style="font-size: 1rem;">Progresso do curso
+							</div>
+							<div class="copyright">
+								<div class="progress-circle"></div>
+								<span id="progressoGeral" class="fonte-plus"></span> <span class="text-color1">%</span>
+							</div>
+						</div>
+						<div class="col-lg-4 uk-text-center ">
+							<div class="legenda" style="font-size: 1rem;">Respostas corretas
+							</div>
+							<div class="copyright">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </section>
-        <section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
-            style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%;        animation: gradient 25s ease infinite;height:auto">
-            <br>
-        </section>
-        <section class="d-flex min-vh-100 flex-column justify-content-center exercicios py-3" id="exercicios">
-            <article class="container py-4">
-                <div class="border rounded">
-                    <h1 class="p-4">Praticando</h1>
-                    <div class="row"></div>
-                </div>
-            </article>
-        </section>
-        <hr class="uk-divider-icon">
-        <!-- Recapitulando -->
-        <section class="d-flex flex-column justify-content-center" id="recapitulando">
-            <article class="container py-4">
-                <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
-                    <div class="section-level1">
-                        <h2>Recapitulando</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <p>
-                        Nesta aula, estudamos o que é o efeito estufa e como alguns tipos de gases o aumentam, pensando
-                        em estratégias para
-                        diminuir a emissão deles.
-                    </p>
-                    <p>
-                        Ademais, falamos sobre o uso dos recursos naturais na produção de energias renováveis,
-                        especificamente dos
-                        biocombustíveis.
-                    </p>
-                </div>
-
-            </article>
-        </section>
-        <!-- lorem -->
-        <hr class="uk-divider-icon">
-        <section class="pb-4" id="11">
-            <article class="container pb-4">
-                <div class="pb-4" id="content">
-                    <div class="row" id="progresso">
-                        <div class="col-lg-4 uk-text-center ">
-                            <div class="legenda" style="font-size: 1rem;">Progresso do curso
-                            </div>
-                            <div class="copyright">
-                                <div class="progress-circle"></div>
-                                <span id="progressoGeral" class="fonte-plus"></span> <span class="text-color1">%</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 uk-text-center ">
-                            <div class="legenda" style="font-size: 1rem;">Respostas corretas
-                            </div>
-                            <div class="copyright">
-
-                                <span id="exerciciosCorretos" class="fonte-plus"></span><span
-                                    class="text-color1">%</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 uk-text-center ">
-                            <div class="legenda" style="font-size: 1rem;">Exercícios
-                                concluídos</div>
-                            <div class="copyright">
-                                <span id="exerciciosRealizados" class="fonte-plus"></span>
-                                <span id="totalExercicios">/</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-    </main>
-    <footer class="border-top fixed-bottom bg-menu-color">
-        <div class="progress_section">
-            <div class="progress_bar_wrap">
-                <div class="progress_bar"></div>
-            </div>
-            <div class="progress_num"> </div>
-        </div>
-        <div class="d-flex justify-content-evenly align-items-center justify-content-center">
-            <div class="col-sm-12 d-flex justify-content-center">
-                <div class="d-flex justify-content-evenly align-items-center">
-                    <div class="col-sm-2 d-flex justify-content-end">
-                        <a href="1de2_pt-br.html" aria-label="Próximo" title="Próximo">
-                            <i class='bx mt-3 bx-fade-left-hover bxs-left-arrow-circle bx-md copyright px-3'></i>
-                        </a>
-                    </div>
-                    <div class="col-sm-8 d-flex justify-content-center ">
-                        <p class="mx-auto mt-4 ">© SENAI <span class="copyright" id="year"></span></p>
-                    </div>
-                    <div class="col-sm-2 d-flex justify-content-start">
-                        <a href="2de1_pt-br.html" aria-label="Próximo" title="Próximo">
-                            <i class='bx mt-3 bx-fade-riht-hover bxs-right-arrow-circle bx-md copyright px-3'></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+								<span id="exerciciosCorretos" class="fonte-plus"></span><span
+									class="text-color1">%</span>
+							</div>
+						</div>
+						<div class="col-lg-4 uk-text-center ">
+							<div class="legenda" style="font-size: 1rem;">Exercícios
+								concluídos</div>
+							<div class="copyright">
+								<span id="exerciciosRealizados" class="fonte-plus"></span>
+								<span id="totalExercicios">/</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+	<footer class="border-top fixed-bottom bg-menu-color">
+		<div class="progress_section">
+			<div class="progress_bar_wrap">
+				<div class="progress_bar"></div>
+			</div>
+			<div class="progress_num"> </div>
+		</div>
+		<div class="d-flex justify-content-evenly align-items-center justify-content-center">
+			<div class="col-sm-12 d-flex justify-content-center">
+				<div class="d-flex justify-content-evenly align-items-center">
+					<div class="col-sm-2 d-flex justify-content-end">
+						<a href="2de2_pt-br.html" aria-label="Próximo" title="Próximo">
+							<i class='bx mt-3 bx-fade-left-hover bxs-left-arrow-circle bx-md copyright px-3'></i>
+						</a>
+					</div>
+					<div class="col-sm-8 d-flex justify-content-center ">
+						<p class="mx-auto mt-4 ">© SENAI <span class="copyright" id="year"></span></p>
+					</div>
+					<div class="col-sm-2 d-flex justify-content-start">
+						<a href="3de1_pt-br.html" aria-label="Próximo" title="Próximo">
+							<i class='bx mt-3 bx-fade-riht-hover bxs-right-arrow-circle bx-md copyright px-3'></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body><!-- SCORM -->
 <script src="../Template/js/acoes.js"></script>
 <script type="text/javascript" src="../Template/js/blocos_pt-br-t2k.js"></script>
@@ -1369,45 +1468,44 @@
 <script src="../Aula/js/aula-1/graficos.js"></script>
 <script src="../Aula/js/aula-1/youtube.js"></script>
 <script>  Fancybox.bind('[data-fancybox="zoom"]', {});</script>
-<script>  window.addEventListener('load', () => { const date = new Date()    document.querySelector('#year').textContent = `${date.getFullYear()}` })</script>
-<script src="../Template/bibliotecas/webtour/intro.min.js"></script>
+<script>  window.addEventListener('load', () => { const date = new Date(); document.querySelector('#year').textContent = `${date.getFullYear()}` })</script>
 <script>
-    var intro = introJs();
-    intro.setOptions({
+	var intro = introJs();
+	intro.setOptions({
 
-        'skipLabel': '<i class="bi bi-x-lg"></i>',
-        tooltipClass: 'customTooltip',
-        showProgress: true,
-        dontShowAgain: true,
-        hidePrev: true,
-        hideNext: false,
-        exitOnEsc: true,
-        showStepNumbers: true,
-        showBullets: false,
-        steps: [
+		'skipLabel': '<i class="bi bi-x-lg"></i>',
+		tooltipClass: 'customTooltip',
+		showProgress: true,
+		dontShowAgain: true,
+		hidePrev: true,
+		hideNext: false,
+		exitOnEsc: true,
+		showStepNumbers: true,
+		showBullets: false,
+		steps: [
 
-            {
-                element: document.querySelector('.cor1'),
-                intro: '<p>Menu - Hieraquia - (texto descritivo)</p>',
-            },
+			{
+				element: document.querySelector('.cor1'),
+				intro: '<p>Menu - Hieraquia - (texto descritivo)</p>',
+			},
 
-            {
-                element: document.querySelector('.switch-darkmode'),
-                intro: '<p>Modo Escuro - (texto descritivo)</p>'
-            },
+			{
+				element: document.querySelector('.switch-darkmode'),
+				intro: '<p>Modo Escuro - (texto descritivo)</p>'
+			},
 
-            {
-                element: document.querySelector('.vlibras-show'),
-                intro: '<p>Aqui voceê pode encontar o V-Libras - (texto descritivo)'
-            },
+			{
+				element: document.querySelector('.vlibras-show'),
+				intro: '<p>Aqui voceê pode encontar o V-Libras - (texto descritivo)'
+			},
 
-            {
-                element: document.querySelector('#Acessibilidade'),
-                intro: '<img src="img/template/acessibilidade.png" alt="Acessibilidade">',
-            },
-        ]
+			{
+				element: document.querySelector('#Acessibilidade'),
+				intro: '<img src="img/template/acessibilidade.png" alt="Acessibilidade">',
+			},
+		]
 
-    }).start();
+	}).start();
 </script>
 
 </html>

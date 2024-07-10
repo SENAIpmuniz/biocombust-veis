@@ -2,1016 +2,1267 @@
 <html id="master" lang="pt-Br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" href="../Template/img/favicon.ico" />
-  <title>Senai</title> <!-- Config -->
-  <script src="../Template/js/main.js" defer></script>
-  <link rel="stylesheet" href="../Template/css/theme.css">
-  <link rel="stylesheet" href="../Template/css/style.css">
-  <link rel="stylesheet" href="css/aula-1/add-style.css">
-  <link rel="stylesheet" href="../Template/bibliotecas/fancybox/fancybox.css"> <!-- JQuery-->
-  <script type="text/javascript" src="../Template/bibliotecas/jQuery-3.6.3/jquery-3.6.3.min.js"></script>
-  <!-- Bootstrap -->
-  <link href="../Template/bibliotecas/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap Icons -->
-  <link href="../Template/bibliotecas/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- UiKit-->
-  <link href="../Template/bibliotecas/uikit/css/uikit.min.css" rel="stylesheet" />
-  <script src="../Template/bibliotecas/uikit/js/uikit.min.js" async></script>
-  <script src="../Template/bibliotecas/uikit/js/uikit-icons.min.js" async></script> <!-- BoxIcons -->
-  <link href="../Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'>
-  <script src="../Template/bibliotecas/boxicons/boxicons.js" defer></script> <!-- GOOGLE TRANSLATE -->
-  <script src="../Template/js/google.js" type="text/javascript" defer></script> <!-- Grafico -->
-  <script src="../Template/bibliotecas/charts/chart.js"></script> <!-- SCORM -->
-  <script src="../Template/scorm/APIWrapper.js"></script>
-  <script src="../Template/scorm/SCOFunctions.js"></script> <!-- Prism -->
-  <script src="../Template/bibliotecas/prism/js/prism.js"></script>
-  <link href="../Template/bibliotecas/prism/css/prism.css" rel='stylesheet'> <!-- BoxIcons -->
-  <script src="../Template/bibliotecas/boxicons/boxicons.js"></script>
-  <link href="../Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'> <!-- VIDEO DO YOUTUBE -->
-  <script src="../Template/js/menu.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="../Template/img/favicon.ico" />
+	<title>Senai</title> <!-- Config -->
+	<script src="../Template/js/main.js" defer></script>
+	<link rel="stylesheet" href="../Template/css/theme.css">
+	<link rel="stylesheet" href="../Template/css/style.css">
+	<link rel="stylesheet" href="css/aula-1/add-style.css">
+	<link rel="stylesheet" href="../Template/bibliotecas/fancybox/fancybox.css"> <!-- JQuery-->
+	<script type="text/javascript" src="../Template/bibliotecas/jQuery-3.6.3/jquery-3.6.3.min.js"></script>
+	<!-- Bootstrap -->
+	<link href="../Template/bibliotecas/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap Icons -->
+	<link href="../Template/bibliotecas/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- UiKit-->
+	<link href="../Template/bibliotecas/uikit/css/uikit.min.css" rel="stylesheet" />
+	<script src="../Template/bibliotecas/uikit/js/uikit.min.js" async></script>
+	<script src="../Template/bibliotecas/uikit/js/uikit-icons.min.js" async></script> <!-- BoxIcons -->
+	<link href="../Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'>
+	<script src="../Template/bibliotecas/boxicons/boxicons.js" defer></script> <!-- GOOGLE TRANSLATE -->
+	<script src="../Template/js/google.js" type="text/javascript" defer></script> <!-- Grafico -->
+	<script src="../Template/bibliotecas/charts/chart.js"></script> <!-- SCORM -->
+	<script src="../Template/scorm/APIWrapper.js"></script>
+	<script src="../Template/scorm/SCOFunctions.js"></script> <!-- Prism -->
+	<script src="../Template/bibliotecas/prism/js/prism.js"></script>
+	<link href="../Template/bibliotecas/prism/css/prism.css" rel='stylesheet'> <!-- BoxIcons -->
+	<script src="../Template/bibliotecas/boxicons/boxicons.js"></script>
+	<link href="../Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'> <!-- VIDEO DO YOUTUBE -->
+	<script src="../Template/js/menu.js"></script>
 </head>
 
 <body onunload="unloadPage()">
-  <header>
-    <div id="google_translate_element"></div>
-    <!-- Vlibras -->
-    <div vw class="enabled">
-      <div id="vlibras-show" vw-access-button class="#"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-      </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-    <!-- Menu -->
-    <nav class="navbar-dark bg-menu-color fixed-top nav-height">
-      <div class="d-flex bd-highlight align-items-center g-4 nav-height">
-        <div class="bd-highlight">
-          <button class="btn align-items-center ms-2" data-bs-toggle="offcanvas" data-bs-target="#nav-menu-open-close" aria-controls="nav-menu-open-close" aria-label="Menu" title="Menu">
-            <i class='cor1 bx bx-menu bx-tada-hover'></i> </button>
-        </div>
-        <div class="bd-highlight mx-auto">
-          <object class="d-none d-lg-block img-fluid" style="margin-left:130px; max-width:180px" data="../Template/img/logo_senai.svg" type="image/svg+xml" alt="SENAI" title="SENAI">
-          </object>
-          <object class="d-md-block d-lg-none" style="margin-top: 5px;max-width: 130px;" data="../Template/img/logo_senai.svg" type="image/svg+xml" alt="SENAI" title="SENAI">
-          </object>
-        </div>
-        <div class="bd-highlight">
-          <div class="d-flex bd-highlight align-items-center nav-height">
-            <div class="form-check form-check-inline switch-group" role="button" title="Temas">
-              <input class="form-check-input d-none" type="checkbox" name="themeBtns" id="themeSwitcher" role="Toogle Temas">
-              <label class="form-check-label" for="themeSwitcher">
-                <div class="switch-darkmode">
-                  <div class="icons"> <i class='bx bx-moon bx-tada-hover'></i> <i class='bx bx-sun bx-spin-hover' style="color: aliceblue;"></i> </div>
-                  <div class="circle"></div>
-                </div>
-              </label>
-            </div>
-            <div class=" d-flex flex-row align-middle ms-2 me-2" onclick="vlibrashow()" role="Vlibras" title="Vlibras"> <i class='vlibras-show bx bx-universal-access' style="font-size:2rem"></i>
-              <span class="ms-1 me-1 d-none d-lg-block menu" style="margin-top: 3px;"></span>
-            </div>
-            <div class="dropdown me-2">
-              <button class="btn text-white me-2" type="button" id="Acessibilidade" title="Configurações" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Configurações">
-                <i class='bx bx-cog bx-spin-hover bx-sm'></i>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-dark menu-margin" aria-labelledby="Acessibilidade">
-                <li class="dropdown-item" data-translate="acessibilidade">
-                  <strong>Acessibilidade</strong>
-                </li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li> <a class="dropdown-item">
-                    <div class="mb-3 form-check form-switch">
-                      <input class="form-check-input " type="checkbox" name="themeBtns" id="graySwitcher" role="Modo monocromatico">
-                      <label class="form-check-label menu" for="graySwitcher" data-translate="thema-linguagem-3">Modo Monocromatico</label>
-                    </div>
-                  </a> </li>
-                <li> <a class="dropdown-item">
-                    <div class="mb-3 form-check form-switch">
-                      <input class="form-check-input" type="checkbox" name="themeBtns" id="daltonicSwitcher" role="Modo Daltônico">
-                      <label class="form-check-label menu" for="daltonicSwitcher" data-translate="thema-linguagem-4">Modo
-                        Daltônico</label>
-                    </div>
-                  </a> </li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li class="dropdown-item"> <span class="menu" data-translate="tamanho-da-fonte">Tamanho
-                    da Fonte</span> <br> <input type="range" class="form-range" min="50" max="115" step="5" id="size"> </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="offcanvas offcanvas-start" data-bs-backdrop="true" data-bs-backdrop="static" tabindex="-1" id="nav-menu-open-close" aria-labelledby="staticBackdropLabel">
-        <div class="offcanvas-header bg-menu-color">
-          <p class="offcanvas-title" id="staticBackdropLabel">Menu</p> <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body ">
-          <h3> <a href="../../index_pt-br.html"> <i class="bi bi-house"></i> Início</a> </h3>
-          <!-- Menu -->
-          <nav id="navbar-menu" class="flex-column align-items-stretch pe-4 my-5">
-            <nav class="nav nav-pills flex-column">
-              <div uk-accordion>
-                <!-- 1 -->
-                <li class="uk-open">
-                  <a class="nav-link uk-accordion-title">
-                    <i class="bi bi-pin-fill"></i>
-                    Módulo 1
-                  </a>
-                  <div class="uk-accordion-content">
-                    <div class="nav nav-pills flex-column">
-                      <ul class="icons-list">
-                        <li class="nav">
-                          <a class="nav-link my-1" href="1de1_pt-br.html#capa">Tema/Aula</a>
-                        </li>
-                        <div class="nav">
-                          <ul class="icons-list">
-                            <li> <a class="nav-link ms-3 my-1" href="1de1_pt-br.html#aula1-section-1">Apresentação da
-                                aula</a> </li>
-                            <li> <a class="nav-link ms-3 my-1" href="1de1_pt-br.html#aula1-section-2">Conteúdo</a>
-                            </li>
-                            <li> <a class="nav-link ms-3 my-1" href="1de1_pt-br.html#aula1-section-3">Praticando</a>
-                            </li>
-                            <li> <a class="nav-link ms-3 my-1" href="1de1_pt-br.html#aula1-section-4">Recapitulando</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <!-- 2 -->
-                <li>
-                  <a class="nav-link uk-accordion-title">
-                    <i class="bi bi-pin-fill"></i>
-                    Módulo 2
-                  </a>
-                  <div class="uk-accordion-content">
-                    <div class="nav nav-pills flex-column">
-                      <ul class="icons-list">
-                        <li class="nav">
-                          <a class="nav-link my-1" href="2de1_pt-br.html#capa">Tema/Aula</a>
-                        </li>
-                        <div class="nav">
-                          <ul class="icons-list">
-                            <li> <a class="nav-link ms-3 my-1" href="2de1_pt-br.html#aula2-section-1">Apresentação da
-                                aula</a> </li>
-                            <li> <a class="nav-link ms-3 my-1" href="2de1_pt-br.html#aula2-section-2">Conteúdo</a>
-                            </li>
-                            <li> <a class="nav-link ms-3 my-1" href="2de1_pt-br.html#aula2-section-3">Praticando</a>
-                            </li>
-                            <li> <a class="nav-link ms-3 my-1" href="2de1_pt-br.html#aula2-section-4">Recapitulando</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <!-- 3 -->
-                <li>
-                  <a class="nav-link uk-accordion-title">
-                    <i class="bi bi-pin-fill"></i>
-                    Módulo 3
-                  </a>
-                  <div class="uk-accordion-content">
-                    <div class="nav nav-pills flex-column">
-                      <ul class="icons-list">
-                        <li class="nav">
-                          <a class="nav-link my-1" href="3de1_pt-br.html#capa">Tema/Aula</a>
-                        </li>
-                        <div class="nav">
-                          <ul class="icons-list">
-                            <li> <a class="nav-link ms-3 my-1" href="3de1_pt-br.html#aula3-section-1">Apresentação da
-                                aula</a> </li>
-                            <li> <a class="nav-link ms-3 my-1" href="3de1_pt-br.html#aula3-section-2">Conteúdo</a>
-                            </li>
-                            <li> <a class="nav-link ms-3 my-1" href="3de1_pt-br.html#aula3-section-3">Praticando</a>
-                            </li>
-                            <li> <a class="nav-link ms-3 my-1" href="3de1_pt-br.html#aula3-section-4">Recapitulando</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <!-- 4 -->
-                <li>
-                  <a class="nav-link uk-accordion-title">
-                    <i class="bi bi-pin-fill"></i>
-                    Módulo 4
-                  </a>
-                  <div class="uk-accordion-content">
-                    <div class="nav nav-pills flex-column">
-                      <ul class="icons-list">
-                        <li class="nav">
-                          <a class="nav-link my-1" href="4de1_pt-br.html#capa">Tema/Aula</a>
-                        </li>
-                        <div class="nav">
-                          <ul class="icons-list">
-                            <li> <a class="nav-link ms-3 my-1" href="4de1_pt-br.html#aula4-section-1">Apresentação da
-                                aula</a> </li>
-                            <li> <a class="nav-link ms-3 my-1" href="4de1_pt-br.html#aula4-section-2">Conteúdo</a>
-                            </li>
-                            <li> <a class="nav-link ms-3 my-1" href="4de1_pt-br.html#aula4-section-3">Praticando</a>
-                            </li>
-                            <li> <a class="nav-link ms-3 my-1" href="4de1_pt-br.html#aula4-section-4">Recapitulando</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-              </div>
-            </nav>
-          </nav>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main class=" pt-4" data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-offset="0">
-    <!-- Capa -->
-    <div id="capa" class="d-flex py-4 min-vh-100 flex-column justify-content-center uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('./../Template/img/capa_aula1_2.jpg');">
-      <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-        <div class="row mt-2">
-          <h1 class=" text-uppercase mt-5 pt-5 color2" uk-parallax="opacity: 1; y: -0,0; scale: 1.1,2; end: 0vh + 10%;">
-            Tecnologias emergentes e economia circular
-          </h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="row position-absolute" style="bottom: 10%
+	<header>
+		<div id="google_translate_element"></div>
+		<!-- Vlibras -->
+		<div vw class="enabled">
+			<div id="vlibras-show" vw-access-button class="#"></div>
+			<div vw-plugin-wrapper>
+				<div class="vw-plugin-top-wrapper"></div>
+			</div>
+		</div>
+		<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+		<script>
+			new window.VLibras.Widget('https://vlibras.gov.br/app');
+		</script>
+		<!-- Menu -->
+		<nav class="navbar-dark bg-menu-color fixed-top nav-height">
+			<div class="d-flex bd-highlight align-items-center g-4 nav-height">
+				<div class="bd-highlight">
+					<button class="btn align-items-center ms-2" data-bs-toggle="offcanvas"
+						data-bs-target="#nav-menu-open-close" aria-controls="nav-menu-open-close" aria-label="Menu"
+						title="Menu">
+						<i class='cor1 bx bx-menu bx-tada-hover'></i> </button>
+				</div>
+				<div class="bd-highlight mx-auto">
+					<object class="d-none d-lg-block img-fluid" style="margin-left:130px; max-width:180px"
+						data="../Template/img/logo_senai.svg" type="image/svg+xml" alt="SENAI" title="SENAI">
+					</object>
+					<object class="d-md-block d-lg-none" style="margin-top: 5px;max-width: 130px;"
+						data="../Template/img/logo_senai.svg" type="image/svg+xml" alt="SENAI" title="SENAI">
+					</object>
+				</div>
+				<div class="bd-highlight">
+					<div class="d-flex bd-highlight align-items-center nav-height">
+						<div class="form-check form-check-inline switch-group" role="button" title="Temas">
+							<input class="form-check-input d-none" type="checkbox" name="themeBtns" id="themeSwitcher"
+								role="Toogle Temas">
+							<label class="form-check-label" for="themeSwitcher">
+								<div class="switch-darkmode">
+									<div class="icons"> <i class='bx bx-moon bx-tada-hover'></i> <i
+											class='bx bx-sun bx-spin-hover' style="color: aliceblue;"></i> </div>
+									<div class="circle"></div>
+								</div>
+							</label>
+						</div>
+						<div class=" d-flex flex-row align-middle ms-2 me-2" onclick="vlibrashow()" role="Vlibras"
+							title="Vlibras"> <i class='vlibras-show bx bx-universal-access' style="font-size:2rem"></i>
+							<span class="ms-1 me-1 d-none d-lg-block menu" style="margin-top: 3px;"></span>
+						</div>
+						<div class="dropdown me-2">
+							<button class="btn text-white me-2" type="button" id="Acessibilidade" title="Configurações"
+								data-bs-toggle="dropdown" aria-expanded="false" aria-label="Configurações">
+								<i class='bx bx-cog bx-spin-hover bx-sm'></i>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-dark menu-margin" aria-labelledby="Acessibilidade">
+								<li class="dropdown-item" data-translate="acessibilidade">
+									<strong>Acessibilidade</strong>
+								</li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li> <a class="dropdown-item">
+										<div class="mb-3 form-check form-switch">
+											<input class="form-check-input " type="checkbox" name="themeBtns"
+												id="graySwitcher" role="Modo monocromatico">
+											<label class="form-check-label menu" for="graySwitcher"
+												data-translate="thema-linguagem-3">Modo Monocromatico</label>
+										</div>
+									</a> </li>
+								<li> <a class="dropdown-item">
+										<div class="mb-3 form-check form-switch">
+											<input class="form-check-input" type="checkbox" name="themeBtns"
+												id="daltonicSwitcher" role="Modo Daltônico">
+											<label class="form-check-label menu" for="daltonicSwitcher"
+												data-translate="thema-linguagem-4">Modo
+												Daltônico</label>
+										</div>
+									</a> </li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li class="dropdown-item"> <span class="menu" data-translate="tamanho-da-fonte">Tamanho
+										da Fonte</span> <br> <input type="range" class="form-range" min="50" max="115"
+										step="5" id="size"> </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="offcanvas offcanvas-start" data-bs-backdrop="true" data-bs-backdrop="static" tabindex="-1"
+				id="nav-menu-open-close" aria-labelledby="staticBackdropLabel">
+				<div class="offcanvas-header bg-menu-color">
+					<p class="offcanvas-title" id="staticBackdropLabel">Menu</p> <button type="button"
+						class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body ">
+					<h3> <a href="../../index_pt-br.html"> <i class="bi bi-house"></i> Início</a> </h3>
+					<!-- Menu -->
+					<nav id="navbar-menu" class="flex-column align-items-stretch pe-4 my-5">
+						<nav class="nav nav-pills flex-column">
+							<div uk-accordion>
+								<!-- 1 -->
+								<li class="uk-open">
+									<a class="nav-link uk-accordion-title">
+										<i class="bi bi-pin-fill"></i>
+										Módulo 1
+									</a>
+									<div class="uk-accordion-content">
+										<div class="nav nav-pills flex-column">
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="1de1_pt-br.html#capa">Transição da
+														matriz energética</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-1">Apresentação da
+																aula</a> </li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-2">Transição da
+																matriz energética</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-3">Contexto
+																histórico</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-4">Matriz
+																energética</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-5">Aspectos
+																políticos e econômicos</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-6">Programas de
+																incentivo à transição energética</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-7">Praticando</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-8">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="#capa">Tecnologias
+														emergentes e economia circular</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li><a class="nav-link ms-3 my-1"
+																href="#aula2-section-1">Apresentação da
+																aula</a> </li>
+														<li><a class="nav-link ms-3 my-1"
+																href="#aula2-section-2">Tecnologias
+																emergentes</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="#aula2-section-3">Economia
+																circular</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1" href="#aula2-section-4">Cadeia
+																de
+																valor</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="#aula2-section-5">Reaproveitamento
+																de resíduos</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="#aula2-section-6">Praticando</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="#aula2-section-7">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="1de3_pt-br.html#capa">Gases do efeito
+														estufa e recursos naturais</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula1-section-1">Apresentação da
+																aula</a> </li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula1-section-2">Transição da
+																matriz energética</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula1-section-3">Contexto
+																histórico</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula1-section-4">Matriz
+																energética</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula1-section-5">Aspectos
+																políticos e econômicos</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula1-section-6">Programas de
+																incentivo à transição energética</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula1-section-7">Praticando</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula1-section-8">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+
+										</div>
+									</div>
+								</li>
+								<!-- 2 -->
+								<li>
+									<a class="nav-link uk-accordion-title">
+										<i class="bi bi-pin-fill"></i>
+										Módulo 2
+									</a>
+									<div class="uk-accordion-content">
+										<div class="nav nav-pills flex-column">
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="2de1_pt-br.html#capa">Tema/Aula</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#aula2-section-1">Apresentação da
+																aula</a> </li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#aula2-section-2">Conteúdo</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#aula2-section-3">Praticando</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#aula2-section-4">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<!-- 3 -->
+								<li>
+									<a class="nav-link uk-accordion-title">
+										<i class="bi bi-pin-fill"></i>
+										Módulo 3
+									</a>
+									<div class="uk-accordion-content">
+										<div class="nav nav-pills flex-column">
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="3de1_pt-br.html#capa">Tema/Aula</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#aula3-section-1">Apresentação da
+																aula</a> </li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#aula3-section-2">Conteúdo</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#aula3-section-3">Praticando</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#aula3-section-4">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<!-- 4 -->
+								<li>
+									<a class="nav-link uk-accordion-title">
+										<i class="bi bi-pin-fill"></i>
+										Módulo 4
+									</a>
+									<div class="uk-accordion-content">
+										<div class="nav nav-pills flex-column">
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="4de1_pt-br.html#capa">Tema/Aula</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li> <a class="nav-link ms-3 my-1"
+																href="4de1_pt-br.html#aula4-section-1">Apresentação da
+																aula</a> </li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="4de1_pt-br.html#aula4-section-2">Conteúdo</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="4de1_pt-br.html#aula4-section-3">Praticando</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="4de1_pt-br.html#aula4-section-4">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</div>
+						</nav>
+					</nav>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class=" pt-4" data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-offset="0">
+		<!-- Capa -->
+		<div id="capa"
+			class="d-flex py-4 min-vh-100 flex-column justify-content-center uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+			style="background-image: url('./../Template/img/capa_aula1_2.jpg');">
+			<div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+				<div class="row mt-2">
+					<h1 class=" text-uppercase mt-5 pt-5 color2"
+						uk-parallax="opacity: 1; y: -0,0; scale: 1.1,2; end: 0vh + 10%;">
+						Tecnologias emergentes e economia circular
+					</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row position-absolute" style="bottom: 10%
         ; left: 49.2%; transform: translateX(-50%)">
-          <div class="py-4 col-lg-1 mx-auto">
-            <div class="mouse"></div>
-          </div>
+					<div class="py-4 col-lg-1 mx-auto">
+						<div class="mouse"></div>
+					</div>
 
-        </div>
-      </div>
-    </div>
-    <section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%; animation: gradient 25s ease infinite;height:auto">
-      <br>
-    </section>
-    <!-- APRESENTACAO -->
-    <section class="d-flex py-4 min-vh-100 flex-column justify-content-center" id="aula1-section-1">
-      <article class="container">
-        <div class="align-self-start ">
-          <div class="section-level1">
-            <h1>Apresentação da aula</h1>
-          </div>
-        </div>
-        <div class="row">
-          <p>
-            Sabemos da urgente necessidade de substituir o uso de combustíveis fósseis para os combustíveis
-            de base biológica,
-            especialmente devido ao aumento perceptível nas emissões de gases de efeito estufa, ao
-            esgotamento dos recursos fósseis
-            e aos riscos associados à sustentabilidade, ou seja, os biocombustíveis, derivados de fontes
-            renováveis, têm se tornado
-            uma peça fundamental na transição para uma matriz energética mais sustentável e ecoeficiente.
-          </p>
-          <p>
-            Nesta aula, exploraremos não apenas as tecnologias emergentes que impulsionam essa indústria,
-            mas também como os
-            princípios da economia circular estão sendo aplicados para tornar a produção de biocombustíveis
-            mais eficiente e
-            sustentável.
-          </p>
-        </div>
-      </article>
-    </section> <!-- lorem -->
-    <section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%;        animation: gradient 25s ease infinite;height:auto">
-      <br>
-    </section> <!-- lorem -->
-    <section class="d-flex flex-column justify-content-center" id="aula1-section-2">
-      <article class="container py-4">
-        <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
-          <div class="section-level1">
-            <h1>Tecnologias emergentes</h1>
-          </div>
-        </div>
-        <div class="row">
-          <p>
-            Ao longo dos últimos séculos, o progresso científico e tecnológico transformou profundamente a
-            civilização global,
-            redefinindo suas operações cotidianas com abordagens cada vez mais sofisticadas.
-          </p>
-          <p>
-            Uma consequência marcante desse desenvolvimento é o aumento exponencial na demanda por
-            <strong>combustíveis</strong>, impulsionado pelas
-            necessidades essenciais de aquecimento, habitação, transporte e outras atividades.
-          </p>
-        </div>
-      </article>
-    </section>
+				</div>
+			</div>
+		</div>
+		<section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+			style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%; animation: gradient 25s ease infinite;height:auto">
+			<br>
+		</section>
+		<!-- APRESENTACAO -->
+		<section class="d-flex py-4 min-vh-100 flex-column justify-content-center" id="aula2-section-1">
+			<article class="container">
+				<div class="align-self-start ">
+					<div class="section-level1">
+						<h1>Apresentação da aula</h1>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						Sabemos da urgente necessidade de substituir o uso de combustíveis fósseis para os combustíveis
+						de base biológica,
+						especialmente devido ao aumento perceptível nas emissões de gases de efeito estufa, ao
+						esgotamento dos recursos fósseis
+						e aos riscos associados à sustentabilidade, ou seja, os biocombustíveis, derivados de fontes
+						renováveis, têm se tornado
+						uma peça fundamental na transição para uma matriz energética mais sustentável e ecoeficiente.
+					</p>
+					<p>
+						Nesta aula, exploraremos não apenas as tecnologias emergentes que impulsionam essa indústria,
+						mas também como os
+						princípios da economia circular estão sendo aplicados para tornar a produção de biocombustíveis
+						mais eficiente e
+						sustentável.
+					</p>
+				</div>
+			</article>
+		</section>
+		<!-- lorem -->
+		<section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+			style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%;        animation: gradient 25s ease infinite;height:auto">
+			<br>
+		</section>
+		<!-- lorem -->
 
-    <section class="container-fluid" id="parallax">
-      <article class="py-4">
-        <div class="row py-4">
-          <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('img/mod1/aula_2_parallax_1.jpeg');">
-            <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
+		<section class="d-flex flex-column justify-content-center">
+			<article class="container py-4" id="aula2-section-2">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>Tecnologias emergentes</h1>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						Ao longo dos últimos séculos, o progresso científico e tecnológico transformou profundamente a
+						civilização global,
+						redefinindo suas operações cotidianas com abordagens cada vez mais sofisticadas.
+					</p>
+					<p>
+						Uma consequência marcante desse desenvolvimento é o aumento exponencial na demanda por
+						<strong>combustíveis</strong>, impulsionado pelas
+						necessidades essenciais de aquecimento, habitação, transporte e outras atividades.
+					</p>
+				</div>
+			</article>
+		</section>
 
-    <section class="d-flex min-vh-100 flex-column justify-content-center" id="aula1-section-2">
-      <article class="container py-4">
-        <div class="row">
-          <p>
-            Esse novo paradigma de vida humana, intensificado pela crescente dependência de energia, tem
-            sido predominantemente
-            sustentado pelos <strong>combustíveis fósseis</strong> (petróleo, carvão e gás natural), responsáveis por
-            aproximadamente 80% do
-            suprimento energético global.
-          </p>
-          <p>
-            Contudo, essa preferência tem um <strong>custo ambiental significativo</strong>, contribuindo de forma
-            substancial para o aumento dos
-            níveis de dióxido de carbono na atmosfera e, consequentemente, impulsionando as mudanças
-            climáticas globais.
-          </p>
+		<section class="container-fluid" id="parallax">
+			<article class="py-4">
+				<div class="row py-4">
+					<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+						style="background-image: url('img/mod1/aula_2_parallax_1.jpeg');">
+						<div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
 
-          <div class="d-flex justify-content-center pt-4 pb-5">
-            <div class="col-lg-6"> <a data-fancybox="zoom" data-src="../Aula/img/mod1/aula_2_parallax_2.jpeg" data-caption=""> <img class="rounded" src="../Aula/img/mod1/aula_2_parallax_2.jpeg" class="img-fluid py-4" alt="">
-              </a>
-            </div>
-          </div>
-          <p>
-            Nos últimos anos, os <strong>biocombustíveis</strong> (etanol de cana-de-açúcar, biodiesel, biogás e
-            biomassa)
-            emergiram como uma fonte
-            líder de bioenergia, substituindo os combustíveis fósseis para atender às crescentes
-            demandas
-            globais de energia e
-            reduzir as emissões de gases de efeito estufa. No entanto, sua produção em larga escala
-            ainda é
-            desafiadora.
-          </p>
-          <p>
-            Por conseguinte, para validar os benefícios da transição para biocombustíveis, é crucial
-            examinar os novos cenários do
-            setor sob a ótica das tendências de produção atuais, o que requer uma avaliação dos desafios
-            e
-            das oportunidades
-            associadas ao desenvolvimento presente e futuro dos biocombustíveis, visando aprimorar sua
-            integração na cadeia de valor
-            e promover a competitividade por meio de tecnologias emergentes, criando condições
-            favoráveis
-            para a implementação
-            generalizada dos biocombustíveis.
-          </p>
-          <p>
-            Para isso, é essencial converter a biomassa em biocombustíveis por meio do desenvolvimento
-            de
-            novas tecnologias capazes
-            de aumentar a produção de biocombustíveis para satisfazer a procura de energia atual e
-            futura.
-          </p>
-        </div>
-        <!-- box destaque -->
-        <div class="col-lg-10 py-4 mx-auto">
-          <div class="box">
-            <p>
-              Para estabelecermos uma nova matriz energética, serão necessários novos recursos
-              tecnológicos. Com isso, várias
-              tecnologias estão surgindo para atender a novos mercados.
-            </p>
-            <p>
-              Essas tecnologias, chamadas de emergentes, têm desempenhado um papel vital no avanço da
-              produção de biocombustíveis,
-              permitindo o uso de uma variedade mais ampla de matérias-primas e processos mais
-              eficientes.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <p>
-            Uma tecnologia emergente em biocombustíveis refere-se a qualquer nova abordagem, processo ou
-            método que está sendo
-            desenvolvido ou implementado para melhorar a produção, eficiência, sustentabilidade ou
-            viabilidade econômica dos
-            biocombustíveis.
-          </p>
-          <p>
-            Essas tecnologias representam avanços significativos em relação aos métodos convencionais de
-            produção de biocombustíveis
-            e são projetadas para superar desafios específicos enfrentados pela indústria.
-          </p>
-          <p>
-            <em>
-              Clique nos itens do quadro a seguir para conhecer algumas características comuns das
-              tecnologias emergentes em biocombustíveis.
-            </em>
-          </p>
-        </div>
-        <!-- accordion 1 -->
-        <div class="col-md-8 mx-auto py-4">
-          <div class="bd-example-snippet bd-code-snippet">
-            <div class="accordion" id="1-accordion">
-              <div class="accordion-item">
-                <h4 class="accordion-header" id="1-collapse-cabecalho-1">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1-collapse-1" aria-expanded="false" aria-controls="1-collapse-1" aria-labelledby="Segurança energética">
-                    Inovação
-                  </button>
-                </h4>
-                <div id="1-collapse-1" class="accordion-collapse collapse" data-bs-parent="#1-accordion">
-                  <div class="accordion-body">
-                    <p>
-                      Essas tecnologias geralmente incorporam novas ideias, conceitos ou
-                      abordagens que representam uma mudança significativa
-                      em relação aos métodos tradicionais de produção de biocombustíveis.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h4 class="accordion-header" id="1-collapse-cabecalho-2">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1-collapse-2" aria-expanded="false" aria-controls="1-collapse-2" aria-labelledby="Titulo 2">
-                    Eficiência
-                  </button>
-                </h4>
-                <div id="1-collapse-2" class="accordion-collapse collapse" data-bs-parent="#1-accordion">
-                  <div class="accordion-body">
-                    <p>
-                      As tecnologias emergentes visam melhorar a eficiência da produção de
-                      biocombustíveis, seja aumentando o rendimento dos
-                      processos de conversão de biomassa em biocombustíveis, reduzindo o
-                      consumo
-                      de energia ou melhorando a qualidade do
-                      produto.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h4 class="accordion-header" id="1-collapse-cabecalho-3">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1-collapse-3" aria-expanded="false" aria-controls="1-collapse-3" aria-labelledby="Titulo 1">
-                    Sustentabilidade
-                  </button>
-                </h4>
-                <div id="1-collapse-3" class="accordion-collapse collapse" data-bs-parent="#1-accordion">
-                  <div class="accordion-body">
-                    <p>
-                      Muitas tecnologias emergentes em biocombustíveis são desenvolvidas com o
-                      objetivo de tornar a produção de
-                      biocombustíveis mais sustentável, utilizando matérias-primas renováveis,
-                      minimizando resíduos e reduzindo as emissões de
-                      gases do efeito estufa.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h4 class="accordion-header" id="1-collapse-cabecalho-4">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#1-collapse-4" aria-expanded="false" aria-controls="1-collapse-4" aria-labelledby="Titulo 1">
-                    Viabilidade econômica
-                  </button>
-                </h4>
-                <div id="1-collapse-4" class="accordion-collapse collapse" data-bs-parent="#1-accordion">
-                  <div class="accordion-body">
-                    <p>
-                      Embora a sustentabilidade seja uma consideração importante, as
-                      tecnologias
-                      emergentes também precisam ser economicamente
-                      viáveis para serem amplamente adotadas pela indústria. Isso pode
-                      envolver
-                      redução de custos de produção, aumento da
-                      competitividade no mercado ou acesso a incentivos financeiros.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <p>
-            Como exemplos de tecnologias emergentes em biocombustíveis, as <strong>biorrefinarias integradas</strong>
-            despontam como soluções
-            inovadoras, capazes de transformar biomassa em uma variedade de produtos de alto valor,
-            incluindo biocombustíveis,
-            produtos químicos e materiais.
-          </p>
-        </div>
-      </article>
-    </section>
+		<section class="d-flex min-vh-100 flex-column justify-content-center">
+			<article class="container py-4">
+				<div class="row">
+					<p>
+						Esse novo paradigma de vida humana, intensificado pela crescente dependência de energia, tem
+						sido predominantemente
+						sustentado pelos <strong>combustíveis fósseis</strong> (petróleo, carvão e gás natural),
+						responsáveis por
+						aproximadamente 80% do
+						suprimento energético global.
+					</p>
+					<p>
+						Contudo, essa preferência tem um <strong>custo ambiental significativo</strong>, contribuindo de
+						forma
+						substancial para o aumento dos
+						níveis de dióxido de carbono na atmosfera e, consequentemente, impulsionando as mudanças
+						climáticas globais.
+					</p>
 
-    <section class="container-fluid" id="parallax">
-      <article class="py-4">
-        <div class="row py-4">
-          <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('img/mod1/aula_2_parallax_3.jpeg');">
-            <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
+					<div class="d-flex justify-content-center pt-4 pb-5">
+						<div class="col-lg-6"> <a data-fancybox="zoom"
+								data-src="../Aula/img/mod1/aula_2_parallax_2.jpeg" data-caption=""> <img class="rounded"
+									src="../Aula/img/mod1/aula_2_parallax_2.jpeg" class="img-fluid py-4" alt="">
+							</a>
+						</div>
+					</div>
+					<p>
+						Nos últimos anos, os <strong>biocombustíveis</strong> (etanol de cana-de-açúcar, biodiesel,
+						biogás e
+						biomassa)
+						emergiram como uma fonte
+						líder de bioenergia, substituindo os combustíveis fósseis para atender às crescentes
+						demandas
+						globais de energia e
+						reduzir as emissões de gases de efeito estufa. No entanto, sua produção em larga escala
+						ainda é
+						desafiadora.
+					</p>
+					<p>
+						Por conseguinte, para validar os benefícios da transição para biocombustíveis, é crucial
+						examinar os novos cenários do
+						setor sob a ótica das tendências de produção atuais, o que requer uma avaliação dos desafios
+						e
+						das oportunidades
+						associadas ao desenvolvimento presente e futuro dos biocombustíveis, visando aprimorar sua
+						integração na cadeia de valor
+						e promover a competitividade por meio de tecnologias emergentes, criando condições
+						favoráveis
+						para a implementação
+						generalizada dos biocombustíveis.
+					</p>
+					<p>
+						Para isso, é essencial converter a biomassa em biocombustíveis por meio do desenvolvimento
+						de
+						novas tecnologias capazes
+						de aumentar a produção de biocombustíveis para satisfazer a procura de energia atual e
+						futura.
+					</p>
+				</div>
+				<!-- box destaque -->
+				<div class="col-lg-10 py-4 mx-auto">
+					<div class="box">
+						<p>
+							Para estabelecermos uma nova matriz energética, serão necessários novos recursos
+							tecnológicos. Com isso, várias
+							tecnologias estão surgindo para atender a novos mercados.
+						</p>
+						<p>
+							Essas tecnologias, chamadas de emergentes, têm desempenhado um papel vital no avanço da
+							produção de biocombustíveis,
+							permitindo o uso de uma variedade mais ampla de matérias-primas e processos mais
+							eficientes.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						Uma tecnologia emergente em biocombustíveis refere-se a qualquer nova abordagem, processo ou
+						método que está sendo
+						desenvolvido ou implementado para melhorar a produção, eficiência, sustentabilidade ou
+						viabilidade econômica dos
+						biocombustíveis.
+					</p>
+					<p>
+						Essas tecnologias representam avanços significativos em relação aos métodos convencionais de
+						produção de biocombustíveis
+						e são projetadas para superar desafios específicos enfrentados pela indústria.
+					</p>
+					<p>
+						<em>
+							Clique nos itens do quadro a seguir para conhecer algumas características comuns das
+							tecnologias emergentes em biocombustíveis.
+						</em>
+					</p>
+				</div>
+				<!-- accordion 1 -->
+				<div class="col-md-8 mx-auto py-4">
+					<div class="bd-example-snippet bd-code-snippet">
+						<div class="accordion" id="1-accordion">
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="1-collapse-cabecalho-1">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#1-collapse-1" aria-expanded="false"
+										aria-controls="1-collapse-1" aria-labelledby="Segurança energética">
+										Inovação
+									</button>
+								</h4>
+								<div id="1-collapse-1" class="accordion-collapse collapse"
+									data-bs-parent="#1-accordion">
+									<div class="accordion-body">
+										<p>
+											Essas tecnologias geralmente incorporam novas ideias, conceitos ou
+											abordagens que representam uma mudança significativa
+											em relação aos métodos tradicionais de produção de biocombustíveis.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="1-collapse-cabecalho-2">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#1-collapse-2" aria-expanded="false"
+										aria-controls="1-collapse-2" aria-labelledby="Titulo 2">
+										Eficiência
+									</button>
+								</h4>
+								<div id="1-collapse-2" class="accordion-collapse collapse"
+									data-bs-parent="#1-accordion">
+									<div class="accordion-body">
+										<p>
+											As tecnologias emergentes visam melhorar a eficiência da produção de
+											biocombustíveis, seja aumentando o rendimento dos
+											processos de conversão de biomassa em biocombustíveis, reduzindo o
+											consumo
+											de energia ou melhorando a qualidade do
+											produto.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="1-collapse-cabecalho-3">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#1-collapse-3" aria-expanded="false"
+										aria-controls="1-collapse-3" aria-labelledby="Titulo 1">
+										Sustentabilidade
+									</button>
+								</h4>
+								<div id="1-collapse-3" class="accordion-collapse collapse"
+									data-bs-parent="#1-accordion">
+									<div class="accordion-body">
+										<p>
+											Muitas tecnologias emergentes em biocombustíveis são desenvolvidas com o
+											objetivo de tornar a produção de
+											biocombustíveis mais sustentável, utilizando matérias-primas renováveis,
+											minimizando resíduos e reduzindo as emissões de
+											gases do efeito estufa.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="1-collapse-cabecalho-4">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#1-collapse-4" aria-expanded="false"
+										aria-controls="1-collapse-4" aria-labelledby="Titulo 1">
+										Viabilidade econômica
+									</button>
+								</h4>
+								<div id="1-collapse-4" class="accordion-collapse collapse"
+									data-bs-parent="#1-accordion">
+									<div class="accordion-body">
+										<p>
+											Embora a sustentabilidade seja uma consideração importante, as
+											tecnologias
+											emergentes também precisam ser economicamente
+											viáveis para serem amplamente adotadas pela indústria. Isso pode
+											envolver
+											redução de custos de produção, aumento da
+											competitividade no mercado ou acesso a incentivos financeiros.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						Como exemplos de tecnologias emergentes em biocombustíveis, as <strong>biorrefinarias
+							integradas</strong>
+						despontam como soluções
+						inovadoras, capazes de transformar biomassa em uma variedade de produtos de alto valor,
+						incluindo biocombustíveis,
+						produtos químicos e materiais.
+					</p>
+				</div>
+			</article>
+		</section>
+
+		<section class="container-fluid" id="parallax">
+			<article class="py-4">
+				<div class="row py-4">
+					<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+						style="background-image: url('img/mod1/aula_2_parallax_3.jpeg');">
+						<div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
 
 
-    <section class="d-flex min-vh-100 flex-column justify-content-center">
-      <article class="container py-4">
-        <div>
-          <p>
-            Essas biorrefinarias são sistemas complexos que combinam diferentes processos de conversão
-            de
-            biomassa, como a <strong>digestão
-              anaeróbia</strong>, a <strong>transesterificação e a produção de bio-hidrogênio</strong>.
-          </p>
-          <p>
-            <em>
-              Clique nas setas laterais para conhecer os processos de conversão de biomassa.
-            </em>
-          </p>
-        </div>
+		<section class="d-flex min-vh-100 flex-column justify-content-center">
+			<article class="container py-4">
+				<div>
+					<p>
+						Essas biorrefinarias são sistemas complexos que combinam diferentes processos de conversão
+						de
+						biomassa, como a <strong>digestão
+							anaeróbia</strong>, a <strong>transesterificação e a produção de bio-hidrogênio</strong>.
+					</p>
+					<p>
+						<em>
+							Clique nas setas laterais para conhecer os processos de conversão de biomassa.
+						</em>
+					</p>
+				</div>
 
-        <!-- slider -->
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <div class="row pt-4">
-              <div uk-slider>
-                <div class="uk-position-relative">
-                  <div class="uk-slider-container uk-light">
-                    <ul class="uk-slider-items ">
-                      <li>
-                        <div class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
-                          <div class="uk-card-body">
-                            <div class="d-flex justify-content-center align-items-center">
-                              <div class="col-lg-4"> <a data-fancybox="zoom" data-src="../Aula/img/mod1/aula_2_1.png" data-caption=""> <img src="../Aula/img/mod1/aula_2_1.png" class="img-fluid py-4" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-8">
-                                <h3>
-                                  Digestão anaeróbia
-                                </h3>
-                                <p>
-                                  Processo biológico no qual microrganismos decompõem a
-                                  matéria orgânica na ausência de oxigênio, produzindo
-                                  biogás
-                                  como
-                                  produto final. Esse biogás é composto principalmente por
-                                  metano e dióxido de carbono, sendo uma fonte valiosa de
-                                  energia
-                                  renovável.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
-                          <div class="uk-card-body">
-                            <div class="d-flex justify-content-center align-items-center">
-                              <div class="col-lg-4"> <a data-fancybox="zoom" data-src="../Aula/img/mod1/aula_2_2.png" data-caption=""> <img src="../Aula/img/mod1/aula_2_2.png" class="img-fluid py-4" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-8">
-                                <h3>Transesterificação</h3>
-                                <p>
-                                  Essencial na produção de biodiesel, gera um
-                                  biocombustível
-                                  renovável amplamente utilizado em veículos a diesel.
-                                  Essa
-                                  tecnologia converte óleos vegetais ou gorduras animais
-                                  em
-                                  ésteres, proporcionando uma alternativa sustentável aos
-                                  combustíveis fósseis.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
-                          <div class="uk-card-body">
-                            <div class="d-flex justify-content-center align-items-center">
-                              <div class="col-lg-4"> <a data-fancybox="zoom" data-src="../Aula/img/mod1/aula_2_3.png" data-caption=""> <img src="../Aula/img/mod1/aula_2_3.png" class="img-fluid py-4" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-8">
-                                <h3>Produção de bio-hidrogênio</h3>
-                                <p>
-                                  A produção de bio-hidrogênio a partir de fontes
-                                  renováveis,
-                                  como a biomassa, tem o potencial de revolucionar o setor
-                                  energético. O hidrogênio é um combustível limpo e
-                                  eficiente,
-                                  que pode ser utilizado em células a combustível para
-                                  gerar
-                                  eletricidade e calor sem emissões de poluentes.
-                                </p>
-                              </div>
-                            </div>
+				<!-- slider -->
+				<div class="row">
+					<div class="col-lg-10 mx-auto">
+						<div class="row pt-4">
+							<div uk-slider>
+								<div class="uk-position-relative">
+									<div class="uk-slider-container uk-light">
+										<ul class="uk-slider-items ">
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<div class="d-flex justify-content-center align-items-center">
+															<div class="col-lg-4"> <a data-fancybox="zoom"
+																	data-src="../Aula/img/mod1/aula_2_1.png"
+																	data-caption=""> <img
+																		src="../Aula/img/mod1/aula_2_1.png"
+																		class="img-fluid py-4" alt="">
+																</a>
+															</div>
+															<div class="col-lg-8">
+																<h3>
+																	Digestão anaeróbia
+																</h3>
+																<p>
+																	Processo biológico no qual microrganismos decompõem
+																	a
+																	matéria orgânica na ausência de oxigênio, produzindo
+																	biogás
+																	como
+																	produto final. Esse biogás é composto principalmente
+																	por
+																	metano e dióxido de carbono, sendo uma fonte valiosa
+																	de
+																	energia
+																	renovável.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<div class="d-flex justify-content-center align-items-center">
+															<div class="col-lg-4"> <a data-fancybox="zoom"
+																	data-src="../Aula/img/mod1/aula_2_2.png"
+																	data-caption=""> <img
+																		src="../Aula/img/mod1/aula_2_2.png"
+																		class="img-fluid py-4" alt="">
+																</a>
+															</div>
+															<div class="col-lg-8">
+																<h3>Transesterificação</h3>
+																<p>
+																	Essencial na produção de biodiesel, gera um
+																	biocombustível
+																	renovável amplamente utilizado em veículos a diesel.
+																	Essa
+																	tecnologia converte óleos vegetais ou gorduras
+																	animais
+																	em
+																	ésteres, proporcionando uma alternativa sustentável
+																	aos
+																	combustíveis fósseis.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<div class="d-flex justify-content-center align-items-center">
+															<div class="col-lg-4"> <a data-fancybox="zoom"
+																	data-src="../Aula/img/mod1/aula_2_3.png"
+																	data-caption=""> <img
+																		src="../Aula/img/mod1/aula_2_3.png"
+																		class="img-fluid py-4" alt="">
+																</a>
+															</div>
+															<div class="col-lg-8">
+																<h3>Produção de bio-hidrogênio</h3>
+																<p>
+																	A produção de bio-hidrogênio a partir de fontes
+																	renováveis,
+																	como a biomassa, tem o potencial de revolucionar o
+																	setor
+																	energético. O hidrogênio é um combustível limpo e
+																	eficiente,
+																	que pode ser utilizado em células a combustível para
+																	gerar
+																	eletricidade e calor sem emissões de poluentes.
+																</p>
+															</div>
+														</div>
 
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="uk-hidden@s uk-light"> <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a> <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a> </div>
-                  <div class="uk-visible@s"> <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a> <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a> </div>
-                </div>
-                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-              </div>
-            </div>
-          </div>
-        </div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="uk-hidden@s uk-light"> <a
+											class="uk-position-center-left uk-position-small" href="#"
+											uk-slidenav-previous uk-slider-item="previous"></a> <a
+											class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next
+											uk-slider-item="next"></a> </div>
+									<div class="uk-visible@s"> <a class="uk-position-center-left-out uk-position-small"
+											href="#" uk-slidenav-previous uk-slider-item="previous"></a> <a
+											class="uk-position-center-right-out uk-position-small" href="#"
+											uk-slidenav-next uk-slider-item="next"></a> </div>
+								</div>
+								<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
 
-      </article>
+			</article>
 
-      <article class="container py-4">
-        <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
-          <div class="section-level1">
-            <h1>Economia circular</h1>
-          </div>
-        </div>
-        <div class="row">
-          <p>
-            A economia circular é um modelo econômico inovador que visa desacoplar o crescimento econômico
-            da degradação ambiental e
-            dos recursos finitos. Assim, propõe um novo modelo de produção inspirado na natureza, em que
-            nada é desperdiçado, e um
-            sistema cíclico, no qual os recursos circulam continuamente, minimizando o descarte e gerando
-            valor em todas as etapas.
-          </p>
-          <p>
-            A economia circular e a bioeconomia surgem como modelos alternativos de produção econômica,
-            visando promover o
-            crescimento sustentável. Esses conceitos buscam integrar economia, sociedade e meio ambiente,
-            alinhando-se com os 17
-            Objetivos de Desenvolvimento Sustentável da ONU.
-          </p>
+			<article class="container py-4" id="aula2-section-3">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>Economia circular</h1>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						A economia circular é um modelo econômico inovador que visa desacoplar o crescimento econômico
+						da degradação ambiental e
+						dos recursos finitos. Assim, propõe um novo modelo de produção inspirado na natureza, em que
+						nada é desperdiçado, e um
+						sistema cíclico, no qual os recursos circulam continuamente, minimizando o descarte e gerando
+						valor em todas as etapas.
+					</p>
+					<p>
+						A economia circular e a bioeconomia surgem como modelos alternativos de produção econômica,
+						visando promover o
+						crescimento sustentável. Esses conceitos buscam integrar economia, sociedade e meio ambiente,
+						alinhando-se com os 17
+						Objetivos de Desenvolvimento Sustentável da ONU.
+					</p>
 
-          <div class="row">
-            <div class=" mx-auto">
-              <div id="highlight-img" class="highlight-dark" name="highlight-img">
+					<div class="row">
+						<div class=" mx-auto">
+							<div id="highlight-img" class="highlight-dark" name="highlight-img">
 
-                <a href="#" class="highlight-spot" style="top: 5%; left: 7%; width: 17%; height: 100%;" data-bs-toggle="modal" uk-toggle="target: #modal-highlight-img-1"></a>
+								<a href="#" class="highlight-spot" style="top: 5%; left: 7%; width: 17%; height: 100%;"
+									data-bs-toggle="modal" uk-toggle="target: #modal-highlight-img-1"></a>
 
-                <a href="#" class="highlight-spot" style="top: 5%; left: 24%; width: 31.2%; height: 100%;" data-bs-toggle="modal" uk-toggle="target: #modal-highlight-img-2"></a>
+								<a href="#" class="highlight-spot"
+									style="top: 5%; left: 24%; width: 31.2%; height: 100%;" data-bs-toggle="modal"
+									uk-toggle="target: #modal-highlight-img-2"></a>
 
-                <a href="#" class="highlight-spot" style="top:5%; left: 55%; width: 38%; height: 100%;" data-bs-toggle="modal" uk-toggle="target: #modal-highlight-img-3"></a>
+								<a href="#" class="highlight-spot" style="top:5%; left: 55%; width: 38%; height: 100%;"
+									data-bs-toggle="modal" uk-toggle="target: #modal-highlight-img-3"></a>
 
-                <img src="img/mod1/aula_2_4.png" class="img-fluid" alt="">
-              </div>
-            </div>
+								<img src="img/mod1/aula_2_4.png" class="img-fluid" alt="">
+							</div>
+						</div>
 
-            <div id="modal-highlight-img-1" uk-modal>
-              <div class="uk-modal-dialog uk-modal-body">
-                <button class="uk-modal-close-default" type="button" uk-close></button>
-                <p><strong>1)</strong> O consumo insustentável de recursos representa uma ameaça ambiental e afeta negativamente a qualidade de vida. Para enfrentar esses desafios, são necessárias transformações econômicas, políticas e financeiras globais. A aplicação de princípios da economia circular e da bioeconomia pode reduzir o impacto nos recursos naturais e impulsionar o desenvolvimento social e econômico, gerando novas oportunidades de emprego.</p>
-              </div>
-            </div>
-            <div id="modal-highlight-img-2" uk-modal>
-              <div class="uk-modal-dialog uk-modal-body">
-                <button class="uk-modal-close-default" type="button" uk-close></button>
-                <p><strong>2)</strong> Quando aplicada ao setor de biocombustíveis, a economia circular desempenha um papel crucial na otimização da cadeia de valor, desde a produção até o consumo.</p>
-              </div>
-            </div>
-            <div id="modal-highlight-img-3" uk-modal>
-              <div class="uk-modal-dialog uk-modal-body">
-                <button class="uk-modal-close-default" type="button" uk-close></button>
-                <p><strong>3)</strong> Na produção de biocombustíveis, a economia circular começa com a seleção de matérias-primas sustentáveis e renováveis, como resíduos agrícolas, florestais ou de alimentos. Esses materiais são então processados por meio de tecnologias emergentes para produzir biocombustíveis líquidos, sólidos ou gasosos.</p>
-              </div>
-            </div>
+						<div id="modal-highlight-img-1" uk-modal>
+							<div class="uk-modal-dialog uk-modal-body">
+								<button class="uk-modal-close-default" type="button" uk-close></button>
+								<p><strong>1)</strong> O consumo insustentável de recursos representa uma ameaça
+									ambiental e afeta negativamente a qualidade de vida. Para enfrentar esses desafios,
+									são necessárias transformações econômicas, políticas e financeiras globais. A
+									aplicação de princípios da economia circular e da bioeconomia pode reduzir o impacto
+									nos recursos naturais e impulsionar o desenvolvimento social e econômico, gerando
+									novas oportunidades de emprego.</p>
+							</div>
+						</div>
+						<div id="modal-highlight-img-2" uk-modal>
+							<div class="uk-modal-dialog uk-modal-body">
+								<button class="uk-modal-close-default" type="button" uk-close></button>
+								<p><strong>2)</strong> Quando aplicada ao setor de biocombustíveis, a economia circular
+									desempenha um papel crucial na otimização da cadeia de valor, desde a produção até o
+									consumo.</p>
+							</div>
+						</div>
+						<div id="modal-highlight-img-3" uk-modal>
+							<div class="uk-modal-dialog uk-modal-body">
+								<button class="uk-modal-close-default" type="button" uk-close></button>
+								<p><strong>3)</strong> Na produção de biocombustíveis, a economia circular começa com a
+									seleção de matérias-primas sustentáveis e renováveis, como resíduos agrícolas,
+									florestais ou de alimentos. Esses materiais são então processados por meio de
+									tecnologias emergentes para produzir biocombustíveis líquidos, sólidos ou gasosos.
+								</p>
+							</div>
+						</div>
 
-            <div class="col-lg-8 mx-auto py-5">
-              <div class="box saibamais">
-                <div class="d-flex justify-content-center d-sm-none mx-auto">
-                  <i class="bx bi bi bi-search verde-saibamais bx-tada"></i>
-                </div>
-                <div class="d-flex  align-items-center container">
-                  <div class="col-lg-10 p-2">
-                    <div class="row">
-                      <h3>Saiba mais...</h3>
-                      <p>Para entender melhor o trabalho que a ONU vem realizando para concluir os Objetivos de Desenvolvimento Sustentável no nosso país, <a href="https://brasil.un.org/pt-br/sdgs" target="_blank" class="link">clique aqui</a></p>
-                    </div>
-                  </div>
-                  <div class="col-lg-2 ">
-                    <div class="d-flex d-none d-sm-block d-md-block d-lg-block">
-                      <i class="bx bi bi bi-search verde-saibamais bx-tada"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+						<div class="col-lg-8 mx-auto py-5">
+							<div class="box saibamais">
+								<div class="d-flex justify-content-center d-sm-none mx-auto">
+									<i class="bx bi bi bi-search verde-saibamais bx-tada"></i>
+								</div>
+								<div class="d-flex  align-items-center container">
+									<div class="col-lg-10 p-2">
+										<div class="row">
+											<h3>Saiba mais...</h3>
+											<p>Para entender melhor o trabalho que a ONU vem realizando para concluir os
+												Objetivos de Desenvolvimento Sustentável no nosso país, <a
+													href="https://brasil.un.org/pt-br/sdgs" target="_blank"
+													class="link">clique aqui</a></p>
+										</div>
+									</div>
+									<div class="col-lg-2 ">
+										<div class="d-flex d-none d-sm-block d-md-block d-lg-block">
+											<i class="bx bi bi bi-search verde-saibamais bx-tada"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
 
-      </article>
-      <article class="container py-4">
-        <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
-          <div class="section-level1">
-            <h1>Cadeia de valor</h1>
-          </div>
-        </div>
-        <div class="row">
-          <p>
-            A cadeia de valor dos biocombustíveis é complexa e envolve diversas etapas interligadas, cada
-            uma com seu conjunto
-            específico de atividades e atores.
+			</article>
+			<article class="container py-4" id="aula2-section-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>Cadeia de valor</h1>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						A cadeia de valor dos biocombustíveis é complexa e envolve diversas etapas interligadas, cada
+						uma com seu conjunto
+						específico de atividades e atores.
 
-          </p>
-          <p>
-            <em>
-              Clique nas setas laterais a seguir para conhecer as etapas da produção de biocombustíveis.
-            </em>
-          </p>
-        </div>
-        <!-- slider -->
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="row pt-4">
-              <div uk-slider>
-                <div class="uk-position-relative">
-                  <div class="uk-slider-container uk-light">
-                    <ul class="uk-slider-items ">
-                      <li>
-                        <div class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
-                          <div class="uk-card-body">
-                            <div class="d-flex justify-content-center align-items-center gap-3">
-                              <div class="col-lg-4"> <a data-fancybox="zoom" data-src="../Aula/img/mod1/aula_2_5.png" data-caption=""> <img src="../Aula/img/mod1/aula_2_5.png" class="img-fluid py-4" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-8">
-                                <h3>
-                                  Matéria-prima
-                                </h3>
-                                <p>
-                                  A matéria-prima para os biocombustíveis geralmente é a
-                                  biomassa, que pode incluir culturas agrícolas dedicadas e
-                                  resíduos agrícolas, florestais ou de alimentos. Ela passa
-                                  por processos de colheita, transporte e armazenamento antes
-                                  de
-                                  ser convertida em biocombustíveis.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
-                          <div class="uk-card-body">
-                            <div class="d-flex justify-content-center align-items-center gap-3">
-                              <div class="col-lg-4"> <a data-fancybox="zoom" data-src="../Aula/img/mod1/aula_2_6.png" data-caption=""> <img src="../Aula/img/mod1/aula_2_6.png" class="img-fluid py-4" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-8">
-                                <h3>Produção de biocombustíveis</h3>
-                                <p>
-                                  A produção de biocombustíveis envolve tecnologias de
-                                  conversão, como a pirólise, a gaseificação, a
-                                  transesterificação e
-                                  a fermentação. Esses processos transformam a biomassa em
-                                  biocombustíveis líquidos, sólidos ou gasosos, como etanol,
-                                  biodiesel, biogás ou bioquerosene.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
-                          <div class="uk-card-body">
-                            <div class="d-flex justify-content-center align-items-center gap-3">
-                              <div class="col-lg-4"> <a data-fancybox="zoom" data-src="../Aula/img/mod1/aula_2_7.png" data-caption=""> <img src="../Aula/img/mod1/aula_2_7.png" class="img-fluid py-4" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-8">
-                                <h3>Biocombustíveis</h3>
-                                <p>
-                                  Após a produção, os biocombustíveis passam por processos de
-                                  refino e purificação para atender aos padrões de qualidade e
-                                  especificações técnicas. Em seguida, são distribuídos para
-                                  os consumidores por meio de uma rede de transporte e
-                                  armazenamento, que pode incluir oleodutos, ferrovias,
-                                  caminhões-tanque e terminais de armazenamento.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
-                          <div class="uk-card-body">
-                            <div class="d-flex justify-content-center align-items-center gap-3">
-                              <div class="col-lg-4"> <a data-fancybox="zoom" data-src="../Aula/img/mod1/aula_2_8.png" data-caption=""> <img src="../Aula/img/mod1/aula_2_8.png" class="img-fluid py-4" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-8">
-                                <h3>Consumo</h3>
-                                <p>
-                                  No ponto de consumo, os biocombustíveis são utilizados em
-                                  uma variedade de aplicações, como transporte rodoviário,
-                                  marítimo e aéreo, aquecimento residencial e industrial,
-                                  geração de eletricidade e produção de produtos químicos e
-                                  materiais.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="uk-hidden@s uk-light"> <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a> <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a> </div>
-                  <div class="uk-visible@s"> <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a> <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a> </div>
-                </div>
-                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <p>
-            Ao longo de toda a cadeia de valor dos biocombustíveis, é importante considerar questões
-            relacionadas à
-            sustentabilidade, como:
-          </p>
-          <ul>
-            <li>
-              a eficiência energética;
-            </li>
-            <li>
-              as emissões de gases de efeito estufa;
-            </li>
-            o uso da terra e da água;
-            </li>
-            <li>
-              a biodiversidade;
-            </li>
-            <li>
-              os impactos sociais e econômicos.
-            </li>
-          </ul>
+					</p>
+					<p>
+						<em>
+							Clique nas setas laterais a seguir para conhecer as etapas da produção de biocombustíveis.
+						</em>
+					</p>
+				</div>
+				<!-- slider -->
+				<div class="row">
+					<div class="col-lg-8 mx-auto">
+						<div class="row pt-4">
+							<div uk-slider>
+								<div class="uk-position-relative">
+									<div class="uk-slider-container uk-light">
+										<ul class="uk-slider-items ">
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<div
+															class="d-flex justify-content-center align-items-center gap-3">
+															<div class="col-lg-4"> <a data-fancybox="zoom"
+																	data-src="../Aula/img/mod1/aula_2_5.png"
+																	data-caption=""> <img
+																		src="../Aula/img/mod1/aula_2_5.png"
+																		class="img-fluid py-4" alt="">
+																</a>
+															</div>
+															<div class="col-lg-8">
+																<h3>
+																	Matéria-prima
+																</h3>
+																<p>
+																	A matéria-prima para os biocombustíveis geralmente é
+																	a
+																	biomassa, que pode incluir culturas agrícolas
+																	dedicadas e
+																	resíduos agrícolas, florestais ou de alimentos. Ela
+																	passa
+																	por processos de colheita, transporte e
+																	armazenamento antes
+																	de
+																	ser convertida em biocombustíveis.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<div
+															class="d-flex justify-content-center align-items-center gap-3">
+															<div class="col-lg-4"> <a data-fancybox="zoom"
+																	data-src="../Aula/img/mod1/aula_2_6.png"
+																	data-caption=""> <img
+																		src="../Aula/img/mod1/aula_2_6.png"
+																		class="img-fluid py-4" alt="">
+																</a>
+															</div>
+															<div class="col-lg-8">
+																<h3>Produção de biocombustíveis</h3>
+																<p>
+																	A produção de biocombustíveis envolve tecnologias de
+																	conversão, como a pirólise, a gaseificação, a
+																	transesterificação e
+																	a fermentação. Esses processos transformam a
+																	biomassa em
+																	biocombustíveis líquidos, sólidos ou gasosos, como
+																	etanol,
+																	biodiesel, biogás ou bioquerosene.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<div
+															class="d-flex justify-content-center align-items-center gap-3">
+															<div class="col-lg-4"> <a data-fancybox="zoom"
+																	data-src="../Aula/img/mod1/aula_2_7.png"
+																	data-caption=""> <img
+																		src="../Aula/img/mod1/aula_2_7.png"
+																		class="img-fluid py-4" alt="">
+																</a>
+															</div>
+															<div class="col-lg-8">
+																<h3>Biocombustíveis</h3>
+																<p>
+																	Após a produção, os biocombustíveis passam por
+																	processos de
+																	refino e purificação para atender aos padrões de
+																	qualidade e
+																	especificações técnicas. Em seguida, são
+																	distribuídos para
+																	os consumidores por meio de uma rede de transporte e
+																	armazenamento, que pode incluir oleodutos,
+																	ferrovias,
+																	caminhões-tanque e terminais de armazenamento.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<div
+															class="d-flex justify-content-center align-items-center gap-3">
+															<div class="col-lg-4"> <a data-fancybox="zoom"
+																	data-src="../Aula/img/mod1/aula_2_8.png"
+																	data-caption=""> <img
+																		src="../Aula/img/mod1/aula_2_8.png"
+																		class="img-fluid py-4" alt="">
+																</a>
+															</div>
+															<div class="col-lg-8">
+																<h3>Consumo</h3>
+																<p>
+																	No ponto de consumo, os biocombustíveis são
+																	utilizados em
+																	uma variedade de aplicações, como transporte
+																	rodoviário,
+																	marítimo e aéreo, aquecimento residencial e
+																	industrial,
+																	geração de eletricidade e produção de produtos
+																	químicos e
+																	materiais.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="uk-hidden@s uk-light"> <a
+											class="uk-position-center-left uk-position-small" href="#"
+											uk-slidenav-previous uk-slider-item="previous"></a> <a
+											class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next
+											uk-slider-item="next"></a> </div>
+									<div class="uk-visible@s"> <a class="uk-position-center-left-out uk-position-small"
+											href="#" uk-slidenav-previous uk-slider-item="previous"></a> <a
+											class="uk-position-center-right-out uk-position-small" href="#"
+											uk-slidenav-next uk-slider-item="next"></a> </div>
+								</div>
+								<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						Ao longo de toda a cadeia de valor dos biocombustíveis, é importante considerar questões
+						relacionadas à
+						sustentabilidade, como:
+					</p>
+					<ul>
+						<li>
+							a eficiência energética;
+						</li>
+						<li>
+							as emissões de gases de efeito estufa;
+						</li>
+						o uso da terra e da água;
+						</li>
+						<li>
+							a biodiversidade;
+						</li>
+						<li>
+							os impactos sociais e econômicos.
+						</li>
+					</ul>
 
-          <div class="col-lg-10 mx-auto"> <a data-fancybox="zoom" data-src="../Aula/img/mod1/aula_2_9.png" data-caption=""> <img src="../Aula/img/mod1/aula_2_9.png" class="img-fluid py-4" alt="">
-            </a>
-          </div>
-          <p>
-            Em resumo, a cadeia de valor dos biocombustíveis é uma sequência complexa de atividades, desde a
-            produção da
-            matéria-prima até a distribuição e o consumo dos produtos finais. É essencial garantir que cada
-            etapa seja realizada de
-            forma sustentável e eficiente, levando em consideração aspectos socioeconômicos e ambientais
-            para promover o
-            desenvolvimento sustentável do setor de biocombustíveis.
-          </p>
-        </div>
-      </article>
-      <article class="container py-4">
-        <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
-          <div class="section-level1">
-            <h1>Reaproveitamento de resíduos</h1>
-          </div>
-        </div>
-        <div class="row">
-          <p>
-            Tendo em conta a atual situação grave da economia e do ambiente, existe uma procura crescente de
-            reciclagem de resíduos
-            de biomassa e de métodos de conservação de energia.
-          </p>
-          <p>
-            O reaproveitamento de resíduos desempenha um papel crucial na produção sustentável de
-            biocombustíveis. Assim, em vez de
-            descartar resíduos orgânicos, como resíduos agrícolas, de alimentos ou de processos industriais,
-            esses materiais podem
-            ser transformados em fontes de energia renovável por meio de diversos processos de conversão.
-          </p>
-          <p>
-            <em>
-              Acompanhe o vídeo a seguir, que aborda o reaproveitamento de resíduos e a reciclagem de
-              nutrientes e biocombustíveis.
-            </em>
-          </p>
+					<div class="col-lg-10 mx-auto"> <a data-fancybox="zoom" data-src="../Aula/img/mod1/aula_2_9.png"
+							data-caption=""> <img src="../Aula/img/mod1/aula_2_9.png" class="img-fluid py-4" alt="">
+						</a>
+					</div>
+					<p>
+						Em resumo, a cadeia de valor dos biocombustíveis é uma sequência complexa de atividades, desde a
+						produção da
+						matéria-prima até a distribuição e o consumo dos produtos finais. É essencial garantir que cada
+						etapa seja realizada de
+						forma sustentável e eficiente, levando em consideração aspectos socioeconômicos e ambientais
+						para promover o
+						desenvolvimento sustentável do setor de biocombustíveis.
+					</p>
+				</div>
+			</article>
 
-        </div>
-        <div class="col-lg-8 mx-auto">
-          <div class="ratio ratio-16x9 ">
-            <iframe class="rounded" src="https://play.sesisenai.videolib.live/index.html?token=13646ef8bb2544c4ab9d893f856e5c69" title="Apresentação" allowfullscreen uk-video=" autoplay:false;">
-            </iframe>
-          </div>
-        </div>
-      </article>
-    </section>
+			<article class="container py-4" id="aula2-section-5">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>Reaproveitamento de resíduos</h1>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						Tendo em conta a atual situação grave da economia e do ambiente, existe uma procura crescente de
+						reciclagem de resíduos
+						de biomassa e de métodos de conservação de energia.
+					</p>
+					<p>
+						O reaproveitamento de resíduos desempenha um papel crucial na produção sustentável de
+						biocombustíveis. Assim, em vez de
+						descartar resíduos orgânicos, como resíduos agrícolas, de alimentos ou de processos industriais,
+						esses materiais podem
+						ser transformados em fontes de energia renovável por meio de diversos processos de conversão.
+					</p>
+					<p>
+						<em>
+							Acompanhe o vídeo a seguir, que aborda o reaproveitamento de resíduos e a reciclagem de
+							nutrientes e biocombustíveis.
+						</em>
+					</p>
 
-    <section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%;        animation: gradient 25s ease infinite;height:auto">
-      <br>
-    </section>
+				</div>
+				<div class="col-lg-8 mx-auto">
+					<div class="ratio ratio-16x9 ">
+						<iframe class="rounded"
+							src="https://play.sesisenai.videolib.live/index.html?token=13646ef8bb2544c4ab9d893f856e5c69"
+							title="Apresentação" allowfullscreen uk-video=" autoplay:false;">
+						</iframe>
+					</div>
+				</div>
+			</article>
+		</section>
 
-    <section class="d-flex min-vh-100 flex-column justify-content-center exercicios py-3" id="exercicios">
-      <article class="container py-4">
-        <div class="border rounded">
-          <h1 class="p-4">Praticando</h1>
-          <div class="row"></div>
-        </div>
-      </article>
-    </section>
+		<section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+			style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%;        animation: gradient 25s ease infinite;height:auto">
+			<br>
+		</section>
 
-    <hr class="uk-divider-icon">
-    <!-- Recapitulando -->
-    <section class="d-flex flex-column justify-content-center" id="recapitulando">
-      <article class="container py-4">
-        <div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
-          <div class="section-level1">
-            <h2>Recapitulando</h2>
-          </div>
-        </div>
-        <div class="row">
-          <p>
-            Em conclusão, a análise das tecnologias emergentes e dos princípios da economia circular na
-            produção de biocombustíveis
-            destaca a necessidade premente de uma abordagem sustentável e eficiente para a transição
-            energética global.
-          </p>
-          <p>
-            Ao integrar inovações tecnológicas com práticas que visam à redução do desperdício e ao
-            aproveitamento máximo dos
-            recursos, podemos vislumbrar um futuro energético mais limpo, resiliente e em harmonia com o
-            meio ambiente. Essa
-            abordagem não apenas contribui para a mitigação das mudanças climáticas, mas também promove o
-            desenvolvimento econômico
-            e social, garantindo um legado sustentável para as gerações futuras.
-          </p>
-        </div>
-      </article>
-    </section>
-    <!-- lorem -->
-    <hr class="uk-divider-icon">
-    <section class="pb-4" id="11">
-      <article class="container pb-4">
-        <div class="pb-4" id="content">
-          <div class="row" id="progresso">
-            <div class="col-lg-4 uk-text-center ">
-              <div class="legenda" style="font-size: 1rem;">Progresso do curso
-              </div>
-              <div class="copyright">
-                <div class="progress-circle"></div>
-                <span id="progressoGeral" class="fonte-plus"></span> <span class="text-color1">%</span>
-              </div>
-            </div>
-            <div class="col-lg-4 uk-text-center ">
-              <div class="legenda" style="font-size: 1rem;">Respostas corretas
-              </div>
-              <div class="copyright">
+		<section class="d-flex min-vh-100 flex-column justify-content-center exercicios py-3" id="aula2-section-6">
+			<article class="container py-4">
+				<div class="border rounded">
+					<h1 class="p-4">Praticando</h1>
+					<div class="row"></div>
+				</div>
+			</article>
+		</section>
 
-                <span id="exerciciosCorretos" class="fonte-plus"></span><span class="text-color1">%</span>
-              </div>
-            </div>
-            <div class="col-lg-4 uk-text-center ">
-              <div class="legenda" style="font-size: 1rem;">Exercícios
-                concluídos</div>
-              <div class="copyright">
-                <span id="exerciciosRealizados" class="fonte-plus"></span>
-                <span id="totalExercicios">/</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-  </main>
-  <footer class="border-top fixed-bottom bg-menu-color">
-    <div class="progress_section">
-      <div class="progress_bar_wrap">
-        <div class="progress_bar"></div>
-      </div>
-      <div class="progress_num"> </div>
-    </div>
-    <div class="d-flex justify-content-evenly align-items-center justify-content-center">
-      <div class="col-sm-12 d-flex justify-content-center">
-        <div class="d-flex justify-content-evenly align-items-center">
-          <div class="col-sm-2 d-flex justify-content-end">
-            <a href="1de1_pt-br.html" aria-label="Próximo" title="Próximo">
-              <i class='bx mt-3 bx-fade-left-hover bxs-left-arrow-circle bx-md copyright px-3'></i>
-            </a>
-          </div>
-          <div class="col-sm-8 d-flex justify-content-center ">
-            <p class="mx-auto mt-4 ">© SENAI <span id="year"></span></p>
-          </div>
-          <div class="col-sm-2 d-flex justify-content-start">
-            <a href="1de3_pt-br.html" aria-label="Próximo" title="Próximo">
-              <i class='bx mt-3 bx-fade-riht-hover bxs-right-arrow-circle bx-md copyright px-3'></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+		<hr class="uk-divider-icon">
+		<!-- Recapitulando -->
+		<section class="d-flex flex-column justify-content-center" id="aula2-section-7">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h2>Recapitulando</h2>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						Em conclusão, a análise das tecnologias emergentes e dos princípios da economia circular na
+						produção de biocombustíveis
+						destaca a necessidade premente de uma abordagem sustentável e eficiente para a transição
+						energética global.
+					</p>
+					<p>
+						Ao integrar inovações tecnológicas com práticas que visam à redução do desperdício e ao
+						aproveitamento máximo dos
+						recursos, podemos vislumbrar um futuro energético mais limpo, resiliente e em harmonia com o
+						meio ambiente. Essa
+						abordagem não apenas contribui para a mitigação das mudanças climáticas, mas também promove o
+						desenvolvimento econômico
+						e social, garantindo um legado sustentável para as gerações futuras.
+					</p>
+				</div>
+			</article>
+		</section>
+		<!-- lorem -->
+		<hr class="uk-divider-icon">
+		<section class="pb-4" id="11">
+			<article class="container pb-4">
+				<div class="pb-4" id="content">
+					<div class="row" id="progresso">
+						<div class="col-lg-4 uk-text-center ">
+							<div class="legenda" style="font-size: 1rem;">Progresso do curso
+							</div>
+							<div class="copyright">
+								<div class="progress-circle"></div>
+								<span id="progressoGeral" class="fonte-plus"></span> <span class="text-color1">%</span>
+							</div>
+						</div>
+						<div class="col-lg-4 uk-text-center ">
+							<div class="legenda" style="font-size: 1rem;">Respostas corretas
+							</div>
+							<div class="copyright">
+
+								<span id="exerciciosCorretos" class="fonte-plus"></span><span
+									class="text-color1">%</span>
+							</div>
+						</div>
+						<div class="col-lg-4 uk-text-center ">
+							<div class="legenda" style="font-size: 1rem;">Exercícios
+								concluídos</div>
+							<div class="copyright">
+								<span id="exerciciosRealizados" class="fonte-plus"></span>
+								<span id="totalExercicios">/</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+	<footer class="border-top fixed-bottom bg-menu-color">
+		<div class="progress_section">
+			<div class="progress_bar_wrap">
+				<div class="progress_bar"></div>
+			</div>
+			<div class="progress_num"> </div>
+		</div>
+		<div class="d-flex justify-content-evenly align-items-center justify-content-center">
+			<div class="col-sm-12 d-flex justify-content-center">
+				<div class="d-flex justify-content-evenly align-items-center">
+					<div class="col-sm-2 d-flex justify-content-end">
+						<a href="1de1_pt-br.html" aria-label="Próximo" title="Próximo">
+							<i class='bx mt-3 bx-fade-left-hover bxs-left-arrow-circle bx-md copyright px-3'></i>
+						</a>
+					</div>
+					<div class="col-sm-8 d-flex justify-content-center ">
+						<p class="mx-auto mt-4 ">© SENAI <span id="year"></span></p>
+					</div>
+					<div class="col-sm-2 d-flex justify-content-start">
+						<a href="1de3_pt-br.html" aria-label="Próximo" title="Próximo">
+							<i class='bx mt-3 bx-fade-riht-hover bxs-right-arrow-circle bx-md copyright px-3'></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body><!-- SCORM -->
 <script src="../Template/js/acoes.js"></script>
 <script type="text/javascript" src="../Template/js/blocos_pt-br-t2k.js"></script>
@@ -1026,51 +1277,51 @@
 <script src="../Aula/js/aula-1/graficos.js"></script>
 <script src="../Aula/js/aula-1/youtube.js"></script>
 <script>
-  Fancybox.bind('[data-fancybox="zoom"]', {});
+	Fancybox.bind('[data-fancybox="zoom"]', {});
 </script>
 <script>
-  window.addEventListener('load', () => {
-    const date = new Date();
-    document.querySelector('#year').textContent = `${date.getFullYear()}`
-  })
+	window.addEventListener('load', () => {
+		const date = new Date();
+		document.querySelector('#year').textContent = `${date.getFullYear()}`
+	})
 </script>
 <script>
-  var intro = introJs();
-  intro.setOptions({
+	var intro = introJs();
+	intro.setOptions({
 
-    'skipLabel': '<i class="bi bi-x-lg"></i>',
-    tooltipClass: 'customTooltip',
-    showProgress: true,
-    dontShowAgain: true,
-    hidePrev: true,
-    hideNext: false,
-    exitOnEsc: true,
-    showStepNumbers: true,
-    showBullets: false,
-    steps: [
+		'skipLabel': '<i class="bi bi-x-lg"></i>',
+		tooltipClass: 'customTooltip',
+		showProgress: true,
+		dontShowAgain: true,
+		hidePrev: true,
+		hideNext: false,
+		exitOnEsc: true,
+		showStepNumbers: true,
+		showBullets: false,
+		steps: [
 
-      {
-        element: document.querySelector('.cor1'),
-        intro: '<p>Menu - Hieraquia - (texto descritivo)</p>',
-      },
+			{
+				element: document.querySelector('.cor1'),
+				intro: '<p>Menu - Hieraquia - (texto descritivo)</p>',
+			},
 
-      {
-        element: document.querySelector('.switch-darkmode'),
-        intro: '<p>Modo Escuro - (texto descritivo)</p>'
-      },
+			{
+				element: document.querySelector('.switch-darkmode'),
+				intro: '<p>Modo Escuro - (texto descritivo)</p>'
+			},
 
-      {
-        element: document.querySelector('.vlibras-show'),
-        intro: '<p>Aqui voceê pode encontar o V-Libras - (texto descritivo)'
-      },
+			{
+				element: document.querySelector('.vlibras-show'),
+				intro: '<p>Aqui voceê pode encontar o V-Libras - (texto descritivo)'
+			},
 
-      {
-        element: document.querySelector('#Acessibilidade'),
-        intro: '<img src="img/template/acessibilidade.png" alt="Acessibilidade">',
-      },
-    ]
+			{
+				element: document.querySelector('#Acessibilidade'),
+				intro: '<img src="img/template/acessibilidade.png" alt="Acessibilidade">',
+			},
+		]
 
-  }).start();
+	}).start();
 </script>
 
 </html>
