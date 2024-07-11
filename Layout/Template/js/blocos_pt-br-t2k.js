@@ -1059,6 +1059,103 @@ var json = {
 						}
 					],
 				},
+				{
+					nome_aula: "AULA 4",
+					//PERGUNTAS SEÇÃO
+					perguntas: [
+						// PERGUNTA 1 - Escolha Única
+						{
+							titulo: "<strong>1.</strong> Qual é o principal benefício da produção de bio-hidrogênio a partir de fontes renováveis em comparação com métodos tradicionais de produção de hidrogênio?",
+							tipo: "checkbox",
+							questao: [
+								{
+									alternativa: "<strong>A)</strong> Maior dependência de combustíveis fósseis para a produção de energia.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>B)</strong> Menor eficiência energética devido à necessidade de altas temperatura e pressão.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>C)</strong> Produção de hidrogênio com menor pureza e maior quantidade de poluentes.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>D)</strong> Maior impacto ambiental devido à emissão de gases de efeito estufa.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>E)</strong> Redução da poluição e da dependência de recursos não renováveis.",
+									resposta: true,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								}
+							],
+							tentativas: 0,
+							feedbackCorreto: "Parabéns! Você selecionou a alternativa correta.",
+							feedbackIncorreto1: "Tente novamente.",
+							feedbackIncorreto2: "Resposta incorreta."
+						},
+						{
+							titulo: "<strong>2.</strong> A respeito da produção de bio-hidrogênio, relacione as colunas corretamente.",
+							tipo: "combobox",
+							opcoes: "Fermentação escura,Fotofermentação,Biofotólise,Eletrólise microbiana",
+							questao: [
+								{
+									alternativa: "<strong>A) </strong> Produção de hidrogênio por bactérias anaeróbias a partir de substratos ricos em carboidratos sem dependência de luz.",
+									resposta: "Fermentação escura",
+									feedbackpositivo: "Você relacionou as colunas corretamente.",
+									feedbacknegativo: "Você não relacionou as colunas corretamente."
+								},
+								{
+									alternativa: "<strong>B) </strong> Produção de hidrogênio por bactérias fotossintéticas em ambientes deficientes em nitrogênio, utilizando energia luminosa.",
+									resposta: "Fotofermentação",
+									feedbackpositivo: "Você relacionou as colunas corretamente.",
+									feedbacknegativo: "Você não relacionou as colunas corretamente."
+								},
+								{
+									alternativa: "<strong>C) </strong> Processo que imita a fotossíntese, realizado por algas, para converter água em hidrogênio usando energia luminosa.",
+									resposta: "Biofotólise",
+									feedbackpositivo: "Você relacionou as colunas corretamente.",
+									feedbacknegativo: "Você não relacionou as colunas corretamente."
+								},
+								{
+									alternativa: "<strong>D) </strong> Utiliza microrganismos eletroativos que catalisam reações eletroquímicas para converter matéria orgânica em hidrogênio.",
+									resposta: "Eletrólise microbiana",
+									feedbackpositivo: "Você relacionou as colunas corretamente.",
+									feedbacknegativo: "Você não relacionou as colunas corretamente."
+								}
+							],
+							tentativas: 0,
+							feedbackCorreto: "Parabéns! Você relacionou as colunas corretamente.",
+							feedbackIncorreto1: "Tente novamente.",
+							feedbackIncorreto2: "Resposta incorreta."
+						},
+						{
+							titulo: "<strong>3.</strong> A integração de diferentes tecnologias de produção de bio-hidrogênio com sistemas de tratamento de resíduos e energias renováveis pode aumentar a eficiência e a viabilidade econômica do processo.",
+							tipo: "trueorfalse",
+							questao: [
+								{
+									alternativa: "Essa afirmação é verdadeira ou falsa?",
+									resposta: true,
+									feedbackpositivo: "A afirmação é verdadeira. A integração de diferentes tecnologias de produção de bio-hidrogênio com sistemas de tratamento de resíduos e energias renováveis cria sinergias que aumentam a eficiência e a viabilidade econômica. Isso se dá pela redução dos custos de matéria-prima ao utilizar resíduos como substratos e pela utilização de fontes de energia renovável, tornando o processo mais econômico e ambientalmente sustentável.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								}
+							],
+							feedbackCorreto: "Parabéns! A afirmação é verdadeira. A integração de diferentes tecnologias de produção de bio-hidrogênio com sistemas de tratamento de resíduos e energias renováveis cria sinergias que aumentam a eficiência e a viabilidade econômica. Isso se dá pela redução dos custos de matéria-prima ao utilizar resíduos como substratos e pela utilização de fontes de energia renovável, tornando o processo mais econômico e ambientalmente sustentável.",
+							feedbackIncorreto1: "Resposta incorreta. A afirmação é verdadeira. A integração de diferentes tecnologias de produção de bio-hidrogênio com sistemas de tratamento de resíduos e energias renováveis cria sinergias que aumentam a eficiência e a viabilidade econômica. Isso se dá pela redução dos custos de matéria-prima ao utilizar resíduos como substratos e pela utilização de fontes de energia renovável, tornando o processo mais econômico e ambientalmente sustentável.",
+							feedbackIncorreto2: "Resposta incorreta. A afirmação é verdadeira. A integração de diferentes tecnologias de produção de bio-hidrogênio com sistemas de tratamento de resíduos e energias renováveis cria sinergias que aumentam a eficiência e a viabilidade econômica. Isso se dá pela redução dos custos de matéria-prima ao utilizar resíduos como substratos e pela utilização de fontes de energia renovável, tornando o processo mais econômico e ambientalmente sustentável."
+						}
+					],
+				},
 			],
 		},
 		//INÍCIO BLOCO 4

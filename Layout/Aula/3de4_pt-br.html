@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html id="master" lang="pt-Br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="../Template/img/favicon.ico" />
+	<title>Senai</title> <!-- Config -->
+	<script src="../Template/js/main.js" defer></script>
+	<link rel="stylesheet" href="../Template/css/theme.css">
+	<link rel="stylesheet" href="../Template/css/style.css">
+	<link rel="stylesheet" href="css/aula-1/add-style.css">
+	<link rel="stylesheet" href="../Template/bibliotecas/fancybox/fancybox.css"> <!-- JQuery-->
+	<script type="text/javascript" src="../Template/bibliotecas/jQuery-3.6.3/jquery-3.6.3.min.js"></script>
+	<!-- Bootstrap -->
+	<link href="../Template/bibliotecas/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap Icons -->
+	<link href="../Template/bibliotecas/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- UiKit-->
+	<link href="../Template/bibliotecas/uikit/css/uikit.min.css" rel="stylesheet" />
+	<script src="../Template/bibliotecas/uikit/js/uikit.min.js" async></script>
+	<script src="../Template/bibliotecas/uikit/js/uikit-icons.min.js" async></script> <!-- BoxIcons -->
+	<link href="../Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'>
+	<script src="../Template/bibliotecas/boxicons/boxicons.js" defer></script> <!-- GOOGLE TRANSLATE -->
+	<script src="../Template/js/google.js" type="text/javascript" defer></script> <!-- Grafico -->
+	<script src="../Template/bibliotecas/charts/chart.js"></script> <!-- SCORM -->
+	<script src="../Template/scorm/APIWrapper.js"></script>
+	<script src="../Template/scorm/SCOFunctions.js"></script> <!-- Prism -->
+	<script src="../Template/bibliotecas/prism/js/prism.js"></script>
+	<link href="../Template/bibliotecas/prism/css/prism.css" rel='stylesheet'> <!-- BoxIcons -->
+	<script src="../Template/bibliotecas/boxicons/boxicons.js"></script>
+	<link href="../Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'> <!-- VIDEO DO YOUTUBE -->
+	<script src="../Template/js/menu.js"></script>
+</head>
+
+<body onunload="unloadPage()">
+	<header>
+		<div id="google_translate_element"></div>
+		<!-- Vlibras -->
+		<div vw class="enabled">
+			<div id="vlibras-show" vw-access-button class="#"></div>
+			<div vw-plugin-wrapper>
+				<div class="vw-plugin-top-wrapper"></div>
+			</div>
+		</div>
+		<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+		<script>      new window.VLibras.Widget('https://vlibras.gov.br/app');    </script>
+		<!-- Menu -->
+		<nav class="navbar-dark bg-menu-color fixed-top nav-height">
+			<div class="d-flex bd-highlight align-items-center g-4 nav-height">
+				<div class="bd-highlight">
+					<button class="btn align-items-center ms-2" data-bs-toggle="offcanvas"
+						data-bs-target="#nav-menu-open-close" aria-controls="nav-menu-open-close" aria-label="Menu"
+						title="Menu">
+						<i class='cor1 bx bx-menu bx-tada-hover'></i> </button>
+				</div>
+				<div class="bd-highlight mx-auto">
+					<object class="d-none d-lg-block img-fluid" style="margin-left:130px; max-width:180px"
+						data="../Template/img/logo_senai.svg" type="image/svg+xml" alt="SENAI" title="SENAI">
+					</object>
+					<object class="d-md-block d-lg-none" style="margin-top: 5px;max-width: 130px;"
+						data="../Template/img/logo_senai.svg" type="image/svg+xml" alt="SENAI" title="SENAI">
+					</object>
+				</div>
+				<div class="bd-highlight">
+					<div class="d-flex bd-highlight align-items-center nav-height">
+						<div class="form-check form-check-inline switch-group" role="button" title="Temas">
+							<input class="form-check-input d-none" type="checkbox" name="themeBtns" id="themeSwitcher"
+								role="Toogle Temas">
+							<label class="form-check-label" for="themeSwitcher">
+								<div class="switch-darkmode">
+									<div class="icons"> <i class='bx bx-moon bx-tada-hover'></i> <i
+											class='bx bx-sun bx-spin-hover' style="color: aliceblue;"></i> </div>
+									<div class="circle"></div>
+								</div>
+							</label>
+						</div>
+						<div class=" d-flex flex-row align-middle ms-2 me-2" onclick="vlibrashow()" role="Vlibras"
+							title="Vlibras"> <i class='vlibras-show bx bx-universal-access' style="font-size:2rem"></i>
+							<span class="ms-1 me-1 d-none d-lg-block menu" style="margin-top: 3px;"></span>
+						</div>
+						<div class="dropdown me-2">
+							<button class="btn text-white me-2" type="button" id="Acessibilidade" title="Configurações"
+								data-bs-toggle="dropdown" aria-expanded="false" aria-label="Configurações">
+								<i class='bx bx-cog bx-spin-hover bx-sm'></i>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-dark menu-margin" aria-labelledby="Acessibilidade">
+								<li class="dropdown-item" data-translate="acessibilidade">
+									<strong>Acessibilidade</strong>
+								</li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li> <a class="dropdown-item">
+										<div class="mb-3 form-check form-switch">
+											<input class="form-check-input " type="checkbox" name="themeBtns"
+												id="graySwitcher" role="Modo monocromatico">
+											<label class="form-check-label menu" for="graySwitcher"
+												data-translate="thema-linguagem-3">Modo Monocromatico</label>
+										</div>
+									</a> </li>
+								<li> <a class="dropdown-item">
+										<div class="mb-3 form-check form-switch">
+											<input class="form-check-input" type="checkbox" name="themeBtns"
+												id="daltonicSwitcher" role="Modo Daltônico">
+											<label class="form-check-label menu" for="daltonicSwitcher"
+												data-translate="thema-linguagem-4">Modo
+												Daltônico</label>
+										</div>
+									</a> </li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li class="dropdown-item"> <span class="menu" data-translate="tamanho-da-fonte">Tamanho
+										da Fonte</span> <br> <input type="range" class="form-range" min="50" max="115"
+										step="5" id="size"> </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="offcanvas offcanvas-start" data-bs-backdrop="true" data-bs-backdrop="static" tabindex="-1"
+				id="nav-menu-open-close" aria-labelledby="staticBackdropLabel">
+				<div class="offcanvas-header bg-menu-color">
+					<p class="offcanvas-title" id="staticBackdropLabel">Menu</p> <button type="button"
+						class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body ">
+					<h3> <a href="../../index_pt-br.html"> <i class="bi bi-house"></i> Início</a> </h3>
+					<!-- Menu -->
+					<nav id="navbar-menu" class="flex-column align-items-stretch pe-4 my-5">
+						<nav class="nav nav-pills flex-column">
+							<div uk-accordion>
+								<!-- 1 -->
+								<li class="">
+									<a class="nav-link uk-accordion-title">
+										<i class="bi bi-pin-fill"></i>
+										Módulo 1
+									</a>
+									<div class="uk-accordion-content">
+										<div class="nav nav-pills flex-column">
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="1de1_pt-br.html#capa">Transição da
+														matriz energética</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-1">Apresentação da
+																aula</a> </li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-2">Transição da
+																matriz energética</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-3">Contexto
+																histórico</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-4">Matriz
+																energética</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-5">Aspectos
+																políticos e econômicos</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-6">Programas de
+																incentivo à transição energética</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-7">Praticando</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-8">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="1de2_pt-br.html#capa">Tecnologias
+														emergentes e economia circular</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li><a class="nav-link ms-3 my-1"
+																href="1de2_pt-br.html#aula2-section-1">Apresentação da
+																aula</a> </li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de2_pt-br.html#aula2-section-2">Tecnologias
+																emergentes</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de2_pt-br.html#aula2-section-3">Economia
+																circular</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de2_pt-br.html#aula2-section-4">Cadeia
+																de
+																valor</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de2_pt-br.html#aula2-section-5">Reaproveitamento
+																de resíduos</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de2_pt-br.html#aula2-section-6">Praticando</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de2_pt-br.html#aula2-section-7">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="1de3_pt-br.html#capa">Gases do efeito
+														estufa e recursos naturais</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula3-section-1">Apresentação da
+																aula</a> </li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula3-section-2">Efeito
+																estufa e
+																estratégias de redução de gases</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula3-section-3">Impactos da
+																produção de energia utilizando recursos naturais</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula3-section-4">Vantagens do agro
+																nacional</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula3-section-5">O uso
+																do solo e a
+																competição entre a produção de alimentos e
+																biocombustíveis</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#outroId">Vantagens de
+																culturas alternativas na geração de biomassa e óleos
+																vegetais</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula3-section-7">Impactos
+																ambientais relacionados à produção e ao uso de
+																biocombustíveis</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula3-section-8">Praticando</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula3-section-9">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+
+										</div>
+									</div>
+								</li>
+								<!-- 2 -->
+								<li class="">
+									<a class="nav-link uk-accordion-title">
+										<i class="bi bi-pin-fill"></i>
+										Módulo 2
+									</a>
+									<div class="uk-accordion-content">
+										<div class="nav nav-pills flex-column">
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="2de1_pt-br.html#capa">Biomassa
+														lignocelulósica
+													</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li><a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#2-aula1-section-1">Apresentação da
+																aula</a> </li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#2-aula1-section-2">Biomassa
+																lignocelulósica: agrícolas e florestais</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#2-aula1-section-3">Características
+																químicas e físicas</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#2-aula1-section-4">Pré-tratamentos</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#2-aula1-section-5">Aplicações e
+																perspectivas</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#2-aula1-section-6">Praticando</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#2-aula1-section-7">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="2de2_pt-br.html#capa">Biomassa
+														residual orgânica</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-1">Apresentação da
+																aula</a> </li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-2">Biomassa
+																residual
+																orgânica</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-3">Características
+																físico-químicas do resíduo orgânico urbano</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-4">Principais
+																fontes
+																de resíduos orgânicos urbanos</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-5">Efluentes
+																domésticos × efluentes industriais (resíduos
+																orgânicos)</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-6">Resíduos
+																agrícolas</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-7">Aplicações de
+																biomassa residual orgânica</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-8">Uso
+																de biomassa
+																residual orgânica na produção de biocombustíveis</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-9">Benefícios
+																ambientais para o uso de biomassa residual orgânica</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-10">Perspectivas
+																futuras para desenvolvimento e utilização de biomassa
+																residual orgânica</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-11">Praticando</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-12">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="2de3_pt-br.html#capa">Biomassa
+														aquática</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li><a class="nav-link ms-3 my-1"
+																href="2de3_pt-br.html#2-aula3-section-1">Apresentação da
+																aula</a> </li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de3_pt-br.html#2-aula3-section-2">Biomassa
+																aquática: macro e
+																microalgas</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de3_pt-br.html#2-aula3-section-3">Características
+																químicas e
+																físicas</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de3_pt-br.html#2-aula3-section-4">Características
+																das
+																microalgas</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de3_pt-br.html#2-aula3-section-5">Características
+																das
+																macroalgas</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de3_pt-br.html#2-outroId">Características de
+																cultivo</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de3_pt-br.html#2-aula3-section-7">Pré-tratamentos</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de3_pt-br.html#2-aula3-section-8">Aplicações e
+																perspectivas</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de3_pt-br.html#2-aula3-section-9">Praticando</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de3_pt-br.html#2-aula3-section-10">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<!-- 3 -->
+								<li class="uk-open">
+									<a class="nav-link uk-accordion-title">
+										<i class="bi bi-pin-fill"></i>
+										Módulo 3
+									</a>
+									<div class="uk-accordion-content">
+										<div class="nav nav-pills flex-column">
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="3de1_pt-br.html#capa">Diferenças
+														entre o etanol de diferentes gerações
+													</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li><a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#3-aula1-section-1">Apresentação da
+																aula</a> </li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#3-aula1-section-2">Diferenças
+																entre as gerações de etanol</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#3-aula1-section-3">Processo de
+																fabricação das gerações de etanol</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#3-aula1-section-4">Etanol de
+																primeira geração</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#3-aula1-section-5">Etanol de
+																segunda geração</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#3-aula1-section-6">Etanol de
+																terceira geração</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#3-aula1-section-7">Potencial do
+																etanol em relação aos combustíveis fósseis</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#3-aula1-section-8">Avanços
+																tecnológicos na produção de etanol</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#3-aula1-section-9">Organismos e
+																microrganismos geneticamente modificados (OGM)</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#3-aula1-section-10">Purificadores</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#3-aula1-section-11">Praticando</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="3de1_pt-br.html#3-aula1-section-12">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="3de2_pt-br.html#capa">Biogás e
+														biometano
+													</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li><a class="nav-link ms-3 my-1"
+																href="3de2_pt-br.html#3-aula2-section-1">Apresentação da
+																aula</a> </li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de2_pt-br.html#3-aula2-section-2">Introdução</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de2_pt-br.html#3-aula2-section-3">Biogás</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de2_pt-br.html#3-aula2-section-4">Características
+																químicas e físicas</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de2_pt-br.html#3-aula2-section-5">Biometano</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de2_pt-br.html#3-aula2-section-6">Características
+																químicas e físicas</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de2_pt-br.html#3-aula2-section-7">Aplicações e
+																perspectivas</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de2_pt-br.html#3-aula2-section-8">Praticando</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="3de2_pt-br.html#3-aula2-section-9">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="3de3_pt-br.html#capa">Biodiesel e
+														combustível sustentável de aviação (SAF)
+													</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li><a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-1">Apresentação da
+																aula</a> </li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-2">O que é
+																biodiesel e o que é SAF?</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-3">Características
+																do processo de produção do biodiesel</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-4">Transesterificação</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-5">Esterificação</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-6">Hidrogenação</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-7">Craqueamento</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-8">Síntese de
+																Fischer-Tropsch</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-9">Processo de
+																produção do diesel verde (HVO)</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-10">Hidrotratamento
+																(HEFA)</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-11">Síntese de
+																Fischer-Tropsch (gaseificação + FT)</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-12">Oligomerização
+																de álcoois (ATJ)</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-13">Processo de
+																produção de SAF (sustainable aviation fuel) – bioquerose
+																de aviação</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-14">HEFA
+																(hydroprocessed esters and fatty acids)</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-15">ATJ (alcool to
+																jet)</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-16">Aplicações de
+																biodiesel e SAF em modais no Brasil</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-17">Perspectivas
+																para o desenvolvimento e utilização de biodiesel e
+																SAF</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-18">Praticando</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="3de3_pt-br.html#3-aula3-section-19">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="3de4_pt-br.html#capa">4io-hidrogênio
+													</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li><a class="nav-link ms-3 my-1"
+																href="3de4_pt-br.html#3-aula4-section-1">Apresentação da
+																aula</a> </li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de4_pt-br.html#3-aula4-section-2">Introdução</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de4_pt-br.html#3-aula4-section-3">Bio-hidrogênio</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de4_pt-br.html#3-aula4-section-4">Características
+																químicas e físicas</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de4_pt-br.html#3-aula4-section-5">Processos de
+																obtenção de bio-hidrogênio</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de4_pt-br.html#3-aula4-section-6">Aplicações e
+																perspectivas</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de4_pt-br.html#3-aula4-section-7">Principais
+																desafios no contexto do bio-hidrogênio</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="3de4_pt-br.html#3-aula4-section-8">Praticando</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="3de4_pt-br.html#3-aula4-section-9">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</div>
+						</nav>
+					</nav>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class=" pt-4" data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-offset="0">
+		<!-- Capa -->
+		<div id="capa"
+			class="d-flex py-4 min-vh-100 flex-column justify-content-center uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+			style="background-image: url('./../Template/img/capa_aula3_4.jpeg');">
+			<div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+				<div class="row mt-2">
+					<h1 class=" text-uppercase bg-light rounded text-black"
+						uk-parallax="opacity: 1; y: -0,0; scale: 1.1,2; end: 0vh + 10%;">
+						Bio-hidrogênio
+					</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row position-absolute" style="bottom: 10%
+        ; left: 49.2%; transform: translateX(-50%)">
+					<div class="py-4 col-lg-1 mx-auto">
+						<div class="mouse"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+			style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%; animation: gradient 25s ease infinite;height:auto">
+			<br>
+		</section>
+		<section class="d-flex py-4 min-vh-100 flex-column justify-content-center" id="3-aula4-section-1">
+			<article class="container">
+				<div class="row">
+					<div class="align-self-start ">
+						<div class="section-level1">
+							<h1>Apresentação da aula</h1>
+						</div>
+					</div>
+					<p>Nesta aula, vamos mergulhar nas definições e características essenciais do bio-hidrogênio,
+						examinando sua composição química única e os processos de produção envolvidos, explorando
+						diversas vias para a obtenção desse combustível renovável.</p>
+					<p>Além disso, vamos analisar as múltiplas aplicações do bio-hidrogênio, desde sua utilização nos
+						atuais modais de transporte até suas potenciais aplicações em biorrefinarias, ressaltando os
+						benefícios econômicos e ambientais dele.</p>
+					<p>Também discutiremos as perspectivas para o desenvolvimento e utilização do bio-hidrogênio,
+						considerando os avanços tecnológicos e as oportunidades emergentes nesse campo dinâmico.</p>
+				</div>
+			</article>
+		</section>
+
+		<!-- lorem -->
+		<section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+			style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%;        animation: gradient 25s ease infinite;height:auto">
+			<br>
+		</section>
+		<!-- lorem -->
+
+		<section class="d-flex min-vh-100 flex-column justify-content-center" id="3-aula4-section-2">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>
+							Introdução
+						</h1>
+					</div>
+				</div>
+				<div class="row">
+					<p>O bio-hidrogênio emergiu como uma alternativa promissora aos combustíveis fósseis, oferecendo uma
+						fonte de energia limpa, renovável e eficiente para enfrentar os desafios da crise climática e da
+						dependência de recursos não renováveis.</p>
+					<p>É derivado de fontes biológicas como matéria orgânica e microrganismos. Ao analisarmos os
+						processos de produção, como a fermentação anaeróbia e a fotossíntese biológica de microalgas,
+						compreendemos a complexidade e a viabilidade dessas técnicas. </p>
+
+					<div class="col-lg-6 py-4 mx-auto">
+						<a data-fancybox="zoom" data-src="../Aula/img/mod3/aula4/img1.png" data-caption="">
+							<img src="../Aula/img/mod3/aula4/img1.png" class="img-fluid rounded" alt="">
+						</a>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="d-flex py-4 flex-column justify-content-center" id="3-aula4-section-3">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>
+							Bio-hidrogênio
+						</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<p>Há uma demanda crescente por energia, especialmente nos países em desenvolvimento, devido à
+						rápida urbanização e ao aumento nos setores industrial e de transporte. A produção global de
+						energia é majoritariamente impulsionada por combustíveis fósseis (81% em 2018), responsáveis por
+						51-60% das emissões globais de gases. Considerando que esses impactos ambientais adversos devem
+						crescer com o aumento da demanda de energia, a descarbonização do setor energético, com a
+						transição para fontes de energia sustentáveis, tornou-se uma prioridade global urgente. </p>
+					<p>No entanto, apesar das vantagens, ainda existem desafios no uso do bio-hidrogênio, conheça-os a
+						seguir. </p>
+				</div>
+				<div class="row d-flex gap-2 py-2">
+					<div class="col-md-4">
+						<a data-fancybox="zoom" data-src="../Aula/img/mod3/aula4/img2.png" data-caption="">
+							<img src="../Aula/img/mod3/aula4/img2.png" class="img-fluid rounded"
+								alt="Representação do processo de craqueamento, no qual óleo mais uma reação com calor resulta no chamado biodiesel craqueado, uma mistura de compostos orgânicos que se assemelha ao diesel do petróleo.">
+						</a>
+					</div>
+					<div class="col-md-7">
+						<h3>Vantagens</h3>
+						<div>
+							<ul>
+								<li>Produção a partir de fontes renováveis de biomassa residual</li>
+								<li>Alto poder calorífico</li>
+								<li>Ausência de emissões poluentes durante sua queima</li>
+								<li>Segurança energética</li>
+								<li>Sustentabilidade ambiental</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row d-flex gap-2 py-2">
+					<div class="col-md-4">
+						<a data-fancybox="zoom" data-src="../Aula/img/mod3/aula4/img3.png" data-caption="">
+							<img src="../Aula/img/mod3/aula4/img3.png" class="img-fluid rounded"
+								alt="Representação do processo de craqueamento, no qual óleo mais uma reação com calor resulta no chamado biodiesel craqueado, uma mistura de compostos orgânicos que se assemelha ao diesel do petróleo.">
+						</a>
+					</div>
+					<div class="col-md-7">
+						<h3>Desvantagens</h3>
+						<div>
+							<ul>
+								<li>A diferença de custo entre hidrogênio de baixo carbono e hidrogênio derivado de
+									combustíveis fósseis.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<p>Como resultado, as tecnologias de produção de bio-hidrogênio têm ganhado cada vez mais espaço
+						como uma das principais fontes renováveis de energia.</p>
+					<p>Confira, na imagem a seguir, o processo de produção do bio-hidrogênio.</p>
+
+					<div class="col-lg-6 py-4 mx-auto">
+						<a data-fancybox="zoom" data-src="../Aula/img/mod3/aula4/img4.png" data-caption="">
+							<img src="../Aula/img/mod3/aula4/img4.png" class="img-fluid rounded"
+								alt="Imagem em etapas representando o hidrogênio de sua produção até o uso. 
+								Começa com as fontes de energia renováveis; passa pela eletrólise da água; armazenamento e transporte, depois, pode ser destinado para processos industriais e motores a hidrogênio.">
+						</a>
+					</div>
+
+					<p>Com políticas de desenvolvimento tecnológico e investimentos sustentáveis, podemos acelerar a
+						transição para uma economia baseada em energia limpa e garantir um futuro mais sustentável para
+						todos. </p>
+				</div>
+			</article>
+		</section>
+		<section class="d-flex py-4 min-vh-100 flex-column justify-content-center" id="3-aula4-section-4">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>
+							Características químicas e físicas
+						</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<p>O bio-hidrogênio é uma variante do hidrogênio produzida por processos biológicos, geralmente
+						utilizando microrganismos como bactérias, algas ou fungos. Suas propriedades físicas e químicas
+						diferem de certa forma do hidrogênio convencional, derivado de fontes não renováveis.</p>
+					<p><em>Clique nas abas a seguir para conhecer mais detalhes.</em></p>
+
+					<div class="col-md-8 mx-auto py-4">
+						<div class="accordion" id="bioHydrogenAccordion">
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="headingDensity">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseDensity" aria-expanded="false"
+										aria-controls="collapseDensity">
+										Densidade e poder calorífico
+									</button>
+								</h4>
+								<div id="collapseDensity" class="accordion-collapse collapse"
+									aria-labelledby="headingDensity" data-bs-parent="#bioHydrogenAccordion">
+									<div class="accordion-body">
+										<p>O hidrogênio apresenta a menor densidade molecular e uma densidade de energia
+											por
+											volume extremamente reduzida. Em condições de temperatura e pressão padrão,
+											1kg
+											de hidrogênio ocupa aproximadamente 11m³. Por outro lado, o hidrogênio
+											combustível possui maior densidade gravimétrica, com um poder calorífico de
+											aproximadamente 3042cal/m³. Isso o torna muito utilizado na geração e
+											transporte
+											de eletricidade. O bio-hidrogênio, devido à sua capacidade de gerar energia
+											superior a 122kJ/g, é considerado uma fonte de combustível promissora em um
+											futuro não tão distante.</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="headingPurity">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapsePurity" aria-expanded="false"
+										aria-controls="collapsePurity">
+										Pureza
+									</button>
+								</h4>
+								<div id="collapsePurity" class="accordion-collapse collapse"
+									aria-labelledby="headingPurity" data-bs-parent="#bioHydrogenAccordion">
+									<div class="accordion-body">
+										<p>O bio-hidrogênio tende a ser mais puro do que o hidrogênio obtido a partir de
+											combustíveis fósseis, uma vez que é produzido por organismos vivos que não
+											liberam poluentes durante o processo de síntese.</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="headingCompatibility">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseCompatibility" aria-expanded="false"
+										aria-controls="collapseCompatibility">
+										Compatibilidade com células a combustível
+									</button>
+								</h4>
+								<div id="collapseCompatibility" class="accordion-collapse collapse"
+									aria-labelledby="headingCompatibility" data-bs-parent="#bioHydrogenAccordion">
+									<div class="accordion-body">
+										<p>Assim como o hidrogênio convencional, o bio-hidrogênio é compatível com
+											células a
+											combustível, e pode ser convertido diretamente em eletricidade com
+											eficiência
+											relativamente alta, sem produzir emissões prejudiciais.</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="headingProduction">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseProduction" aria-expanded="false"
+										aria-controls="collapseProduction">
+										Processos de produção
+									</button>
+								</h4>
+								<div id="collapseProduction" class="accordion-collapse collapse"
+									aria-labelledby="headingProduction" data-bs-parent="#bioHydrogenAccordion">
+									<div class="accordion-body">
+										<p>Atualmente, cerca de 76% do hidrogênio é produzido a partir do gás natural
+											pelo
+											processo de reforma do vapor de metano, 23% é gerado pela gaseificação do
+											carvão, enquanto o restante é produzido através da eletrólise da água. No
+											entanto, esses métodos convencionais são altamente intensivos em energia e
+											baseados em combustíveis fósseis, contribuindo para a poluição ambiental.
+											Por
+											outro lado, a produção de bio-hidrogênio por vias biológicas apresenta
+											vantagens
+											significativas, operando em temperaturas e pressões atmosféricas mais baixas
+											e
+											teoricamente necessitando de uma intensidade energética menor.</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h4 class="accordion-header" id="headingFactors">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#collapseFactors" aria-expanded="false"
+										aria-controls="collapseFactors">
+										Fatores de influência na produção
+									</button>
+								</h4>
+								<div id="collapseFactors" class="accordion-collapse collapse"
+									aria-labelledby="headingFactors" data-bs-parent="#bioHydrogenAccordion">
+									<div class="accordion-body">
+										<p>A taxa de produção e o rendimento de bio-hidrogênio são afetados por vários
+											fatores, incluindo tipos de substratos, inóculo da fonte e diversos
+											parâmetros
+											operacionais, como pH, temperatura e tempo de retenção hidráulica.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<p>Em suma, o bio-hidrogênio representa uma alternativa promissora e sustentável ao hidrogênio
+						convencional, oferecendo vantagens como renovabilidade, pureza e compatibilidade com tecnologias
+						de energia limpa. No entanto, ainda são necessários avanços significativos em pesquisa e
+						desenvolvimento para explorar todo o seu potencial como uma fonte de energia alternativa. </p>
+
+					<p><em>Confira a imagem a seguir para saber mais sobre o papel do
+							bio-hidrogênio em um futuro sustentável.</em></p>
+					<div class="col-lg-6 py-4 mx-auto">
+						<a data-fancybox="zoom" data-src="../Aula/img/mod3/aula4/img4.png" data-caption="">
+							<img src="../Aula/img/mod3/aula4/img5.png" class="img-fluid rounded" alt="">
+						</a>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="d-flex py-4 min-vh-100 flex-column justify-content-center" id="3-aula4-section-5">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>
+							Processos de obtenção de bio-hidrogênio
+						</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<p>A produção de hidrogênio pode ser realizada através de várias metodologias. Essas metodologias
+						são amplamente categorizadas em duas principais vias: a utilização de combustíveis fósseis e o
+						aproveitamento de energias renováveis. Conheça-as a seguir</p>
+
+					<div>
+						<ul>
+							<li>Produção de hidrogênio a partir de combustíveis fósseis </li>
+						</ul>
+					</div>
+
+					<p>A produção de hidrogênio a partir de combustíveis fósseis é dominada por duas tecnologias
+						principais: a <strong>reforma de hidrocarbonetos</strong> e a <strong>pirólise</strong>. </p>
+
+					<p><em>Clique nas setas laterais a seguir para conhecer mais detalhes da reforma de
+							hidrocarbonetos.</em></p>
+				</div>
+
+				<!-- slider -->
+				<div class="row">
+					<div class="col-lg-10 mx-auto">
+						<div class="row pt-4">
+							<div uk-slider>
+								<div class="uk-position-relative">
+									<div class="uk-slider-container uk-light">
+										<ul class="uk-slider-items ">
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<h3>Reforma de hidrocarbonetos</h3>
+														<p>Descrição: esse processo envolve a reação de hidrocarbonetos,
+															como gás natural, com vapor de água para produzir hidrogênio
+															e monóxido de carbono. Este último pode ser, posteriormente,
+															convertido em dióxido de carbono e mais hidrogênio através
+															da reação de deslocamento gás-água.</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<h3>Reforma de hidrocarbonetos</h3>
+														<p>Importância: a reforma de hidrocarbonetos é a principal
+															tecnologia para a produção de hidrogênio, representando uma
+															parte significativa do fornecimento global.</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<h3>Reforma de hidrocarbonetos</h3>
+														<p>Estatísticas: recentemente, 48% do hidrogênio foi produzido a
+															partir de gás natural, 30% de óleos pesados e nafta, e 18% a
+															partir de carvão. Mas esses métodos requerem grandes insumos
+															energéticos recuperados da combustão de combustíveis
+															fósseis, os quais não são deliberados como fontes de energia
+															renováveis.</p>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="uk-hidden@s uk-light">
+										<a class="uk-position-center-left uk-position-small" href="#"
+											uk-slidenav-previous uk-slider-item="previous"></a>
+										<a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next
+											uk-slider-item="next"></a>
+									</div>
+									<div class="uk-visible@s">
+										<a class="uk-position-center-left-out uk-position-small" href="#"
+											uk-slidenav-previous uk-slider-item="previous"></a>
+										<a class="uk-position-center-right-out uk-position-small" href="#"
+											uk-slidenav-next uk-slider-item="next"></a>
+									</div>
+								</div>
+								<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row py-5">
+					<p><em>Clique nas setas laterais a seguir para conhecer os detalhes da pirólise. </em></p>
+				</div>
+				<!-- slider -->
+				<div class="row">
+					<div class="col-lg-10 mx-auto">
+						<div class="row pt-4">
+							<div uk-slider>
+								<div class="uk-position-relative">
+									<div class="uk-slider-container uk-light">
+										<ul class="uk-slider-items ">
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<h3>Pirólise</h3>
+														<p>Descrição: esse método envolve a decomposição térmica de
+															materiais orgânicos na ausência de oxigênio, resultando na
+															produção de hidrogênio e outros subprodutos, como carvão e
+															metano.</p>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<h3>Pirólise</h3>
+														<p>Uso: apesar de ser menos comum que a reforma de
+															hidrocarbonetos, a pirólise é uma tecnologia importante,
+															especialmente em contextos em que há disponibilidade de
+															matéria-prima adequada.</p>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="uk-hidden@s uk-light">
+										<a class="uk-position-center-left uk-position-small" href="#"
+											uk-slidenav-previous uk-slider-item="previous"></a>
+										<a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next
+											uk-slider-item="next"></a>
+									</div>
+									<div class="uk-visible@s">
+										<a class="uk-position-center-left-out uk-position-small" href="#"
+											uk-slidenav-previous uk-slider-item="previous"></a>
+										<a class="uk-position-center-right-out uk-position-small" href="#"
+											uk-slidenav-next uk-slider-item="next"></a>
+									</div>
+								</div>
+								<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<p>Os métodos tradicionais de produção de hidrogênio, como a pirólise, não são ecologicamente
+						corretos devido às emissões de gases de efeito estufa, portanto, não são considerados
+						biocombustíveis por não serem derivados de fontes renováveis. </p>
+					<p>No entanto, um método biológico ecologicamente correto e economicamente viável para a produção de
+						hidrogênio pode ser preferível em vez dos métodos tradicionais. </p>
+
+					<h3>Produção de hidrogênio a partir de energias renováveis</h3>
+
+					<p>Existem vários métodos para a produção de hidrogênio a partir de recursos renováveis, muitos dos
+						quais estão em diferentes estágios de desenvolvimento e implementação.</p>
+					<p>Prevê-se que, num futuro próximo, quantidades significativas de bio-hidrogênio possam ser
+						produzidas a partir de resíduos agrícolas, alimentares e animais, porém, atualmente, o
+						desenvolvimento tecnológico ainda é limitado. </p>
+					<p>Essa produção poderá acontecer de diferentes maneiras, confira. </p>
+
+					<div class="col-lg-6 mx-auto">
+						<a data-fancybox="zoom" data-src="../Aula/img/mod3/aula4/img6.png" data-caption="">
+							<img src="../Aula/img/mod3/aula4/img6.png" class="img-fluid rounded" alt="">
+						</a>
+					</div>
+					<h3>Bioprocessos para a produção de bio-hidrogênio </h3>
+					<div>
+						<ul>
+							<li>Fermentação escura</li>
+							<li>Fotofermentação</li>
+							<li>Biofotólise</li>
+							<li>Eletrólise microbiana</li>
+						</ul>
+					</div>
+
+					<p>Esses bioprocessos possuem diferentes pré-tratamentos e geralmente operam em temperaturas
+						variáveis. Alguns desses processos são demorados, outros necessitam de melhorias biológicas, e
+						muitos requerem a otimização de diversos fatores para aumentar a eficiência e o rendimento de
+						bio-hidrogênio. </p>
+
+					<p>Vários parâmetros, como tipo de matéria-prima, teor de carbono, necessidade de pré-tratamento,
+						temperatura, tempo de retenção hidráulica (TRH) e pH, podem afetar a eficiência da produção de
+						hidrogênio nesses processos.</p>
+
+					<h3>Produção de Bio-hidrogênio</h3>
+					<p>Fontes de energia renováveis </p>
+					<div class="col-lg-6 mx-auto">
+						<a data-fancybox="zoom" data-src="../Aula/img/mod3/aula4/img7.png" data-caption="">
+							<img src="../Aula/img/mod3/aula4/img7.png" class="img-fluid rounded" alt="">
+						</a>
+					</div>
+					<p>Entre eles, a biomassa é o recurso energético mais promissor na produção de bioenergia </p>
+
+					<p>O bio-hidrogênio produzido a partir da <span class="destaque"
+							uk-tooltip="Resíduos de madeira, lenha combustível, resíduos agrícolas, resíduos pecuários, matérias-primas de algas, culturas energéticas, resíduos sólidos urbanos, resíduos de biodiesel como glicerol, resíduos de laticínios, efluentes de fábricas de óleo e lodos ativados por resíduos. Esses recursos são considerados substratos muito promissores devido à maior quantidade de celulose, hemicelulose, carboidratos, proteínas e nitrogênio."
+							title="" aria-describedby="uk-tooltip-159">biomassa</span> chama grande atenção devido à sua
+						sustentabilidade e inesgotabilidade, juntamente à sua limitada exigência de energia e maior
+						eficácia em evitar concorrência com produtos alimentícios.</p>
+
+					<p>Além disso, esses processos são potencialmente neutros em carbono, produzidos sob temperaturas e
+						pressões favoráveis, sendo considerados mais eficientes e vantajosos do que processos
+						eletroquímicos e termoquímicos.</p>
+
+					<p>No entanto, a produção de bio-hidrogênio pode variar dependendo da matéria-prima utilizada, das
+						condições de cultivo dos microrganismos e do método de produção empregado. Isso pode afetar
+						tanto a quantidade quanto a qualidade do bio-hidrogênio produzido.</p>
+
+					<p>Acompanhe na imagem a seguir as principais características dos processos.</p>
+
+					<h3>Figura comparativa dos processos </h3>
+					<div class="col-lg-6 mx-auto">
+						<a data-fancybox="zoom" data-src="../Aula/img/mod3/aula4/img8.png" data-caption="">
+							<img src="../Aula/img/mod3/aula4/img8.png" class="img-fluid rounded" alt="">
+						</a>
+					</div>
+
+					<div>
+						<ul>
+							<li><strong>Biofotólise</strong></li>
+						</ul>
+					</div>
+
+					<p>A biofotólise é um processo que imita a fotossíntese realizada por organismos fotossintéticos,
+						como
+						algas e plantas, para converter água em hidrogênio usando energia luminosa.</p>
+
+					<p><em>Confira os cards a seguir para entender os processos direto e indireto. </em></p>
+				</div>
+				<div class="row">
+					<div class="d-flex flex-wrap justify-content-center gap-2">
+						<div class="col-md-5 m-2">
+							<div class="uk-card uk-card-default h-100">
+								<div class="uk-card-body">
+									<h3 class="uk-card-title">Biogás</h3>
+									Produzido pela decomposição anaeróbica (sem oxigênio) de matéria orgânica.
+									<p>Alguns tipos de biomassa residuais orgânicos, como resíduos agrícolas, de
+										alimentos e esterco animal, são direcionados para biodigestores onde os
+										microrganismos a convertem em biogás, formando principalmente os gases metano
+										(CH4), dióxido de carbono (CO2) e outros. </p>
+									<p>O biogás pode ser queimado diretamente em motores a combustão ou direcionados
+										para combustão em caldeiras que geram vapor para movimentação de turbinas; em
+										ambos os casos, o objetivo é a geração de energia elétrica. O biogás também pode
+										passar por processos de purificação para produzir o biometano, que pode
+										substituir o GNV e ser usado como combustível veicular. </p>
+									<p>Para saber mais, <a class="link"
+											href="https://www.youtube.com/watch?v=y0dR7FF5mlM" target="_blank">clique
+											aqui</a> e <a class="link"
+											href="https://www.youtube.com/watch?v=NC3is9-s7ss" target="_blank">aqui</a>.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-5 m-2">
+							<div class="uk-card uk-card-default h-100">
+								<div class="uk-card-body">
+									<h3 class="uk-card-title">Biofotólise direta</h3>
+									<p>Na biofotólise direta, a energia luminosa é utilizada para dividir diretamente as
+										moléculas de água em hidrogênio e oxigênio, como mostrado na equação:</p>
+									<p>2H<sub>2</sub>O + energia solar → 2H<sub>2</sub> + O<sub>2</sub></p>
+									<p>Durante esse processo, as algas dividem as moléculas de água para produzir íons
+										hidrogênio [H<sup>+</sup>] e oxigênio através da fotossíntese. Os íons de
+										hidrogênio [H<sup>+</sup>] são, então, convertidos em gás hidrogênio
+										[H<sub>2</sub>] com a ajuda da enzima hidrogenase.</p>
+									<p><strong>Vantagem:</strong> produzir hidrogênio diretamente da água usando luz
+										solar, podendo aumentar a eficiência energética em até dez vezes se comparada às
+										plantações ou às árvores.</p>
+									<p><strong>Desvantagens:</strong> necessidade de luz de alta intensidade, risco de
+										inibição pelo oxigênio e menor eficiência fotoquímica.</p>
+									<p><strong>Desafios:</strong> utilizar algas verdes na fotólise direta incluem a
+										eficiência do aparato fotossintético na conversão solar; o processo de produção
+										de hidrogênio e os custos e design dos biorreatores.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-5 m-2">
+							<div class="uk-card uk-card-default h-100">
+								<div class="uk-card-body">
+									<h3 class="uk-card-title">Biofotólise indireta</h3>
+									<p>Aborda os problemas da sensibilidade ao oxigênio separando as etapas de evolução
+										do oxigênio e do hidrogênio em dois estágios diferentes, integrados à fixação de
+										CO<sub>2</sub>.</p>
+									<p>Nesse método, o CO<sub>2</sub> presente na atmosfera é consumido como fonte de
+										carbono, enquanto a energia solar é utilizada pelas cianobactérias.</p>
+									<p>12H<sub>2</sub>O + 6CO<sub>2</sub> + luz solar →
+										C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 6O<sub>2</sub> –
+										C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> + 12H<sub>2</sub>O + luz solar →
+										12H<sub>2</sub> + 6CO<sub>2</sub></p>
+									<p>A geração de hidrogênio por cianobactérias é facilitada pela presença de enzimas
+										como hidrogenase e nitrogenase, que realizam atividades metabólicas essenciais.
+									</p>
+									<p><strong>Vantagem:</strong> oferece uma solução ao separar as etapas de produção
+										de oxigênio e hidrogênio, utilizando cianobactérias e otimizando condições de
+										produção.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<ul>
+							<li><strong>Fotofermentação</strong></li>
+						</ul>
+					</div>
+
+					<p>A fotofermentação para produção de hidrogênio por algumas bactérias não sulfurosas ocorre em um
+						ambiente com deficiência de nitrogênio, onde a enzima nitrogenase é utilizada para metabolizar
+						ácidos orgânicos reduzidos e energia luminosa na produção de hidrogênio.</p>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th scope="col">Vantagem</th>
+								<th scope="col">Desvantagem</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<ul>
+										<li>Bactérias fotossintéticas são amplamente investigadas por sua capacidade de
+											sintetizar quantidades substanciais de hidrogênio.</li>
+										<li>As bactérias foto-heterotróficas são muito promissoras na conversão de
+											energia luminosa em hidrogênio utilizando substratos como resíduos
+											orgânicos.</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li>Menor disponibilidade de ácidos orgânicos, atividade mais lenta da enzima
+											nitrogenase e a exigência de uma quantidade extrema de energia devido à
+											reoxidação do hidrogênio.</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p>A fotofermentação difere da fotólise em termos de sua necessidade de substratos orgânicos como
+						fonte de carbono para a produção de hidrogênio. Na fotólise, por outro lado, a água é dividida
+						em hidrogênio na presença da luz solar. </p>
+
+					<p>Além disso, o processo de fotofermentação é realizado por bactérias fotossintéticas e
+						foto-heterotróficas, enquanto a fotólise é observada em algas e cianobactérias. </p>
+
+					<div>
+						<ul>
+							<li><strong>Fermentação escura</strong></li>
+						</ul>
+					</div>
+
+					<p>A fermentação escura para a produção de hidrogênio por bactérias anaeróbias pode ser realizada
+						utilizando substratos ricos em carboidratos.</p>
+					<p> A glicose é a fonte de carbono preferida entre os carboidratos e, durante a fermentação escura,
+						é convertida em gás hidrogênio junto com ácidos acético e butírico. </p>
+
+					<!-- box destaque -->
+					<div class="col-lg-10 py-4 mx-auto">
+						<div class="box">
+							<p>A bioconversão de 1mol de glicose pode teoricamente produzir até 12mol de gás hidrogênio.
+								No entanto, de acordo com a reação estequiométrica, a conversão de 1mol de glicose em
+								acetato pode produzir 4mol de hidrogênio, enquanto a conversão em butirato produz 2mol
+								de hidrogênio. Nas abordagens fermentativas atuais, estima-se que aproximadamente 2,4 a
+								3,2 mol de hidrogênio são produzidos por mol de glicose.
+							</p>
+						</div>
+					</div>
+
+					<p>Assim como os outros métodos, é fundamental conhecer as vantagens e desvantagens da fermentação
+						escura.</p>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th scope="col">Vantagens</th>
+								<th scope="col">Desafios</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<ul>
+										<li>A fermentação escura é considerada mais promissora que a fotofermentação
+											devido à sua independência da luz e maior eficiência na produção de energia
+											a partir de açúcares e carboidratos.</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li>A fermentação escura é mais cara devido à necessidade de matérias-primas
+											como biomassa orgânica.</li>
+										<li>A produção de hidrogênio por bactérias é fortemente influenciada por fatores
+											que afetam o equilíbrio metabólico.</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div>
+						<ul>
+							<li><strong>Eletrólise microbiana</strong></li>
+						</ul>
+					</div>
+
+					<p>As células de eletrólise microbiana (MECs) são uma tecnologia promissora para a produção de
+						hidrogênio a partir de resíduos orgânicos. Este processo utiliza microrganismos eletroativos que
+						catalisam reações eletroquímicas, convertendo matéria orgânica em hidrogênio e outros
+						subprodutos. As MECs operam aplicando uma pequena voltagem externa para superar a barreira
+						termodinâmica e promover a produção de hidrogênio. </p>
+
+					<p>A operação das MECs envolve a decomposição da matéria orgânica no ânodo por bactérias
+						eletroativas, liberando elétrons e prótons. Os elétrons são transportados através de um circuito
+						externo para o cátodo, onde se combinam com os prótons para formar hidrogênio. </p>
+
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th scope="col">Vantagens</th>
+								<th scope="col">Desafios</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<ul>
+										<li>Capacidade de utilizar uma ampla variedade de substratos orgânicos,
+											incluindo águas residuais, resíduos agrícolas e outros resíduos orgânicos.
+										</li>
+										<li>Elevada eficiência energética.</li>
+										<li>A produção de hidrogênio nas MECs não depende da luz, o que as torna
+											adequadas para operação contínua em diferentes condições ambientais.</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li>A eficiência do processo pode ser afetada por fatores como a composição do
+											substrato, a densidade de corrente aplicada e a resistência interna da
+											célula.</li>
+										<li>Altas concentrações de hidrogênio podem inibir a atividade microbiana e
+											diminuir a eficiência geral do processo.</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<p>Até o momento, discutimos a importância do biohidrogênio e seus métodos de obtenção. Vamos agora
+						explorar seus usos e aplicações? </p>
+				</div>
+			</article>
+		</section>
+		<section class="d-flex py-4 min-vh-100 flex-column justify-content-center" id="3-aula4-section-6">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>
+							Aplicações e perspectivas
+						</h1>
+					</div>
+				</div>
+				<div class="row">
+					<p>O biohidrogênio é uma fonte de energia cujo potencial tem atraído crescente interesse.</p>
+
+					<p><em>Clique em play no vídeo a seguir para conhecer as aplicações e perspectivas da produção e uso
+							de bio-hidrogênio. </em></p>
+
+					<div class="col-lg-8 mx-auto">
+						<div class="ratio ratio-16x9 ">
+							<iframe class="rounded"
+								src="https://play.sesisenai.videolib.live/index.html?token=13646ef8bb2544c4ab9d893f856e5c69"
+								title="Apresentação" allowfullscreen uk-video=" autoplay:false;">
+							</iframe>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="d-flex py-4 min-vh-100 flex-column justify-content-center" id="3-aula4-section-7">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>
+							Principais desafios no contexto do bio-hidrogênio
+						</h1>
+					</div>
+				</div>
+				<div class="row">
+					<p>A obtenção de bio-hidrogênio a partir de uma variedade de fontes de resíduos, como resíduos
+						agrícolas e industriais, é considerada um método potencial para reduzir o desperdício e produzir
+						energia renovável.</p>
+					<p>No entanto, a eficácia dessa tecnologia é influenciada por diversos fatores-chave, incluindo o
+						inóculo utilizado, o substrato empregado, o pH, a temperatura, o tempo de retenção hidráulica, a
+						taxa de carga orgânica e a estrutura do biorreator. Uma análise detalhada desses fatores é
+						fundamental para o sucesso da implementação da produção de biohidrogênio a partir de resíduos.
+					</p>
+					<p><em>Clique nas setas laterais para conhecer os desafios relacionados ao bio-hidrogênio. </em></p>
+				</div>
+				<!-- slider -->
+				<div class="row">
+					<div class="col-lg-10 mx-auto">
+						<div class="row pt-4">
+							<div uk-slider>
+								<div class="uk-position-relative">
+									<div class="uk-slider-container uk-light">
+										<ul class="uk-slider-items ">
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<div class="row d-flex justify-content-between gap-3">
+															<div class="col-md-4">
+																<img src="../Aula/img/mod3/aula4/img9.png" alt="">
+															</div>
+															<div class="col-md-7">
+																<p>Baixa produtividade e baixo rendimento de conversão
+																	de vários processos bioquímicos, juntamente a
+																	fatores de influência.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<div class="row d-flex justify-content-between gap-3">
+															<div class="col-md-4">
+																<img src="../Aula/img/mod3/aula4/img9.png" alt="">
+															</div>
+															<div class="col-md-7">
+																<p>Devido à produtividade atual do bio-hidrogênio, um
+																	processo industrial exigiria um reator de volume
+																	muito grande.</p>
+																<p>A escolha adequada do inóculo e da câmara
+																	fermentativa anaeróbia mista é crucial para obter o
+																	rendimento máximo na produção de bio-hidrogênio.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<div class="row d-flex justify-content-between gap-3">
+															<div class="col-md-4">
+																<img src="../Aula/img/mod3/aula4/img9.png" alt="">
+															</div>
+															<div class="col-md-7">
+																<p>A preservação do pH ideal durante o ensaio de
+																	produção é uma consideração importante para a
+																	produção de bio-hidrogênio.</p>
+																<p>Manter o controle do pH durante o processo é
+																	essencial para garantir a síntese efetiva de
+																	bio-hidrogênio, pois variações inadequadas podem
+																	levar a ciclos de produção mais curtos, custos de
+																	produção mais altos e rendimentos reduzidos.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<div class="row d-flex justify-content-between gap-3">
+															<div class="col-md-4">
+																<img src="../Aula/img/mod3/aula4/img9.png" alt="">
+															</div>
+															<div class="col-md-7">
+																<p>A regulação dos níveis de temperatura também é
+																	crucial, pois influencia significativamente a
+																	atividade metabólica envolvida na degradação do
+																	substrato e no crescimento microbiano, afetando a
+																	produção de bio-hidrogênio.</p>
+																<p>Altas temperaturas podem levar à produção indesejada
+																	de subprodutos, como metano; portanto, manter a
+																	temperatura adequada é essencial para a produção
+																	eficiente.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<div class="row d-flex justify-content-between gap-3">
+															<div class="col-md-4">
+																<img src="../Aula/img/mod3/aula4/img9.png" alt="">
+															</div>
+															<div class="col-md-7">
+																<p>Além disso, a taxa de retenção hidráulica (TRH) e a
+																	taxa de carregamento hidráulico (HLR) são parâmetros
+																	importantes que devem ser cuidadosamente controlados
+																	durante o processo fermentativo, pois afetam
+																	diretamente a eficiência de utilização do substrato
+																	e o rendimento de bio-hidrogênio.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="uk-hidden@s uk-light">
+										<a class="uk-position-center-left uk-position-small" href="#"
+											uk-slidenav-previous uk-slider-item="previous"></a>
+										<a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next
+											uk-slider-item="next"></a>
+									</div>
+									<div class="uk-visible@s">
+										<a class="uk-position-center-left-out uk-position-small" href="#"
+											uk-slidenav-previous uk-slider-item="previous"></a>
+										<a class="uk-position-center-right-out uk-position-small" href="#"
+											uk-slidenav-next uk-slider-item="next"></a>
+									</div>
+								</div>
+								<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="d-flex min-vh-100 flex-column justify-content-center exercicios py-3" id="3-aula4-section-8">
+			<article class="container py-4">
+				<div class="border rounded">
+					<h1 class="p-4">Praticando</h1>
+					<div class="row"></div>
+				</div>
+			</article>
+		</section>
+		<hr class="uk-divider-icon">
+		<!-- Recapitulando -->
+		<section class="d-flex flex-column justify-content-center" id="3-aula4-section-9">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h2>Recapitulando</h2>
+					</div>
+				</div>
+				<div class="row">
+					<p>Neta aula, estudamos o bio-hidrogênio, fonte de energia renovável com grande potencial.
+						Exploramos minuciosamente os diversos métodos de produção, como fermentação escura,
+						fotofermentação, biofotólise e células de eletrólise microbiana, destacando suas
+						particularidades e os desafios que enfrentam.</p>
+					<p>Reconhecemos a importância de aprimorar esses métodos para aumentar sua eficiência e viabilidade
+						econômica. Refletimos sobre o papel vital do biohidrogênio na transição para uma matriz
+						energética mais sustentável, evidenciando seus benefícios ambientais e sua capacidade de reduzir
+						consideravelmente as emissões de gases de efeito estufa.</p>
+					<p>Esperamos que ao término desta exploração, você sinta motivação de aplicar esse conhecimento de
+						forma prática, contribuindo para o avanço das tecnologias de bio-hidrogênio e impulsionando um
+						futuro energético mais promissor e ecologicamente consciente.</p>
+				</div>
+
+			</article>
+		</section>
+		<!-- lorem -->
+		<hr class="uk-divider-icon">
+		<section class="pb-4" id="11">
+			<article class="container pb-4">
+				<div class="pb-4" id="content">
+					<div class="row" id="progresso">
+						<div class="col-lg-4 uk-text-center ">
+							<div class="legenda" style="font-size: 1rem;">Progresso do curso
+							</div>
+							<div class="copyright">
+								<div class="progress-circle"></div>
+								<span id="progressoGeral" class="fonte-plus"></span> <span class="text-color1">%</span>
+							</div>
+						</div>
+						<div class="col-lg-4 uk-text-center ">
+							<div class="legenda" style="font-size: 1rem;">Respostas corretas
+							</div>
+							<div class="copyright">
+
+								<span id="exerciciosCorretos" class="fonte-plus"></span><span
+									class="text-color1">%</span>
+							</div>
+						</div>
+						<div class="col-lg-4 uk-text-center ">
+							<div class="legenda" style="font-size: 1rem;">Exercícios
+								concluídos</div>
+							<div class="copyright">
+								<span id="exerciciosRealizados" class="fonte-plus"></span>
+								<span id="totalExercicios">/</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+	<footer class="border-top fixed-bottom bg-menu-color">
+		<div class="progress_section">
+			<div class="progress_bar_wrap">
+				<div class="progress_bar"></div>
+			</div>
+			<div class="progress_num"> </div>
+		</div>
+		<div class="d-flex justify-content-evenly align-items-center justify-content-center">
+			<div class="col-sm-12 d-flex justify-content-center">
+				<div class="d-flex justify-content-evenly align-items-center">
+					<div class="col-sm-2 d-flex justify-content-end">
+						<a href="3de2_pt-br.html" aria-label="Próximo" title="Próximo">
+							<i class='bx mt-3 bx-fade-left-hover bxs-left-arrow-circle bx-md copyright px-3'></i>
+						</a>
+					</div>
+					<div class="col-sm-8 d-flex justify-content-center ">
+						<p class="mx-auto mt-4 ">© SENAI <span id="year"></span></p>
+					</div>
+					<div class="col-sm-2 d-flex justify-content-start">
+						<a href="3de4_pt-br.html" aria-label="Próximo" title="Próximo">
+							<i class='bx mt-3 bx-fade-riht-hover bxs-right-arrow-circle bx-md copyright px-3'></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body><!-- SCORM -->
+<script src="../Template/js/acoes.js"></script>
+<script type="text/javascript" src="../Template/js/blocos_pt-br-t2k.js"></script>
+<script type="text/javascript" src="../Template/js/blocos_pt-br.js"></script>
+<script type="text/javascript" src="../Template/js/exercicios_pt-br.js"></script><!-- CONFIGURAÇÕES -->
+<script src='../Template/js/chart-plugin.js'></script>
+<script src="../Template/js/configuracoes.js"></script>
+<script src="../Template/js/main.js"></script>
+<script src="../Template/bibliotecas/youtube/js/youtube-chapters.min.js"></script>
+<script src="../Template/bibliotecas/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../Template/bibliotecas/fancybox/fancybox.umd.js"></script>
+<script src="../Aula/js/aula-1/graficos.js"></script>
+<script src="../Aula/js/aula-1/youtube.js"></script>
+<script>  Fancybox.bind('[data-fancybox="zoom"]', {});</script>
+<script>  window.addEventListener('load', () => { const date = new Date(); document.querySelector('#year').textContent = `${date.getFullYear()}` })</script>
+<script>
+	var intro = introJs();
+	intro.setOptions({
+
+		'skipLabel': '<i class="bi bi-x-lg"></i>',
+		tooltipClass: 'customTooltip',
+		showProgress: true,
+		dontShowAgain: true,
+		hidePrev: true,
+		hideNext: false,
+		exitOnEsc: true,
+		showStepNumbers: true,
+		showBullets: false,
+		steps: [
+
+			{
+				element: document.querySelector('.cor1'),
+				intro: '<p>Menu - Hieraquia - (texto descritivo)</p>',
+			},
+
+			{
+				element: document.querySelector('.switch-darkmode'),
+				intro: '<p>Modo Escuro - (texto descritivo)</p>'
+			},
+
+			{
+				element: document.querySelector('.vlibras-show'),
+				intro: '<p>Aqui voceê pode encontar o V-Libras - (texto descritivo)'
+			},
+
+			{
+				element: document.querySelector('#Acessibilidade'),
+				intro: '<img src="img/template/acessibilidade.png" alt="Acessibilidade">',
+			},
+		]
+
+	}).start();
+</script>
+
+</html>
