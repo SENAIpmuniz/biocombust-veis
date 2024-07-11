@@ -746,95 +746,104 @@ var json = {
 					perguntas: [
 						// PERGUNTA 1
 						{
-							titulo:
-								"<strong>1.</strong> Aspectos ambientais são elementos que interagem ou podem interagir com o meio ambiente. Os impactos ambientais ocorrem quando aspectos ambientais provocam mudanças integrais ou parciais e positivas ou negativas no meio ambiente. Associe as definições corretamente, indicando se a opção corresponde a um aspecto ambiental ou a um impacto ambiental.",
-							tipo: "combobox",
-							opcoes: "Impacto ambiental,Aspecto ambiental",
+							titulo: "<strong>1.</strong> A produção do etanol de segunda geração é vantajosa porque:",
+							tipo: "checkbox",
 							questao: [
 								{
-									alternativa:
-										"<strong>A. </strong>Escassez de recursos naturais não renováveis.",
-									resposta: "Impacto ambiental",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
+									alternativa: "<strong>A)</strong> utiliza principalmente culturas não alimentares e é produzido a partir de biomassa lignocelulósica, como resíduos agrícolas (palha, bagaço de cana-de-açúcar), resíduos florestais, resíduos de alimentos, entre outros.",
+									resposta: true,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
-
 								{
-									alternativa:
-										"<strong>B. </strong>Emissão de gases de efeito estufa.",
-									resposta: "Aspecto ambiental",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
+									alternativa: "<strong>B)</strong> é a forma mais simples e conhecida para ser obtido e isso ocorre por meio de um processo de fermentação de moléculas de açúcar, encontradas em vegetais como cana-de-açúcar, milho, beterraba, batata, trigo e mandioca, ou seja, de matérias-primas que servem como alimento.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
-
 								{
-									alternativa:
-										"<strong>C. </strong>Intensificação do aquecimento global.",
-									resposta: "Impacto ambiental",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
-								},
-
-								{
-									alternativa: "<strong>D. </strong>Uso de papel reciclado.",
-									resposta: "Aspecto ambiental",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
-								},
+									alternativa: "<strong>C)</strong> sua produção a partir de algas é uma das mais promissoras vias para a produção desse tipo de biocombustível, pois as algas têm um alto potencial de crescimento e podem ser cultivadas em diversos tipos de água, incluindo água salgada, água do mar ou água doce.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								}
 							],
-							tentativas: 1,
-							feedbackCorreto:
-								"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
-							feedbackIncorreto1: "Tente Novamente",
-							feedbackIncorreto2:
-								"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
+							tentativas: 0,
+							feedbackCorreto: "Parabéns! Você selecionou a alternativa correta.",
+							feedbackIncorreto1: "Tente novamente.",
+							feedbackIncorreto2: "Resposta incorreta."
 						},
 						// PERGUNTA 2
 						{
-							titulo:
-								"<strong>2.</strong> Indique as alternativas corretas que contêm as principais atividades antrópicas relacionadas à emissão de gases de efeito estufa (GEE) e ao aumento da temperatura global.",
-							tipo: "multiple",
+							titulo: "<strong>2.</strong> Em relação às vias de produção do etanol de primeira, segunda e terceira geração, relacione as colunas corretamente.",
+							tipo: "combobox",
+							opcoes: "Etanol de primeira geração,Etanol de 1,5 geração,Etanol de segunda geração,Etanol de terceira geração",
 							questao: [
 								{
-									alternativa: "<strong>A.</strong> Desmatamento de florestas.",
-									resposta: true,
-									feedbacknegativo: "A alternativa está correta.",
-									feedbackpositivo: "A alternativa está correta.",
+									alternativa: "<strong>A) </strong> É produzido de forma simples e conhecida e isso ocorre por meio de um processo de fermentação de moléculas de açúcares simples.",
+									resposta: "Etanol de primeira geração",
+									feedbackpositivo: "Você relacionou as colunas corretamente.",
+									feedbacknegativo: "Você não relacionou as colunas corretamente."
 								},
 								{
-									alternativa: "<strong>B.</strong> Produção de etanol.",
-									resposta: false,
-									feedbacknegativo: "A alternativa está incorreta.",
-									feedbackpositivo: "A alternativa está incorreta.",
+									alternativa: "<strong>B) </strong> É um biocombustível produzido por um processo intermediário de produção que ocupa um lugar entre a primeira e a segunda geração de produção de etanol.",
+									resposta: "Etanol de 1,5 geração",
+									feedbackpositivo: "Você relacionou as colunas corretamente.",
+									feedbacknegativo: "Você não relacionou as colunas corretamente."
 								},
 								{
-									alternativa:
-										"<strong>C.</strong> Geração e utilização de energia.",
-									resposta: true,
-									feedbacknegativo: "Alternativa correta. ",
-									feedbackpositivo: "Alternativa correta. ",
+									alternativa: "<strong>C) </strong> Seu pré-tratamento consiste no uso de enzimas específicas sobre a biomassa para “cortar” as cadeias longas de celulose e hemicelulose transformando-as em açúcares simples, “menores” como glicose e xilose.",
+									resposta: "Etanol de segunda geração",
+									feedbackpositivo: "Você relacionou as colunas corretamente.",
+									feedbacknegativo: "Você não relacionou as colunas corretamente."
 								},
 								{
-									alternativa:
-										"<strong>D.</strong> Produção de cimento, aço e ferro.",
-									resposta: true,
-									feedbacknegativo: "A alternativa está correta. ",
-									feedbackpositivo: "A alternativa está correta. ",
-								},
+									alternativa: "<strong>D) </strong> O processo começa com o cultivo das algas, que pode ser feito em lagoas abertas, fotobiorreatores ou sistemas de cultivo fechados, dependendo das condições locais e dos tipos de algas a serem utilizadas.",
+									resposta: "Etanol de terceira geração",
+									feedbackpositivo: "Você relacionou as colunas corretamente.",
+									feedbacknegativo: "Você não relacionou as colunas corretamente."
+								}
 							],
-							tentativas: 2,
-							feedbackCorreto: "Parabéns",
-							feedbackIncorreto1: "Tente Novamente",
-							feedbackIncorreto2: "Resposta Incorreta",
+							tentativas: 0,
+							feedbackCorreto: "Parabéns! Você relacionou as colunas corretamente.",
+							feedbackIncorreto1: "Tente novamente.",
+							feedbackIncorreto2: "Resposta incorreta."
 						},
+						// PERGUNTA 3
+						{
+							titulo: "<strong>3.</strong> Indique verdadeiro ou falso para as afirmações a seguir.",
+							tipo: "trueorfalse",
+							questao: [
+								{
+									alternativa: "<strong>A) </strong>O etanol pode ser misturado à gasolina em diferentes proporções, reduzindo a dependência de combustíveis fósseis puros e ajudando a diminuir as emissões totais de carbono.",
+									resposta: true,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>B) </strong>Testes com microrganismos, como fungos e bactérias, têm sido realizados com o intuito de produzir enzimas mais eficazes na quebra de componentes da parede celular das plantas, convertendo esse tipo de material em açúcares simples, como glicose e xilose.",
+									resposta: true,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>C) </strong>Ainda não existem regulamentações rigorosas necessárias para garantir que microrganismos modificados não representem riscos para o meio ambiente ou para a saúde humana.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>D) </strong>A utilização da biomassa residual da produção de etanol na geração de eletricidade pode ajudar a diversificar a matriz energética de um país, reduzindo a dependência de fontes de energia não renováveis.",
+									resposta: true,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								}
+							],
+							feedbackCorreto: "Parabéns! Alternativas A, B e D são verdadeiras. A alternativa C é falsa.",
+							feedbackIncorreto1: "Resposta incorreta. Alternativas A, B e D são verdadeiras. A alternativa C é falsa.",
+							feedbackIncorreto2: "Resposta incorreta. Alternativas A, B e D são verdadeiras. A alternativa C é falsa."
+						}
+
 					],
 				},
 				{
