@@ -962,97 +962,101 @@ var json = {
 					nome_aula: "AULA 3",
 					//PERGUNTAS SEÇÃO
 					perguntas: [
-						// PERGUNTA 1
+						// PERGUNTA 1 - Escolha Única
 						{
-							titulo:
-								"<strong>1.</strong> Aspectos ambientais são elementos que interagem ou podem interagir com o meio ambiente. Os impactos ambientais ocorrem quando aspectos ambientais provocam mudanças integrais ou parciais e positivas ou negativas no meio ambiente. Associe as definições corretamente, indicando se a opção corresponde a um aspecto ambiental ou a um impacto ambiental.",
-							tipo: "combobox",
-							opcoes: "Impacto ambiental,Aspecto ambiental",
+							titulo: "<strong>1.</strong> As principais matérias-primas utilizadas na produção do biodiesel são:",
+							tipo: "checkbox",
 							questao: [
 								{
-									alternativa:
-										"<strong>A. </strong>Escassez de recursos naturais não renováveis.",
-									resposta: "Impacto ambiental",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
-								},
-
-								{
-									alternativa:
-										"<strong>B. </strong>Emissão de gases de efeito estufa.",
-									resposta: "Aspecto ambiental",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
-								},
-
-								{
-									alternativa:
-										"<strong>C. </strong>Intensificação do aquecimento global.",
-									resposta: "Impacto ambiental",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
-								},
-
-								{
-									alternativa: "<strong>D. </strong>Uso de papel reciclado.",
-									resposta: "Aspecto ambiental",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
-								},
-							],
-							tentativas: 1,
-							feedbackCorreto:
-								"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
-							feedbackIncorreto1: "Tente Novamente",
-							feedbackIncorreto2:
-								"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-						},
-						// PERGUNTA 2
-						{
-							titulo:
-								"<strong>2.</strong> Indique as alternativas corretas que contêm as principais atividades antrópicas relacionadas à emissão de gases de efeito estufa (GEE) e ao aumento da temperatura global.",
-							tipo: "multiple",
-							questao: [
-								{
-									alternativa: "<strong>A.</strong> Desmatamento de florestas.",
-									resposta: true,
-									feedbacknegativo: "A alternativa está correta.",
-									feedbackpositivo: "A alternativa está correta.",
-								},
-								{
-									alternativa: "<strong>B.</strong> Produção de etanol.",
+									alternativa: "<strong>A)</strong> os hidrocarbonetos produzidos a partir do petróleo.",
 									resposta: false,
-									feedbacknegativo: "A alternativa está incorreta.",
-									feedbackpositivo: "A alternativa está incorreta.",
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
 								{
-									alternativa:
-										"<strong>C.</strong> Geração e utilização de energia.",
-									resposta: true,
-									feedbacknegativo: "Alternativa correta. ",
-									feedbackpositivo: "Alternativa correta. ",
+									alternativa: "<strong>B)</strong> os ésteres produzidos a partir de combustíveis fósseis.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
 								{
-									alternativa:
-										"<strong>D.</strong> Produção de cimento, aço e ferro.",
+									alternativa: "<strong>C)</strong> fontes renováveis, como os óleos vegetais de soja, canola, girassol, palma, e outros, as gorduras animais, óleos residuais de cozinha e até mesmo algas e resíduos agrícolas.",
 									resposta: true,
-									feedbacknegativo: "A alternativa está correta. ",
-									feedbackpositivo: "A alternativa está correta. ",
-								},
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								}
 							],
-							tentativas: 2,
-							feedbackCorreto: "Parabéns",
-							feedbackIncorreto1: "Tente Novamente",
-							feedbackIncorreto2: "Resposta Incorreta",
-						},
+							tentativas: 0,
+							feedbackCorreto: "Parabéns, você selecionou a alternativa correta.",
+							feedbackIncorreto1: "Você não selecionou a alternativa correta. Tente novamente.",
+							feedbackIncorreto2: "Você não selecionou a alternativa correta."
+						}, {
+							titulo: "<strong>2.</strong> Em relação aos biocombustíveis, biodiesel, HVO, SAF e H-Bio, relacione as colunas corretamente.",
+							tipo: "combobox",
+							opcoes: "Biodiesel,HVO (diesel verde sustentável),SAF (combustível sustentável de aviação),H-BIO",
+							questao: [
+								{
+									alternativa: "<strong>A) </strong> Pode ser misturado ao diesel convencional e utilizado no abastecimento de veículos pesados, como ônibus, caminhões e máquinas agrícolas. Essa mistura pode reduzir significativamente as emissões de gases de efeito estufa e poluentes locais, como material particulado e óxidos de nitrogênio.",
+									resposta: "Biodiesel",
+									feedbackpositivo: "Você relacionou as colunas corretamente.",
+									feedbacknegativo: "Você não relacionou as colunas corretamente."
+								},
+								{
+									alternativa: "<strong>B) </strong> Pode ser misturado em qualquer proporção com diesel convencional de petróleo, já que suas moléculas são idênticas às do diesel produzido a partir de matriz fóssil e é considerado uma alternativa mais sustentável ao diesel convencional, podendo ajudar a reduzir as emissões de gases de efeito estufa.",
+									resposta: "HVO (diesel verde sustentável)",
+									feedbackpositivo: "Você relacionou as colunas corretamente.",
+									feedbacknegativo: "Você não relacionou as colunas corretamente."
+								},
+								{
+									alternativa: "<strong>C) </strong> Pode ser usado como uma alternativa sustentável ao querosene de aviação em aeronaves comerciais e militares. Ao contrário do combustível de aviação convencional, é produzido a partir de fontes renováveis, como óleos vegetais, gorduras animais, resíduos orgânicos ou biomassa.",
+									resposta: "SAF (combustível sustentável de aviação)",
+									feedbackpositivo: "Você relacionou as colunas corretamente.",
+									feedbacknegativo: "Você não relacionou as colunas corretamente."
+								},
+								{
+									alternativa: "<strong>D) </strong> É uma tecnologia que tem como objetivo a produção de diesel renovável a partir de uma mistura de óleo vegetal ou gordura animal com óleo diesel convencional.",
+									resposta: "H-BIO",
+									feedbackpositivo: "Você relacionou as colunas corretamente.",
+									feedbacknegativo: "Você não relacionou as colunas corretamente."
+								}
+							],
+							tentativas: 0,
+							feedbackCorreto: "Parabéns! Você relacionou as colunas corretamente.",
+							feedbackIncorreto1: "Tente novamente.",
+							feedbackIncorreto2: "Resposta incorreta."
+						}, {
+							titulo: "<strong>3.</strong> Indique verdadeiro ou falso para as afirmações a seguir.",
+							tipo: "trueorfalse",
+							questao: [
+								{
+									alternativa: "<strong>A) </strong>As preocupações ambientais, regulamentações governamentais e avanços tecnológicos impulsionam o uso do biodiesel e do combustível sustentável de aviação (SAF) como alternativas ao uso de combustíveis não renováveis.",
+									resposta: true,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>B) </strong>O biodiesel e o SAF podem ser integrados com outros setores de energia renovável, como energia solar e eólica, para criar sistemas energéticos mais sustentáveis e resilientes.",
+									resposta: true,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>C) </strong>Existe uma responsabilidade ambiental em todo o mundo que está relacionada à implementação de políticas de incentivos para promover o uso de biocombustíveis, incluindo metas de mistura, subsídios fiscais, créditos de carbono e investimentos em pesquisa e desenvolvimento.",
+									resposta: true,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>D) </strong>Espera-se que os avanços contínuos na tecnologia de produção de biocombustíveis levem a processos mais eficientes e econômicos para a produção de biodiesel e SAF. Isso pode incluir o desenvolvimento de novas rotas de produção, catalisadores mais eficientes e métodos de processamento mais sustentáveis.",
+									resposta: true,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								}
+							],
+							feedbackCorreto: "Parabéns! Todas as afirmações são verdadeiras.",
+							feedbackIncorreto1: "Resposta incorreta. Todas as afirmações são verdadeiras.",
+							feedbackIncorreto2: "Resposta incorreta. Todas as afirmações são verdadeiras."
+						}
 					],
 				},
 			],
