@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html id="master" lang="pt-Br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="../Template/img/favicon.ico" />
+	<title>Senai</title> <!-- Config -->
+	<script src="../Template/js/main.js" defer></script>
+	<link rel="stylesheet" href="../Template/css/theme.css">
+	<link rel="stylesheet" href="../Template/css/style.css">
+	<link rel="stylesheet" href="css/aula-1/add-style.css">
+	<link rel="stylesheet" href="../Template/bibliotecas/fancybox/fancybox.css"> <!-- JQuery-->
+	<script type="text/javascript" src="../Template/bibliotecas/jQuery-3.6.3/jquery-3.6.3.min.js"></script>
+	<!-- Bootstrap -->
+	<link href="../Template/bibliotecas/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap Icons -->
+	<link href="../Template/bibliotecas/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> <!-- UiKit-->
+	<link href="../Template/bibliotecas/uikit/css/uikit.min.css" rel="stylesheet" />
+	<script src="../Template/bibliotecas/uikit/js/uikit.min.js" async></script>
+	<script src="../Template/bibliotecas/uikit/js/uikit-icons.min.js" async></script> <!-- BoxIcons -->
+	<link href="../Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'>
+	<script src="../Template/bibliotecas/boxicons/boxicons.js" defer></script> <!-- GOOGLE TRANSLATE -->
+	<script src="../Template/js/google.js" type="text/javascript" defer></script> <!-- Grafico -->
+	<script src="../Template/bibliotecas/charts/chart.js"></script> <!-- SCORM -->
+	<script src="../Template/scorm/APIWrapper.js"></script>
+	<script src="../Template/scorm/SCOFunctions.js"></script> <!-- Prism -->
+	<script src="../Template/bibliotecas/prism/js/prism.js"></script>
+	<link href="../Template/bibliotecas/prism/css/prism.css" rel='stylesheet'> <!-- BoxIcons -->
+	<script src="../Template/bibliotecas/boxicons/boxicons.js"></script>
+	<link href="../Template/bibliotecas/boxicons/css/boxicons.min.css" rel='stylesheet'> <!-- VIDEO DO YOUTUBE -->
+	<script src="../Template/js/menu.js"></script>
+</head>
+
+<body onunload="unloadPage()">
+	<header>
+		<div id="google_translate_element"></div>
+		<!-- Vlibras -->
+		<div vw class="enabled">
+			<div id="vlibras-show" vw-access-button class="#"></div>
+			<div vw-plugin-wrapper>
+				<div class="vw-plugin-top-wrapper"></div>
+			</div>
+		</div>
+		<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+		<script>      new window.VLibras.Widget('https://vlibras.gov.br/app');    </script>
+		<!-- Menu -->
+		<nav class="navbar-dark bg-menu-color fixed-top nav-height">
+			<div class="d-flex bd-highlight align-items-center g-4 nav-height">
+				<div class="bd-highlight">
+					<button class="btn align-items-center ms-2" data-bs-toggle="offcanvas"
+						data-bs-target="#nav-menu-open-close" aria-controls="nav-menu-open-close" aria-label="Menu"
+						title="Menu">
+						<i class='cor1 bx bx-menu bx-tada-hover'></i> </button>
+				</div>
+				<div class="bd-highlight mx-auto">
+					<object class="d-none d-lg-block img-fluid" style="margin-left:130px; max-width:180px"
+						data="../Template/img/logo_senai.svg" type="image/svg+xml" alt="SENAI" title="SENAI">
+					</object>
+					<object class="d-md-block d-lg-none" style="margin-top: 5px;max-width: 130px;"
+						data="../Template/img/logo_senai.svg" type="image/svg+xml" alt="SENAI" title="SENAI">
+					</object>
+				</div>
+				<div class="bd-highlight">
+					<div class="d-flex bd-highlight align-items-center nav-height">
+						<div class="form-check form-check-inline switch-group" role="button" title="Temas">
+							<input class="form-check-input d-none" type="checkbox" name="themeBtns" id="themeSwitcher"
+								role="Toogle Temas">
+							<label class="form-check-label" for="themeSwitcher">
+								<div class="switch-darkmode">
+									<div class="icons"> <i class='bx bx-moon bx-tada-hover'></i> <i
+											class='bx bx-sun bx-spin-hover' style="color: aliceblue;"></i> </div>
+									<div class="circle"></div>
+								</div>
+							</label>
+						</div>
+						<div class=" d-flex flex-row align-middle ms-2 me-2" onclick="vlibrashow()" role="Vlibras"
+							title="Vlibras"> <i class='vlibras-show bx bx-universal-access' style="font-size:2rem"></i>
+							<span class="ms-1 me-1 d-none d-lg-block menu" style="margin-top: 3px;"></span>
+						</div>
+						<div class="dropdown me-2">
+							<button class="btn text-white me-2" type="button" id="Acessibilidade" title="Configurações"
+								data-bs-toggle="dropdown" aria-expanded="false" aria-label="Configurações">
+								<i class='bx bx-cog bx-spin-hover bx-sm'></i>
+							</button>
+							<ul class="dropdown-menu dropdown-menu-dark menu-margin" aria-labelledby="Acessibilidade">
+								<li class="dropdown-item" data-translate="acessibilidade">
+									<strong>Acessibilidade</strong>
+								</li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li> <a class="dropdown-item">
+										<div class="mb-3 form-check form-switch">
+											<input class="form-check-input " type="checkbox" name="themeBtns"
+												id="graySwitcher" role="Modo monocromatico">
+											<label class="form-check-label menu" for="graySwitcher"
+												data-translate="thema-linguagem-3">Modo Monocromatico</label>
+										</div>
+									</a> </li>
+								<li> <a class="dropdown-item">
+										<div class="mb-3 form-check form-switch">
+											<input class="form-check-input" type="checkbox" name="themeBtns"
+												id="daltonicSwitcher" role="Modo Daltônico">
+											<label class="form-check-label menu" for="daltonicSwitcher"
+												data-translate="thema-linguagem-4">Modo
+												Daltônico</label>
+										</div>
+									</a> </li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li class="dropdown-item"> <span class="menu" data-translate="tamanho-da-fonte">Tamanho
+										da Fonte</span> <br> <input type="range" class="form-range" min="50" max="115"
+										step="5" id="size"> </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="offcanvas offcanvas-start" data-bs-backdrop="true" data-bs-backdrop="static" tabindex="-1"
+				id="nav-menu-open-close" aria-labelledby="staticBackdropLabel">
+				<div class="offcanvas-header bg-menu-color">
+					<p class="offcanvas-title" id="staticBackdropLabel">Menu</p> <button type="button"
+						class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body ">
+					<h3> <a href="../../index_pt-br.html"> <i class="bi bi-house"></i> Início</a> </h3>
+					<!-- Menu -->
+					<nav id="navbar-menu" class="flex-column align-items-stretch pe-4 my-5">
+						<nav class="nav nav-pills flex-column">
+							<div uk-accordion>
+								<!-- 1 -->
+								<li class="">
+									<a class="nav-link uk-accordion-title">
+										<i class="bi bi-pin-fill"></i>
+										Módulo 1
+									</a>
+									<div class="uk-accordion-content">
+										<div class="nav nav-pills flex-column">
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="1de1_pt-br.html#capa">Transição da
+														matriz energética</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-1">Apresentação da
+																aula</a> </li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-2">Transição da
+																matriz energética</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-3">Contexto
+																histórico</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-4">Matriz
+																energética</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-5">Aspectos
+																políticos e econômicos</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-6">Programas de
+																incentivo à transição energética</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-7">Praticando</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de1_pt-br.html#aula1-section-8">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="1de2_pt-br.html#capa">Tecnologias
+														emergentes e economia circular</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li><a class="nav-link ms-3 my-1"
+																href="1de2_pt-br.html#aula2-section-1">Apresentação da
+																aula</a> </li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de2_pt-br.html#aula2-section-2">Tecnologias
+																emergentes</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de2_pt-br.html#aula2-section-3">Economia
+																circular</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de2_pt-br.html#aula2-section-4">Cadeia
+																de
+																valor</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de2_pt-br.html#aula2-section-5">Reaproveitamento
+																de resíduos</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de2_pt-br.html#aula2-section-6">Praticando</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de2_pt-br.html#aula2-section-7">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="1de3_pt-br.html#capa">Gases do efeito
+														estufa e recursos naturais</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula3-section-1">Apresentação da
+																aula</a> </li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula3-section-2">Efeito
+																estufa e
+																estratégias de redução de gases</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula3-section-3">Impactos da
+																produção de energia utilizando recursos naturais</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula3-section-4">Vantagens do agro
+																nacional</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula3-section-5">O uso
+																do solo e a
+																competição entre a produção de alimentos e
+																biocombustíveis</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#outroId">Vantagens de
+																culturas alternativas na geração de biomassa e óleos
+																vegetais</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula3-section-7">Impactos
+																ambientais relacionados à produção e ao uso de
+																biocombustíveis</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula3-section-8">Praticando</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="1de3_pt-br.html#aula3-section-9">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+
+										</div>
+									</div>
+								</li>
+								<!-- 2 -->
+								<li class="uk-open">
+									<a class="nav-link uk-accordion-title">
+										<i class="bi bi-pin-fill"></i>
+										Módulo 2
+									</a>
+									<div class="uk-accordion-content">
+										<div class="nav nav-pills flex-column">
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="2de1_pt-br.html#capa">Biomassa
+														lignocelulósica
+													</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li><a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#2-aula1-section-1">Apresentação da
+																aula</a> </li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#2-aula1-section-2">Biomassa
+																lignocelulósica: agrícolas e florestais</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#2-aula1-section-3">Características
+																químicas e físicas</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#2-aula1-section-4">Pré-tratamentos</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#2-aula1-section-5">Aplicações e
+																perspectivas</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#2-aula1-section-6">Praticando</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de1_pt-br.html#2-aula1-section-7">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="2de2_pt-br.html#capa">Biomassa
+														residual orgânica</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-1">Apresentação da
+																aula</a> </li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-2">Biomassa
+																residual
+																orgânica</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-3">Características
+																físico-químicas do resíduo orgânico urbano</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-4">Principais
+																fontes
+																de resíduos orgânicos urbanos</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-5">Efluentes
+																domésticos × efluentes industriais (resíduos
+																orgânicos)</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-6">Resíduos
+																agrícolas</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-7">Aplicações de
+																biomassa residual orgânica</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-8">Uso
+																de biomassa
+																residual orgânica na produção de biocombustíveis</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-9">Benefícios
+																ambientais para o uso de biomassa residual orgânica</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-10">Perspectivas
+																futuras para desenvolvimento e utilização de biomassa
+																residual orgânica</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-11">Praticando</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="2de2_pt-br.html#2-aula2-section-12">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+
+											<ul class="icons-list">
+												<li class="nav">
+													<a class="nav-link my-1" href="#capa">Biomassa
+														aquática</a>
+												</li>
+												<div class="nav">
+													<ul class="icons-list">
+														<li><a class="nav-link ms-3 my-1"
+																href="#2-aula3-section-1">Apresentação da
+																aula</a> </li>
+														<li><a class="nav-link ms-3 my-1"
+																href="#2-aula3-section-2">Biomassa
+																aquática: macro e
+																microalgas</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="#2-aula3-section-3">Características
+																químicas e
+																físicas</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="#2-aula3-section-4">Características
+																das
+																microalgas</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="#2-aula3-section-5">Características
+																das
+																macroalgas</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="#2-outroId">Características de
+																cultivo</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="#2-aula3-section-7">Pré-tratamentos</a>
+														</li>
+														<li> <a class="nav-link ms-3 my-1"
+																href="#2-aula3-section-8">Aplicações e
+																perspectivas</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="#2-aula3-section-9">Praticando</a>
+														</li>
+														<li><a class="nav-link ms-3 my-1"
+																href="#2-aula3-section-10">Recapitulando</a>
+														</li>
+													</ul>
+												</div>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</div>
+						</nav>
+					</nav>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class=" pt-4" data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-offset="0">
+		<!-- Capa -->
+		<div id="capa"
+			class="d-flex py-4 min-vh-100 flex-column justify-content-center uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+			style="background-image: url('./../Template/img/capa_aula3_3.jpeg');">
+			<div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+				<div class="row mt-2">
+					<h1 class=" text-uppercase bg-light rounded text-black"
+						uk-parallax="opacity: 1; y: -0,0; scale: 1.1,2; end: 0vh + 10%;">
+						Biodiesel e combustível sustentável de aviação
+					</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="row position-absolute" style="bottom: 10%
+        ; left: 49.2%; transform: translateX(-50%)">
+					<div class="py-4 col-lg-1 mx-auto">
+						<div class="mouse"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+			style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%; animation: gradient 25s ease infinite;height:auto">
+			<br>
+		</section>
+		<section class="d-flex py-4 min-vh-100 flex-column justify-content-center" id="3-aula2-section-1">
+			<article class="container">
+				<div class="row">
+					<div class="align-self-start ">
+						<div class="section-level1">
+							<h1>Apresentação da aula</h1>
+						</div>
+					</div>
+					<p>
+						Nesta aula, conheceremos diferentes tipos de biocombustíveis, com especial atenção ao biogás e
+						ao biometano. Então, abordaremos suas definições e características fundamentais, incluindo sua
+						composição química e os processos de produção envolvidos, desde a geração de biogás até a
+						purificação, assim como a obtenção de biometano.
+					</p>
+					<p>Além disso, exploraremos diversas aplicações desses recursos, destacando seu uso na geração de
+						eletricidade, aquecimento residencial e industrial, bem como combustível veicular. Também
+						discutiremos as tendências atuais e futuras nesse campo, considerando os avanços tecnológicos e
+						suas implicações no desenvolvimento e na utilização desses biocombustíveis de interesse.</p>
+				</div>
+			</article>
+		</section>
+		<!-- lorem -->
+		<section class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+			style="background: linear-gradient(90deg, var(--color1), var(--color2));background-size: 400% 400%;        animation: gradient 25s ease infinite;height:auto">
+			<br>
+		</section>
+		<!-- lorem -->
+
+		<section class="d-flex min-vh-100 flex-column justify-content-center" id="3-aula2-section-2">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>
+							Introdução
+						</h1>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						Vamos entender as diferenças entre biometano e biogás? Ambos são gerados a partir da
+						decomposição anaeróbia de substâncias orgânicas, como resíduos agrícolas e alimentares, resíduos
+						sólidos urbanos (RSU) e lodo de esgoto. No entanto, o biogás é a mistura inicial de gases
+						produzida durante esse processo, enquanto o biometano é uma versão mais purificada e rica em
+						metano, com menos impurezas.</p>
+					<p><em>Clique em play no vídeo a seguir para saber mais. </em></p>
+
+					<div class="col-lg-8 mx-auto py-5">
+						<div class="ratio ratio-16x9 ">
+							<iframe class="rounded"
+								src="https://play.sesisenai.videolib.live/index.html?token=13646ef8bb2544c4ab9d893f856e5c69"
+								title="Apresentação" allowfullscreen uk-video=" autoplay:false;">
+							</iframe>
+						</div>
+					</div>
+
+					<p>A imagem a seguir representa o processo de produção de biogás e suas utilizações.</p>
+
+					<div class="col-lg-6 py-4 mx-auto">
+						<a data-fancybox="zoom" data-src="../Aula/img/mod3/aula2/img1.png" data-caption="">
+							<img src="../Aula/img/mod3/aula2/img1.png" class="img-fluid rounded"
+								alt="A imagem mostra diferentes tipos de resíduos orgânicos, como esterco de animais, restos de comida, culturas agrícolas e águas residuais. 
+
+							Esses resíduos são processados em um digestor anaeróbico, em que ocorre a fermentação bacteriana na ausência de oxigênio. 
+							
+							No digestor, os resíduos orgânicos são decompostos por bactérias, resultando na produção de biogás. 
+							
+							O biogás é composto principalmente de metano (CH₄) e dióxido de carbono (CO₂). O biogás pode ser queimado para produzir calor, usado em sistemas de aquecimento ou para cozinhar. 
+
+							O biogás pode ser usado em geradores para produzir eletricidade. 
+							
+							Pode ser purificado e usado como combustível para veículos. 
+							
+							Em alguns lugares, o biogás é injetado na rede de gás natural. 
+							
+							O subproduto do processo, chamado digestato, é rico em nutrientes e pode ser usado como fertilizante ou emendas do solo. ">
+						</a>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="d-flex py-4 flex-column justify-content-center" id="3-aula2-section-3">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>
+							Biogás
+						</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<p>Vamos falar sobre biogás? A biomassa tem um enorme potencial para fornecer calor, eletricidade e
+						combustíveis, o que tem aumentado sua participação na energia global. Espera-se que esse uso
+						continue crescendo nos próximos anos, ajudando a combater as emissões de gases de efeito estufa
+						(GEE) e a alcançar metas políticas, como os Objetivos de Desenvolvimento Sustentável (ODS).</p>
+
+					<p>No entanto, em muitas regiões rurais, os <strong>combustíveis sólidos</strong>, como resíduos
+						agrícolas, madeira e cascas, ainda são muito usados. Embora acessíveis, a queima desses
+						materiais traz desafios ambientais e de saúde, tornando-os uma opção insustentável.</p>
+
+					<p>A transição para <strong>combustíveis líquidos</strong> e <strong>gasosos</strong>, produzidos de
+						forma sustentável, surge como uma solução mais ecológica e neutra em termos climáticos. Aumentar
+						o uso desses biocombustíveis na matriz energética é essencial para mitigar o aquecimento global
+						e promover o desenvolvimento sustentável. </p>
+
+					<p>O gráfico a seguir representa a composição do biogás, que é composto por aproximadamente 60% de
+						metano, 32% de dióxido de carbono e os 8% restantes incluem gases como hidrogênio, nitrogênio,
+						oxigênio e sulfureto de hidrogênio.</p>
+
+					<div class="col-lg-6 py-4 mx-auto">
+						<a data-fancybox="zoom" data-src="../Aula/img/mod3/aula2/img2.png" data-caption="">
+							<img src="../Aula/img/mod3/aula2/img2.png" class="img-fluid rounded" alt="">
+						</a>
+					</div>
+
+					<p>A média de produção de etanol de primeira geração por hectare de cana é de cerca de 7500 litros.
+						Nos EUA, o milho é a principal matéria-prima para a produção de etanol por fermentação, rendendo
+						aproximadamente 3000 litros por hectare. </p>
+					<p>Em resumo, o processo de produção de etanol de primeira geração envolve o processamento da
+						matéria-prima e a extração dos açúcares através da moagem, resultando em um caldo rico em
+						sacarose. </p>
+
+					<!-- Você sabia? -->
+					<div class="col-lg-10 mx-auto py-4">
+						<div class="box vcsabia">
+							<div class="d-flex justify-content-center d-sm-none mx-auto"> <i
+									class="bx bi bi-question-circle roxo-vcsabia bx-tada"></i> </div>
+							<div class="d-flex  align-items-center container">
+								<div class="col-lg-10 p-2">
+									<h3>Você sabia?</h3>
+									<p>
+										Você sabia que o biogás é fundamental para a produção de biocombustíveis
+										avançados? Uma das metas globais é que, até 2030, pelo menos 3,5% do setor de
+										transportes utilize biocombustíveis. Além de ser uma fonte de energia renovável,
+										o biogás oferece diversas vantagens: ajuda a reduzir as emissões de gases de
+										efeito estufa (GEE), recicla resíduos e ainda gera eletricidade, calor e um
+										fertilizante de alta qualidade como subproduto.
+									</p>
+								</div>
+								<div class="col-lg-2">
+									<div class="d-flex d-none d-sm-block d-md-block d-lg-block"> <i
+											class="bx bi bi-question-circle roxo-vcsabia bx-tada"></i> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="d-flex py-4 min-vh-100 flex-column justify-content-center" id="3-aula2-section-4">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level2">
+						<h2>
+							Características químicas e físicas
+						</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<p>Você já se perguntou como podemos transformar resíduos orgânicos em energia limpa? O segredo está
+						na DA (digestão anaeróbia), um processo biológico que converte uma ampla gama de biomassas em
+						biogás. Isso inclui não apenas materiais amiláceos e açucarados de culturas energéticas, mas
+						também restos de alimentos, esterco de gado e lodo de águas residuais.</p>
+
+					<!-- Saiba mais... -->
+					<div class="col-lg-10 mx-auto py-4">
+						<div class="box saibamais">
+							<div class="d-flex justify-content-center d-sm-none mx-auto"> <i
+									class="bx bi bi bi-search verde-saibamais bx-tada"></i> </div>
+							<div class="d-flex  align-items-center container">
+								<div class="col-lg-10 p-2">
+									<h3>Saiba mais</h3>
+									<p>Culturas bioenergéticas dedicadas (DECs) incluem culturas celulósicas, como
+										árvores de cultivo de curta rotação e arbustos. Essas culturas são formadas por
+										biomassa celulósica, que, por sua vez, é constituída principalmente por
+										celulose, hemicelulose e lignina. É uma biomassa naturalmente resistente e, por
+										conseguinte, requer tecnologias avançadas para a sua conversão em combustíveis
+										líquidos.</p>
+									<p>A maioria dos biocombustíveis avançados ou de segunda geração são provenientes
+										das DECs e alguns exemplos são eucalipto (Eucalyptus spp.), choupo (Populus
+										spp.), salgueiro (Salix spp.), gramíneas perenes como capim-amarelo (Phalaris
+										arundinacea), switchgrass (Panicum virgatum) e oleaginosas não comestíveis, como
+										a mamona (Racinus communis) e pinhão-manso (Jatropha curcas). São culturas
+										propostas como uma estratégia de produção de energia sem comprometimento
+										alimentar ou do ambiente.</p>
+									<p>Os requisitos de recursos genéticos para pré-tratamentos biológicos, químicos ou
+										físicos são mais seguros ambientalmente e terão uma maior contribuição para a
+										mitigação das mudanças climáticas. As DECs são benéficas a alguns serviços dos
+										ecossistemas, incluindo a absorção de carbono, o aumento da biodiversidade, a
+										mitigação de salinidade e a melhoria da qualidade do solo e freático.</p>
+								</div>
+								<div class="col-lg-2">
+									<div class="d-flex d-none d-sm-block d-md-block d-lg-block"> <i
+											class="bx bi bi bi-search verde-saibamais bx-tada"></i> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<p>O processo de digestão anaeróbia (DA) inclui uma série de bioprocessos nos quais diferentes
+						microrganismos dominantes quebram sólidos biodegradáveis e substâncias solúveis, como açúcares,
+						monômeros simples e oligômeros, na ausência de oxigênio, produzindo biogás por meio de diversos
+						estágios, incluindo hidrólise, acidogênese, acetogênese e metanogênese, culminando na produção
+						de metano.</p>
+					<p>Dessa forma, fica claro que é necessário um esforço combinado de diferentes microrganismos
+						anaeróbios para degradar eficientemente os substratos orgânicos complexos em compostos simples e
+						facilmente conversíveis, principalmente metano e CO₂. Normalmente, esta conversão de compostos
+						orgânicos complexos em CH₄ e CO₂ só é possível se a combinação de bactérias fermentativas,
+						sintróficas, acetogênicas e metanogênicas existir no digestor para conversões sistemáticas e
+						graduais. </p>
+					<p>O processo DA é dividido em quatro etapas; clique nos itens do quadro a seguir para conhecer os
+						detalhes.</p>
+
+					<!-- accordion bioconversao -->
+					<div class="col-md-8 mx-auto py-4">
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="accordion" id="bioconversao-accordion">
+								<div class="accordion-item">
+									<h4 class="accordion-header" id="collapse-cabecalho-1">
+										<button class="accordion-button collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false"
+											aria-controls="collapse-1" aria-labelledby="Hidrólise"> Hidrólise
+										</button>
+									</h4>
+									<div id="collapse-1" class="accordion-collapse collapse"
+										data-bs-parent="#bioconversao-accordion">
+										<div class="accordion-body">
+											<p>No primeiro estágio, compostos orgânicos complexos como proteínas,
+												carboidratos e lipídios são decompostos em produtos solúveis simples por
+												enzimas extracelulares, como celulases, amilases, proteases e lipases,
+												excretadas por bactérias fermentativas.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h4 class="accordion-header" id="collapse-cabecalho-2">
+										<button class="accordion-button collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false"
+											aria-controls="collapse-2" aria-labelledby="Acidogênese">
+											Acidogênese
+										</button>
+									</h4>
+									<div id="collapse-2" class="accordion-collapse collapse"
+										data-bs-parent="#bioconversao-accordion">
+										<div class="accordion-body">
+											<p>Estágio da bioconversão através da qual monômeros simples produzidos pela
+												hidrólise são posteriormente convertidos em ácidos graxos voláteis, como
+												ácido acético, ácido propiônico, ácido butírico, álcoois traço, cetonas,
+												CO₂NH₃, H₂S e H₂.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h4 class="accordion-header" id="collapse-cabecalho-3">
+										<button class="accordion-button collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false"
+											aria-controls="collapse-3" aria-labelledby="Acetogênese">
+											Acetogênese
+										</button>
+									</h4>
+									<div id="collapse-3" class="accordion-collapse collapse"
+										data-bs-parent="#bioconversao-accordion">
+										<div class="accordion-body">
+											<p>As bactérias acetogênicas produtoras de hidrogênio decompõem e convertem
+												ácido propiônico, ácido butírico e álcoois em ácido acético, hidrogênio
+												e dióxido de carbono, enquanto as bactérias homoacetogênicas convertem
+												hidrogênio e dióxido de carbono em ácido acético.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h4 class="accordion-header" id="collapse-cabecalho-4">
+										<button class="accordion-button collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false"
+											aria-controls="collapse-4" aria-labelledby="Metanogênese">
+											Metanogênese
+										</button>
+									</h4>
+									<div id="collapse-4" class="accordion-collapse collapse"
+										data-bs-parent="#bioconversao-accordion">
+										<div class="accordion-body">
+											<p>O ácido acético, hidrogênio e compostos carbônicos, como ácido fórmico,
+												metanol e metilamina, são convertidos no produto, o metano. Foi
+												demonstrado que cerca de dois terços do metano produzido vêm do ácido
+												acético, enquanto o restante vem do hidrogênio e dos compostos
+												carbônicos. A energia disponível nas substâncias orgânicas, exceto a
+												utilizada para o metabolismo celular, é recuperada por meio do metano.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<p>A imagem a seguir representa as etapas da digestão anaeróbia, em que os carboidratos são
+						quebrados em açúcares, os lipídios (gorduras) são quebrados em ácidos graxos, e as proteínas são
+						quebradas em aminoácidos. </p>
+
+					<p>Na hidrólise: os compostos são decompostos ainda mais. </p>
+
+					<p>Na acidogênese: os produtos como ácidos carboxílicos e álcoois são formados. </p>
+
+					<p>Na acetogênese: resulta na produção de ácido acético, hidrogênio e dióxido de carbono. </p>
+
+					<p>Na metanogênese: o metano e o dióxido de carbono são produzidos como produtos. </p>
+
+					<div class="col-lg-6 py-4 mx-auto">
+						<a data-fancybox="zoom" data-src="../Aula/img/mod3/aula2/img3.png" data-caption="">
+							<img src="../Aula/img/mod3/aula2/img3.png" class="img-fluid rounded" alt="">
+						</a>
+					</div>
+
+					<p>Você já parou para pensar no potencial invisível que pode estar flutuando ao nosso redor? Do
+						ponto de vista físico, o biogás é incolor, inodoro e altamente inflamável. Ele é mais leve que o
+						ar, o que significa que tem uma tendência a se elevar e se dispersar quando liberado no
+						ambiente. Além disso, o biogás possui um poder calorífico relativamente alto, entre 21 e 25
+						MJ/Nm³, considerando aproximadamente 60% de CH₄, apresentando um potencial
+						energético significativo, o que o torna adequado para diversas aplicações energéticas, incluindo
+						geração de eletricidade, aquecimento industrial e residencial, e como combustível veicular.</p>
+
+					<p>Para a geração de 1kWh de eletricidade, são necessários aproximadamente 0,7-0,8 m³ de biogás.
+						Esses números destacam a versatilidade e eficiência do biogás como fonte de energia renovável em
+						diversas aplicações, desde o aquecimento residencial até a geração de eletricidade. E quanto à
+						eficiência na produção de biogás, ela pode ser significativamente aumentada através de ajustes
+						técnicos no biorreator, sabia? </p>
+
+					<p>A separação do biogás do reator facilita o processo de purificação em comparação com outras
+						tecnologias de biocombustíveis. Para alcançar alta eficiência dos biorreatores e obter a
+						quantidade máxima de biogás por unidade de volume de biomassa, é necessário criar parâmetros
+						técnicos ótimos no biorreator.</p>
+
+					<p>Embora a tecnologia do biogás seja considerada madura, esforços contínuos estão sendo feitos por
+						governos e pesquisadores para aprimorá-la e torná-la mais eficiente. Investigações visam
+						melhorar a porcentagem de metano no biogás, explorando diferentes matérias-primas e estratégias
+						de codigestão para equilibrar as relações carbono/nitrogênio (C/N). Novas abordagens, como
+						sistemas bioeletroquímicos e a adição de hidrogênio aos reatores para converter CO₂ em CH₄,
+						estão sendo integradas à tecnologia do biogás para otimizar seu conteúdo de metano. Além disso,
+						diversas técnicas de separação, como adsorção criogênica, bioeletroquímica, separação por
+						membrana, depuração e absorção, são empregadas para elevar o teor de metano a níveis adequados
+						(> 95%), viabilizando sua injeção direta na rede de distribuição.</p>
+				</div>
+			</article>
+		</section>
+
+		<section class="container-fluid" id="parallax">
+			<article class="py-4">
+				<div class="row py-4">
+					<div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex"
+						style="background-image: url('img/mod3/aula2/parallax1.jpeg');">
+						<div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<section class="d-flex py-4 min-vh-100 flex-column justify-content-center" id="3-aula2-section-5">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>
+							Biometano
+						</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<p>O biometano é uma energia limpa que tem ganhado destaque no cenário ambiental. Vamos conhecer um
+						pouco mais sobre ele.</p>
+					<p>O biometano, uma forma purificada e aprimorada do biogás, emerge como uma solução ainda mais
+						promissora na busca por fontes de energia sustentáveis. Derivado do biogás por meio de processos
+						avançados de purificação, o biometano possui características químicas e físicas que o tornam
+						altamente versátil e ambientalmente amigável. Assim como o biogás, o biometano é produzido a
+						partir da decomposição anaeróbica de matéria orgânica, mas passa por etapas adicionais de
+						purificação para remover impurezas, como dióxido de carbono (CO₂), sulfeto de hidrogênio (H₂S) e
+						umidade, resultando em um combustível mais puro e concentrado.</p>
+					<p>O biometano compartilha muitas das vantagens do biogás, incluindo sua capacidade de reduzir as
+						emissões de gases de efeito estufa, aproveitar resíduos orgânicos e gerar subprodutos úteis,
+						como fertilizantes de alta qualidade. Além disso, sua alta pureza e qualidade o tornam uma opção
+						ideal para uma variedade de aplicações, desde a geração de eletricidade e aquecimento
+						residencial até o abastecimento de veículos movidos a gás natural.</p>
+				</div>
+			</article>
+		</section>
+		<section class="d-flex py-4 min-vh-100 flex-column justify-content-center" id="3-aula2-section-6">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level2">
+						<h2>
+							Características químicas e físicas
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						A seguir, vamos conhecer as características que o tornam uma alternativa promissora aos
+						combustíveis fósseis.
+					</p>
+					<p>O biometano, também conhecido como metano, é um hidrocarboneto de molécula tetraédrica e apolar
+						(CH₄). Em condições normais de temperatura e pressão, ele compartilha características físicas
+						semelhantes ao metano convencional. </p>
+
+					<div class="col-lg-6 mx-auto">
+						<a data-fancybox="zoom" data-src="../Aula/img/mod3/aula2/img4.png" data-caption="">
+							<img src="../Aula/img/mod3/aula2/img4.png" class="img-fluid rounded" alt="">
+						</a>
+					</div>
+
+					<p>Assim como o metano natural, o biometano é um gás incolor e inodoro, que pode se tornar altamente
+						inflamável e explosivo quando entra em contato com o ar. Quando inalado, pode prejudicar a saúde
+						humana. No entanto, existem diferenças significativas entre eles.</p>
+
+					<p>Assim como o biogás, o biometano é mais leve que o ar, o que facilita sua dispersão quando
+						liberado no ambiente. Além disso, o biometano possui um poder calorífico de aproximadamente
+						35,9MJ/Nm³, dependendo da sua pureza. </p>
+
+					<p>A produção de biometano não é limitada por fatores geográficos, como padrões de vento, o que
+						permite sua implementação em uma variedade de locais. Ela envolve a digestão anaeróbica de
+						resíduos orgânicos por uma comunidade de microrganismos. </p>
+
+					<p>Esse processo resulta em biogás, composto principalmente por metano (CH₄) e dióxido de carbono
+						(CO₂), juntamente com pequenas concentrações de impurezas como sulfeto de hidrogênio (H₂S),
+						nitrogênio (N₂), oxigênio (O₂) e hidrogênio (H₂), que precisam ser purificadas para obter maior
+						pureza.</p>
+
+					<p>O biometano pode substituir o gás natural em qualquer de suas aplicações, seja para:</p>
+
+					<div>
+						<ul>
+							<li>uso térmico: alimentação de fornos, caldeiras, aquecedores de água, sistemas de
+								refrigeração GHP.</li>
+
+							<li>combustível em veículos de qualquer porte (carros e caminhões), entre outros.</li>
+
+							<li>energia elétrica: alimentação de grupos motogeradores ou turbinas/microturbinas.</li>
+						</ul>
+					</div>
+
+					<!-- box destaque -->
+					<div class="col-lg-10 py-4 mx-auto">
+						<div class="box">
+							<p>A tecnologia do biometano está em constante evolução, com esforços contínuos para
+								aprimorar sua eficiência e qualidade. Novas abordagens, como sistemas bioeletroquímicos
+								e técnicas avançadas de separação têm sido exploradas para otimizar o conteúdo de metano
+								do biometano e viabilizar sua integração na rede de distribuição de gás natural.</p>
+
+							<p>Com sua versatilidade, sustentabilidade e potencial para reduzir as emissões de gases de
+								efeito estufa, o biometano desempenha um papel importante na transição para uma matriz
+								energética mais limpa e sustentável. </p>
+
+							<div class="col-lg-6 mx-auto">
+								<a data-fancybox="zoom" data-src="../Aula/img/mod3/aula2/img5.png" data-caption="">
+									<img src="../Aula/img/mod3/aula2/img5.png" class="img-fluid rounded" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<p>O biometano, uma forma purificada e aprimorada do biogás, pode ser produzido através de processos
+						avançados de purificação e refino.</p>
+
+					<p><em>Clique nas setas laterais para saber mais. </em></p>
+				</div>
+				<!-- slider -->
+				<div class="row">
+					<div class="col-lg-10 mx-auto">
+						<div class="row pt-4">
+							<div uk-slider>
+								<div class="uk-position-relative">
+									<div class="uk-slider-container uk-light">
+										<ul class="uk-slider-items ">
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<h3>Purificação do biogás</h3>
+														<div class="row d-flex justify-content-between gap-3">
+
+															<p>O biometano é obtido a partir do biogás através de
+																processos de purificação. Nesses processos, como já
+																mencionado, impurezas como dióxido de carbono (CO2),
+																sulfeto de hidrogênio (H2S), umidade e outros gases
+																são removidos, resultando em um produto com teor de
+																metano superior a 95%.</p>
+
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<h3>Gaseificação térmica</h3>
+
+														<p>A gaseificação térmica é uma abordagem que visa a
+															produzir metano a partir de matéria-prima como
+															material lignocelulósico. Geralmente, esse método
+															requer uma escala significativa, da ordem de 400MW,
+															tornando-o adequado para grandes distâncias de
+															transporte. Os gases resultantes da combustão
+															deficiente em oxigênio são convertidos em biometano,
+															oferecendo uma fonte de energia renovável.</p>
+
+													</div>
+												</div>
+											</li>
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<h3>Digestão anaeróbia biológica</h3>
+
+														<p>A digestão anaeróbia biológica é uma tecnologia
+															amplamente utilizada para produção de biometano,
+															especialmente com matéria-prima como resíduos
+															orgânicos. Essa metodologia, embora em escala menor,
+															tipicamente inferior a 1MW, é uma opção popular
+															devido à sua versatilidade e disponibilidade
+															crescente de matérias-primas. Os resíduos,
+															predominantemente de esgoto, chorume e lixo
+															orgânico, são complementados por culturas e resíduos
+															agrícolas, ampliando, assim, o potencial de produção
+															de biometano.</p>
+
+													</div>
+												</div>
+											</li>
+											<li>
+												<div
+													class="uk-card uk-card-default h-100 rounded-4 d-flex justify-content-center align-items-center mx-3">
+													<div class="uk-card-body">
+														<h3>Conversão de eletricidade em hidrogênio</h3>
+
+
+														<p>Esta metodologia envolve a conversão de eletricidade
+															renovável em hidrogênio por meio de eletrólise,
+															seguida pela conversão do hidrogênio em metano. É
+															uma opção vantajosa para a indústria de turbinas
+															eólicas, pois a eletricidade produzida durante
+															períodos de baixa demanda pode ser aproveitada para
+															a produção de biometano. Em países com
+															infraestrutura de gás natural, o dióxido de carbono
+															de usinas ou instalações de digestão anaeróbia pode
+															ser sequestrado, convertendo hidrogênio e dióxido de
+															carbono em metano, que pode ser incorporado à rede
+															de gás como fonte de energia renovável.</p>
+
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="uk-hidden@s uk-light">
+										<a class="uk-position-center-left uk-position-small" href="#"
+											uk-slidenav-previous uk-slider-item="previous"></a>
+										<a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next
+											uk-slider-item="next"></a>
+									</div>
+									<div class="uk-visible@s">
+										<a class="uk-position-center-left-out uk-position-small" href="#"
+											uk-slidenav-previous uk-slider-item="previous"></a>
+										<a class="uk-position-center-right-out uk-position-small" href="#"
+											uk-slidenav-next uk-slider-item="next"></a>
+									</div>
+								</div>
+								<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row pt-5">
+					<p><em>Clique nos itens do quadro a seguir para conhecer as técnicas de purificação do biogás para a
+							produção de biometano. </em></p>
+
+					<!-- accordion biogas-purificacao -->
+					<div class="col-md-8 mx-auto py-4">
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="accordion" id="biogas-purificacao-accordion">
+								<div class="accordion-item">
+									<h4 class="accordion-header" id="collapse-cabecalho-1">
+										<button class="accordion-button collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false"
+											aria-controls="collapse-1" aria-labelledby="Tecnologia de lavagem">
+											Tecnologia de lavagem
+										</button>
+									</h4>
+									<div id="collapse-1" class="accordion-collapse collapse"
+										data-bs-parent="#biogas-purificacao-accordion">
+										<div class="accordion-body">
+											<p>Neste método, o biogás é submetido a um processo de lavagem para remover
+												o dióxido de carbono e o sulfeto de hidrogênio. Geralmente, são usadas
+												soluções alcalinas ou ácidas para capturar esses gases indesejados.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h4 class="accordion-header" id="collapse-cabecalho-2">
+										<button class="accordion-button collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false"
+											aria-controls="collapse-2" aria-labelledby="Absorção">
+											Absorção
+										</button>
+									</h4>
+									<div id="collapse-2" class="accordion-collapse collapse"
+										data-bs-parent="#biogas-purificacao-accordion">
+										<div class="accordion-body">
+											<p>A absorção é outro método utilizado para separar o dióxido de carbono e o
+												sulfeto de hidrogênio do biogás. Neste processo, o biogás é borbulhado
+												através de uma solução absorvente, e as impurezas são capturadas e
+												removidas.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h4 class="accordion-header" id="collapse-cabecalho-3">
+										<button class="accordion-button collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false"
+											aria-controls="collapse-3" aria-labelledby="Membranas de separação">
+											Membranas de separação
+										</button>
+									</h4>
+									<div id="collapse-3" class="accordion-collapse collapse"
+										data-bs-parent="#biogas-purificacao-accordion">
+										<div class="accordion-body">
+											<p>O uso de membranas de separação é uma técnica eficaz para purificar o
+												biogás. As membranas permitem que o metano passe através delas enquanto
+												retêm outras impurezas, produzindo assim biometano de alta pureza.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h4 class="accordion-header" id="collapse-cabecalho-4">
+										<button class="accordion-button collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false"
+											aria-controls="collapse-4" aria-labelledby="Adsorção">
+											Adsorção
+										</button>
+									</h4>
+									<div id="collapse-4" class="accordion-collapse collapse"
+										data-bs-parent="#biogas-purificacao-accordion">
+										<div class="accordion-body">
+											<p>É um processo em que as impurezas do biogás são removidas pela adesão a
+												uma superfície sólida. Carvão ativado ou zeólitos são frequentemente
+												utilizados como materiais adsorventes para capturar o CO2 e o H2S.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h4 class="accordion-header" id="collapse-cabecalho-5">
+										<button class="accordion-button collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false"
+											aria-controls="collapse-5" aria-labelledby="Destilação Criogênica">
+											Destilação Criogênica
+										</button>
+									</h4>
+									<div id="collapse-5" class="accordion-collapse collapse"
+										data-bs-parent="#biogas-purificacao-accordion">
+										<div class="accordion-body">
+											<p>Neste método, o biogás é resfriado a temperaturas muito baixas para
+												liquefação dos gases indesejados, que são separados do metano
+												liquefeito.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<p>Esses são alguns dos principais métodos utilizados para produzir biometano, todos visando à
+						obtenção de um produto de alta pureza e qualidade, adequado para uma variedade de aplicações,
+						incluindo injeção na rede de gás natural, transporte e uso como combustível em veículos. </p>
+
+					<div class="col-lg-6 mx-auto">
+						<a data-fancybox="zoom" data-src="../Aula/img/mod3/aula2/img6.png" data-caption="">
+							<img src="../Aula/img/mod3/aula2/img6.png" class="img-fluid rounded" alt="">
+						</a>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="d-flex py-4 min-vh-100 flex-column justify-content-center" id="3-aula2-section-7">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h1>
+							Aplicações e perspectivas
+						</h1>
+					</div>
+				</div>
+				<div class="row">
+					<p>
+						O biogás e o biometano emergem como protagonistas essenciais na transição global para sistemas
+						energéticos mais sustentáveis e de baixo carbono.</p>
+					<p>No contexto do setor de transporte, o biometano desponta como uma alternativa promissora aos
+						combustíveis fósseis, oferecendo uma solução viável para a descarbonização de veículos e frotas.
+						À medida que o mundo busca formas de enfrentar os desafios das mudanças climáticas e reduzir sua
+						dependência de combustíveis não renováveis, o biogás e o biometano se tornam catalisadores
+						essenciais dessa transformação, tanto em nível global quanto local.</p>
+					<p>Nesse cenário, é fundamental entender as principais aplicações e perspectivas dessas tecnologias,
+						considerando não apenas o contexto europeu, mas também as oportunidades e desafios específicos
+						do cenário brasileiro.</p>
+
+					<p><em>Clique em play no podcast a seguir para conhecer as perspectivas do uso de biogás e
+							biometano. </em></p>
+
+					<div class="col-lg-8 mx-auto py-3">
+						<div class="ratio ratio-16x9 ">
+							<iframe class="rounded"
+								src="https://play.sesisenai.videolib.live/index.html?token=c919a383dc154a21ad731cab3c3cd954"
+								title="Podcast 1" allowfullscreen uk-video=" autoplay:false;">
+							</iframe>
+						</div>
+					</div>
+					<div class="mx-auto pb-5">
+						<button class="uk-button-default rounded uk-align-center ativo" type="button"
+							uk-toggle="target: #audio-1; animation:  uk-animation-slide-left, uk-animation-slide-bottom"
+							aria-expanded="false">
+							<h3 class="m-3">Transcrição</h3>
+						</button>
+						<div id="audio-1" class="uk-card uk-card-default uk-card-body uk-margin-small rounded py-5"
+							hidden="">
+							<p><strong>Jefferson:</strong> Olá, ouvintes! Bem-vindos ao nosso podcast. Vamos falar sobre
+								as tendências atuais e futuras na utilização do biogás e biometano. E para esse
+								bate-papo está aqui comigo a Bruna. Seja bem-vinda!</p>
+
+							<p><strong>Bruna:</strong> Obrigada Jefferson! É um prazer estar aqui.</p>
+
+							<p><strong>Jefferson:</strong> Bruna, esse é um tema que está ganhando destaque como uma
+								fonte sustentável de energia, não é? Você poderia nos falar sobre as tendências atuais
+								na utilização do biogás e biometano?</p>
+
+							<p><strong>Bruna:</strong> Claro! O biogás é produzido a partir da decomposição anaeróbica
+								de resíduos orgânicos, como resíduos agrícolas, alimentares, sólidos urbanos e lodo de
+								esgoto. As principais tendências incluem a integração do biogás em sistemas de geração
+								de energia elétrica e térmica, especialmente em áreas rurais. Além disso, a conversão do
+								biogás em biometano, que tem propriedades semelhantes ao gás natural, está crescendo,
+								especialmente para uso como combustível veicular.</p>
+
+							<p><strong>Jefferson:</strong> Muito interessante! E, Bruna, como o biometano está sendo
+								utilizado atualmente?</p>
+
+							<p><strong>Bruna:</strong> O biometano, que é uma forma purificada de biogás, pode ser
+								injetado diretamente na rede de gás natural. Uma tendência importante é a sua utilização
+								em frotas de veículos pesados, como caminhões e ônibus, devido ao seu menor impacto
+								ambiental comparado aos combustíveis fósseis tradicionais. Além disso, muitos países
+								estão incentivando a produção de biometano por meio de políticas de subsídios e tarifas
+								feed-in, impulsionando investimentos na infraestrutura necessária para sua produção e
+								distribuição.</p>
+
+							<p><strong>Jefferson:</strong> E olhando para o futuro, o que podemos esperar na evolução do
+								uso do biogás e biometano?</p>
+
+							<p><strong>Bruna:</strong> No futuro, vemos um grande potencial para o biogás na
+								descarbonização da matriz energética. As tecnologias emergentes estão focadas em
+								aumentar a eficiência de produção e a captura de carbono durante o processo de digestão
+								anaeróbica. A integração de biogás com outras fontes renováveis, como solar e eólica,
+								também está sendo explorada para criar sistemas de energia híbridos mais resilientes e
+								sustentáveis.</p>
+
+							<p><strong>Bruna:</strong> Complementando, o biometano tem um papel importante na transição
+								para uma economia circular. Esperamos ver um aumento na utilização de resíduos
+								industriais e agrícolas não só para produção de energia, mas também para gerar
+								bioprodutos de alto valor agregado, como biofertilizantes. A inovação em tecnologias de
+								purificação e compressão de biometano será vital para ampliar seu uso em setores
+								diversos, incluindo a aviação e o transporte marítimo.</p>
+
+							<p><strong>Jefferson:</strong> Muito obrigado, Bruna, por compartilhar seu conhecimento
+								sobre as tendências do biogás e biometano. É evidente que essas fontes de energia
+								renovável têm um futuro promissor e desempenham um papel importante na transição
+								energética global.</p>
+
+							<p><strong>Bruna:</strong> Obrigada! Foi um prazer participar.</p>
+
+							<p><strong>Jefferson:</strong> E a todos os nossos ouvintes, agradecemos por nos
+								acompanharem até aqui. Um abraço e até a próxima!</p>
+
+						</div>
+					</div>
+
+					<p><em>Clique nos itens do quadro a seguir para conhecer mais detalhes das aplicações do biogás e
+							biometano. </em></p>
+
+					<!-- accordion biometano-brasil -->
+					<div class="col-md-8 mx-auto py-4">
+						<div class="bd-example-snippet bd-code-snippet">
+							<div class="accordion" id="biometano-brasil-accordion">
+								<div class="accordion-item">
+									<h4 class="accordion-header" id="collapse-cabecalho-1">
+										<button class="accordion-button collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false"
+											aria-controls="collapse-1" aria-labelledby="Variedade de matérias-primas">
+											Variedade de matérias-primas
+										</button>
+									</h4>
+									<div id="collapse-1" class="accordion-collapse collapse"
+										data-bs-parent="#biometano-brasil-accordion">
+										<div class="accordion-body">
+											<p>Além de resíduos agrícolas, florestais, animais e resíduos sólidos
+												urbanos, no Brasil, há um grande potencial para o uso de subprodutos da
+												agroindústria, como bagaço de cana-de-açúcar e vinhaça. Isso amplia
+												ainda mais as possibilidades de produção sustentável de biometano e sua
+												aplicação no transporte, contribuindo para uma economia mais circular e
+												reduzindo a dependência de combustíveis fósseis.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h4 class="accordion-header" id="collapse-cabecalho-2">
+										<button class="accordion-button collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false"
+											aria-controls="collapse-2"
+											aria-labelledby="Benefícios ambientais e econômicos">
+											Benefícios ambientais e econômicos
+										</button>
+									</h4>
+									<div id="collapse-2" class="accordion-collapse collapse"
+										data-bs-parent="#biometano-brasil-accordion">
+										<div class="accordion-body">
+											<p>Além dos benefícios ambientais, como a redução das emissões de carbono, o
+												biometano também oferece vantagens econômicas. No Brasil, por exemplo, o
+												biometano pode ajudar a reduzir a dependência do país dos combustíveis
+												fósseis importados, contribuindo para a segurança energética e para o
+												desenvolvimento econômico sustentável.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h4 class="accordion-header" id="collapse-cabecalho-3">
+										<button class="accordion-button collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false"
+											aria-controls="collapse-3"
+											aria-labelledby="Infraestrutura e regulamentação">
+											Infraestrutura e regulamentação
+										</button>
+									</h4>
+									<div id="collapse-3" class="accordion-collapse collapse"
+										data-bs-parent="#biometano-brasil-accordion">
+										<div class="accordion-body">
+											<p>O desenvolvimento do biometano no transporte requer não apenas avanços
+												tecnológicos na produção e distribuição, mas também políticas e
+												regulamentações favoráveis, bem como infraestrutura adequada. No Brasil,
+												são necessários investimentos em infraestrutura de produção, transporte
+												e distribuição de biometano, além de incentivos e políticas claras para
+												promover seu uso.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h4 class="accordion-header" id="collapse-cabecalho-4">
+										<button class="accordion-button collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false"
+											aria-controls="collapse-4" aria-labelledby="Cenário regulatório brasileiro">
+											Cenário regulatório brasileiro
+										</button>
+									</h4>
+									<div id="collapse-4" class="accordion-collapse collapse"
+										data-bs-parent="#biometano-brasil-accordion">
+										<div class="accordion-body">
+											<p>No Brasil, o uso de biometano no transporte é incentivado por políticas
+												como o RenovaBio, programa que estabelece metas anuais de redução de
+												emissões de gases de efeito estufa e incentiva a produção e o uso de
+												biocombustíveis avançados. Além disso, o país possui regulamentações
+												específicas para a produção e qualidade do biometano, garantindo sua
+												segurança e viabilidade como combustível.</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h4 class="accordion-header" id="collapse-cabecalho-5">
+										<button class="accordion-button collapsed" type="button"
+											data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false"
+											aria-controls="collapse-5"
+											aria-labelledby="Potencial de crescimento no Brasil">
+											Potencial de crescimento no Brasil
+										</button>
+									</h4>
+									<div id="collapse-5" class="accordion-collapse collapse"
+										data-bs-parent="#biometano-brasil-accordion">
+										<div class="accordion-body">
+											<p>O Brasil possui um vasto potencial para a produção de biogás e biometano,
+												devido à sua grande produção agrícola e agroindustrial, além da
+												quantidade significativa de resíduos sólidos urbanos. Com investimentos
+												adequados em tecnologia e infraestrutura, o país pode se tornar líder na
+												produção e uso de biometano, tanto para o transporte quanto para outras
+												aplicações.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+		<section class="d-flex min-vh-100 flex-column justify-content-center exercicios py-3" id="3-aula2-section-8">
+			<article class="container py-4">
+				<div class="border rounded">
+					<h1 class="p-4">Praticando</h1>
+					<div class="row"></div>
+				</div>
+			</article>
+		</section>
+		<hr class="uk-divider-icon">
+		<!-- Recapitulando -->
+		<section class="d-flex flex-column justify-content-center" id="3-aula2-section-9">
+			<article class="container py-4">
+				<div class="align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2 py-4 ">
+					<div class="section-level1">
+						<h2>Recapitulando</h2>
+					</div>
+				</div>
+				<div class="row">
+					<p>Nesta aula, estudamos a respeito de biogás e biometano, valiosas fontes de energia renovável.
+						Exploramos sua origem na decomposição anaeróbia da matéria orgânica, ressaltando as diferenças
+						fundamentais em seus processos de produção.</p>
+					<p>Ao compreendermos a necessidade de etapas adicionais de purificação para o biogás, reconhecemos a
+						importância de remover impurezas, resultando em um produto mais puro e concentrado. Refletimos
+						sobre o potencial desses gases para impulsionar a transição energética global, destacando seus
+						benefícios ambientais e econômicos.</p>
+					<p>Ao concluirmos essa jornada de aprendizado, somos instigados a considerar como podemos aplicar
+						esse conhecimento em nossas vidas e contribuir para um futuro mais sustentável e próspero. </p>
+				</div>
+
+			</article>
+		</section>
+		<!-- lorem -->
+		<hr class="uk-divider-icon">
+		<section class="pb-4" id="11">
+			<article class="container pb-4">
+				<div class="pb-4" id="content">
+					<div class="row" id="progresso">
+						<div class="col-lg-4 uk-text-center ">
+							<div class="legenda" style="font-size: 1rem;">Progresso do curso
+							</div>
+							<div class="copyright">
+								<div class="progress-circle"></div>
+								<span id="progressoGeral" class="fonte-plus"></span> <span class="text-color1">%</span>
+							</div>
+						</div>
+						<div class="col-lg-4 uk-text-center ">
+							<div class="legenda" style="font-size: 1rem;">Respostas corretas
+							</div>
+							<div class="copyright">
+
+								<span id="exerciciosCorretos" class="fonte-plus"></span><span
+									class="text-color1">%</span>
+							</div>
+						</div>
+						<div class="col-lg-4 uk-text-center ">
+							<div class="legenda" style="font-size: 1rem;">Exercícios
+								concluídos</div>
+							<div class="copyright">
+								<span id="exerciciosRealizados" class="fonte-plus"></span>
+								<span id="totalExercicios">/</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</section>
+	</main>
+	<footer class="border-top fixed-bottom bg-menu-color">
+		<div class="progress_section">
+			<div class="progress_bar_wrap">
+				<div class="progress_bar"></div>
+			</div>
+			<div class="progress_num"> </div>
+		</div>
+		<div class="d-flex justify-content-evenly align-items-center justify-content-center">
+			<div class="col-sm-12 d-flex justify-content-center">
+				<div class="d-flex justify-content-evenly align-items-center">
+					<div class="col-sm-2 d-flex justify-content-end">
+						<a href="3de1_pt-br.html" aria-label="Próximo" title="Próximo">
+							<i class='bx mt-3 bx-fade-left-hover bxs-left-arrow-circle bx-md copyright px-3'></i>
+						</a>
+					</div>
+					<div class="col-sm-8 d-flex justify-content-center ">
+						<p class="mx-auto mt-4 ">© SENAI <span id="year"></span></p>
+					</div>
+					<div class="col-sm-2 d-flex justify-content-start">
+						<a href="3de3_pt-br.html" aria-label="Próximo" title="Próximo">
+							<i class='bx mt-3 bx-fade-riht-hover bxs-right-arrow-circle bx-md copyright px-3'></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body><!-- SCORM -->
+<script src="../Template/js/acoes.js"></script>
+<script type="text/javascript" src="../Template/js/blocos_pt-br-t2k.js"></script>
+<script type="text/javascript" src="../Template/js/blocos_pt-br.js"></script>
+<script type="text/javascript" src="../Template/js/exercicios_pt-br.js"></script><!-- CONFIGURAÇÕES -->
+<script src='../Template/js/chart-plugin.js'></script>
+<script src="../Template/js/configuracoes.js"></script>
+<script src="../Template/js/main.js"></script>
+<script src="../Template/bibliotecas/youtube/js/youtube-chapters.min.js"></script>
+<script src="../Template/bibliotecas/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../Template/bibliotecas/fancybox/fancybox.umd.js"></script>
+<script src="../Aula/js/aula-1/graficos.js"></script>
+<script src="../Aula/js/aula-1/youtube.js"></script>
+<script>  Fancybox.bind('[data-fancybox="zoom"]', {});</script>
+<script>  window.addEventListener('load', () => { const date = new Date(); document.querySelector('#year').textContent = `${date.getFullYear()}` })</script>
+<script>
+	var intro = introJs();
+	intro.setOptions({
+
+		'skipLabel': '<i class="bi bi-x-lg"></i>',
+		tooltipClass: 'customTooltip',
+		showProgress: true,
+		dontShowAgain: true,
+		hidePrev: true,
+		hideNext: false,
+		exitOnEsc: true,
+		showStepNumbers: true,
+		showBullets: false,
+		steps: [
+
+			{
+				element: document.querySelector('.cor1'),
+				intro: '<p>Menu - Hieraquia - (texto descritivo)</p>',
+			},
+
+			{
+				element: document.querySelector('.switch-darkmode'),
+				intro: '<p>Modo Escuro - (texto descritivo)</p>'
+			},
+
+			{
+				element: document.querySelector('.vlibras-show'),
+				intro: '<p>Aqui voceê pode encontar o V-Libras - (texto descritivo)'
+			},
+
+			{
+				element: document.querySelector('#Acessibilidade'),
+				intro: '<img src="img/template/acessibilidade.png" alt="Acessibilidade">',
+			},
+		]
+
+	}).start();
+</script>
+
+</html>

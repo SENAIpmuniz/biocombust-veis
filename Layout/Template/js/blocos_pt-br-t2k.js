@@ -852,95 +852,110 @@ var json = {
 					perguntas: [
 						// PERGUNTA 1
 						{
-							titulo:
-								"<strong>1.</strong> Aspectos ambientais são elementos que interagem ou podem interagir com o meio ambiente. Os impactos ambientais ocorrem quando aspectos ambientais provocam mudanças integrais ou parciais e positivas ou negativas no meio ambiente. Associe as definições corretamente, indicando se a opção corresponde a um aspecto ambiental ou a um impacto ambiental.",
-							tipo: "combobox",
-							opcoes: "Impacto ambiental,Aspecto ambiental",
+							titulo: "<strong>1.</strong> Qual das seguintes afirmações sobre o processo de produção de biometano está correta?",
+							tipo: "checkbox",
 							questao: [
 								{
-									alternativa:
-										"<strong>A. </strong>Escassez de recursos naturais não renováveis.",
-									resposta: "Impacto ambiental",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
+									alternativa: "<strong>A)</strong> O biometano é produzido exclusivamente a partir de resíduos alimentares.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
-
 								{
-									alternativa:
-										"<strong>B. </strong>Emissão de gases de efeito estufa.",
-									resposta: "Aspecto ambiental",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
+									alternativa: "<strong>B)</strong> A gaseificação térmica é a única metodologia utilizada na produção de biometano.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
-
 								{
-									alternativa:
-										"<strong>C. </strong>Intensificação do aquecimento global.",
-									resposta: "Impacto ambiental",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
+									alternativa: "<strong>C)</strong> O processo de purificação do biogás para produzir biometano não envolve a remoção de impurezas como CO2 e H2S.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
-
 								{
-									alternativa: "<strong>D. </strong>Uso de papel reciclado.",
-									resposta: "Aspecto ambiental",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
+									alternativa: "<strong>D)</strong> O biometano, uma vez produzido, pode ser diretamente injetado na rede de gás natural após passar por um processo de purificação e condicionamento.",
+									resposta: true,
+									feedbackpositivo: "Isso mesmo! Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
+								{
+									alternativa: "<strong>E)</strong> O Brasil não possui potencial para a produção de biometano devido à falta de matérias-primas adequadas.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								}
 							],
-							tentativas: 1,
-							feedbackCorreto:
-								"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
-							feedbackIncorreto1: "Tente Novamente",
-							feedbackIncorreto2:
-								"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-						},
+							tentativas: 0,
+							feedbackCorreto: "Parabéns! Você selecionou a alternativa correta.",
+							feedbackIncorreto1: "Tente novamente.",
+							feedbackIncorreto2: "Resposta incorreta."
+						}
+						,
 						// PERGUNTA 2
 						{
-							titulo:
-								"<strong>2.</strong> Indique as alternativas corretas que contêm as principais atividades antrópicas relacionadas à emissão de gases de efeito estufa (GEE) e ao aumento da temperatura global.",
-							tipo: "multiple",
+							titulo: "<strong>2.</strong> A respeito dos processos relacionados à produção de biogás e biometano, relacione as colunas corretamente.",
+							tipo: "combobox",
+							opcoes: "Biogás,Biometano,Digestão anaeróbia,Microrganismos anaeróbios,Purificação do biogás",
 							questao: [
 								{
-									alternativa: "<strong>A.</strong> Desmatamento de florestas.",
-									resposta: true,
-									feedbacknegativo: "A alternativa está correta.",
-									feedbackpositivo: "A alternativa está correta.",
+									alternativa: "<strong>A) </strong>Gás composto principalmente por metano e dióxido de carbono, gerado durante a digestão anaeróbia.",
+									resposta: "Biogás",
+									feedbackpositivo: "Isso mesmo! Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
 								},
 								{
-									alternativa: "<strong>B.</strong> Produção de etanol.",
-									resposta: false,
-									feedbacknegativo: "A alternativa está incorreta.",
-									feedbackpositivo: "A alternativa está incorreta.",
+									alternativa: "<strong>B) </strong>Forma refinada de biogás, com alta concentração de metano.",
+									resposta: "Biometano",
+									feedbackpositivo: "Isso mesmo! Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
 								},
 								{
-									alternativa:
-										"<strong>C.</strong> Geração e utilização de energia.",
-									resposta: true,
-									feedbacknegativo: "Alternativa correta. ",
-									feedbackpositivo: "Alternativa correta. ",
+									alternativa: "<strong>C) </strong>Processo de decomposição de matéria orgânica sem a presença de oxigênio.",
+									resposta: "Digestão anaeróbia",
+									feedbackpositivo: "Isso mesmo! Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
 								},
 								{
-									alternativa:
-										"<strong>D.</strong> Produção de cimento, aço e ferro.",
-									resposta: true,
-									feedbacknegativo: "A alternativa está correta. ",
-									feedbackpositivo: "A alternativa está correta. ",
+									alternativa: "<strong>D) </strong>Responsáveis pela decomposição da matéria orgânica.",
+									resposta: "Microrganismos anaeróbios",
+									feedbackpositivo: "Isso mesmo! Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
 								},
+								{
+									alternativa: "<strong>E) </strong>Método para remover impurezas do biogás, como CO2 e H2S.",
+									resposta: "Purificação do biogás",
+									feedbackpositivo: "Isso mesmo! Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
+								}
 							],
-							tentativas: 2,
-							feedbackCorreto: "Parabéns",
-							feedbackIncorreto1: "Tente Novamente",
-							feedbackIncorreto2: "Resposta Incorreta",
+							tentativas: 0,
+							feedbackCorreto: "Isso mesmo! Você fez a correspondência de maneira correta.",
+							feedbackIncorreto1: "Você não fez a correspondência de maneira correta.",
+							feedbackIncorreto2: "Você não fez a correspondência de maneira correta."
 						},
+						// PERGUNTA3
+						{
+							titulo: "<strong>3.</strong> Biogás e biometano são ambos produzidos a partir da decomposição anaeróbia de matéria orgânica, mas o biogás passa por etapas adicionais de purificação para remover impurezas, resultando em um produto mais puro e concentrado, enquanto o biometano não.",
+							tipo: "trueorfalse",
+							questao: [
+								{
+									alternativa: "<strong>A) </strong>Verdadeiro",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>B) </strong>Falso",
+									resposta: true,
+									feedbackpositivo: "Isso mesmo! A afirmação é falsa. O biometano, assim como o biogás, é produzido a partir da decomposição anaeróbia de matéria orgânica. No entanto, ao contrário do que foi afirmado, o biometano passa por etapas adicionais de purificação para remover impurezas, resultando em um produto mais puro e concentrado, enquanto o biogás não necessariamente passa por essas etapas de purificação.",
+									feedbacknegativo: "Você não selecionou a alternativa correta. A afirmação é falsa. O biometano, assim como o biogás, é produzido a partir da decomposição anaeróbia de matéria orgânica. No entanto, ao contrário do que foi afirmado, o biometano passa por etapas adicionais de purificação para remover impurezas, resultando em um produto mais puro e concentrado, enquanto o biogás não necessariamente passa por essas etapas de purificação."
+								}
+							],
+							feedbackCorreto: "Parabéns! A afirmação é falsa. O biometano, assim como o biogás, é produzido a partir da decomposição anaeróbia de matéria orgânica. No entanto, ao contrário do que foi afirmado, o biometano passa por etapas adicionais de purificação para remover impurezas, resultando em um produto mais puro e concentrado, enquanto o biogás não necessariamente passa por essas etapas de purificação.",
+							feedbackIncorreto1: "Resposta incorreta. A afirmação é falsa. O biometano, assim como o biogás, é produzido a partir da decomposição anaeróbia de matéria orgânica. No entanto, ao contrário do que foi afirmado, o biometano passa por etapas adicionais de purificação para remover impurezas, resultando em um produto mais puro e concentrado, enquanto o biogás não necessariamente passa por essas etapas de purificação.",
+							feedbackIncorreto2: "Resposta incorreta. A afirmação é falsa. O biometano, assim como o biogás, é produzido a partir da decomposição anaeróbia de matéria orgânica. No entanto, ao contrário do que foi afirmado, o biometano passa por etapas adicionais de purificação para remover impurezas, resultando em um produto mais puro e concentrado, enquanto o biogás não necessariamente passa por essas etapas de purificação."
+						}
 					],
 				},
 				{
