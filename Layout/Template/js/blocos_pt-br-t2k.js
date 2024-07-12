@@ -1279,95 +1279,110 @@ var json = {
 					perguntas: [
 						// PERGUNTA 1
 						{
-							titulo:
-								"<strong>1.</strong> Aspectos ambientais são elementos que interagem ou podem interagir com o meio ambiente. Os impactos ambientais ocorrem quando aspectos ambientais provocam mudanças integrais ou parciais e positivas ou negativas no meio ambiente. Associe as definições corretamente, indicando se a opção corresponde a um aspecto ambiental ou a um impacto ambiental.",
-							tipo: "combobox",
-							opcoes: "Impacto ambiental,Aspecto ambiental",
+							titulo: "<strong>1.</strong> Qual dos seguintes fatores é o mais significativo para determinar a viabilidade econômica dos biocombustíveis?",
+							tipo: "checkbox",
 							questao: [
 								{
-									alternativa:
-										"<strong>A. </strong>Escassez de recursos naturais não renováveis.",
-									resposta: "Impacto ambiental",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
+									alternativa: "<strong>A)</strong> O preço do petróleo no mercado internacional.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
-
 								{
-									alternativa:
-										"<strong>B. </strong>Emissão de gases de efeito estufa.",
-									resposta: "Aspecto ambiental",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
+									alternativa: "<strong>B)</strong> A quantidade de água utilizada na produção agrícola.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
-
 								{
-									alternativa:
-										"<strong>C. </strong>Intensificação do aquecimento global.",
-									resposta: "Impacto ambiental",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
+									alternativa: "<strong>C)</strong> Os custos de produção, incluindo matéria-prima, processamento e distribuição.",
+									resposta: true,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
-
 								{
-									alternativa: "<strong>D. </strong>Uso de papel reciclado.",
-									resposta: "Aspecto ambiental",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
+									alternativa: "<strong>D)</strong> A opinião pública sobre energias renováveis.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
+								{
+									alternativa: "<strong>E)</strong> O clima da região onde os biocombustíveis são produzidos.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								}
 							],
-							tentativas: 1,
-							feedbackCorreto:
-								"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental.",
-							feedbackIncorreto1: "Tente Novamente",
-							feedbackIncorreto2:
-								"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
+							tentativas: 0,
+							feedbackCorreto: "Isso mesmo! Você selecionou a alternativa correta.",
+							feedbackIncorreto1: "Tente novamente.",
+							feedbackIncorreto2: "Resposta incorreta."
 						},
 						// PERGUNTA 2
 						{
-							titulo:
-								"<strong>2.</strong> Indique as alternativas corretas que contêm as principais atividades antrópicas relacionadas à emissão de gases de efeito estufa (GEE) e ao aumento da temperatura global.",
-							tipo: "multiple",
+							titulo: "<strong>2.</strong> Faça a associação correta entre os itens a seguir no que diz respeito ao conceito relacionado à viabilidade econômica dos biocombustíveis.",
+							tipo: "combobox",
+							opcoes: "Matéria-prima,Processamento,Distribuição,Comparação de custos,Subsídios governamentais",
 							questao: [
 								{
-									alternativa: "<strong>A.</strong> Desmatamento de florestas.",
-									resposta: true,
-									feedbacknegativo: "A alternativa está correta.",
-									feedbackpositivo: "A alternativa está correta.",
+									alternativa: "<strong>A) </strong> Recursos como milho, cana-de-açúcar e resíduos agrícolas.",
+									resposta: "Matéria-prima",
+									feedbackpositivo: "Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
 								},
 								{
-									alternativa: "<strong>B.</strong> Produção de etanol.",
-									resposta: false,
-									feedbacknegativo: "A alternativa está incorreta.",
-									feedbackpositivo: "A alternativa está incorreta.",
+									alternativa: "<strong>B) </strong> Custo relacionado à conversão de biomassa em biocombustíveis.",
+									resposta: "Processamento",
+									feedbackpositivo: "Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
 								},
 								{
-									alternativa:
-										"<strong>C.</strong> Geração e utilização de energia.",
-									resposta: true,
-									feedbacknegativo: "Alternativa correta. ",
-									feedbackpositivo: "Alternativa correta. ",
+									alternativa: "<strong>C) </strong> Infraestrutura necessária para transportar e armazenar biocombustíveis.",
+									resposta: "Distribuição",
+									feedbackpositivo: "Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
 								},
 								{
-									alternativa:
-										"<strong>D.</strong> Produção de cimento, aço e ferro.",
-									resposta: true,
-									feedbacknegativo: "A alternativa está correta. ",
-									feedbackpositivo: "A alternativa está correta. ",
+									alternativa: "<strong>D) </strong> Análise de preços entre biocombustíveis e combustíveis fósseis.",
+									resposta: "Comparação de custos",
+									feedbackpositivo: "Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
 								},
+								{
+									alternativa: "<strong>E) </strong> Incentivos fiscais e financeiros oferecidos pelo governo.",
+									resposta: "Subsídios governamentais",
+									feedbackpositivo: "Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
+								}
 							],
-							tentativas: 2,
-							feedbackCorreto: "Parabéns",
-							feedbackIncorreto1: "Tente Novamente",
-							feedbackIncorreto2: "Resposta Incorreta",
-						},
+							tentativas: 0,
+							feedbackCorreto: "Isso mesmo! Você fez a correspondência de maneira correta.",
+							feedbackIncorreto1: "Tente novamente.",
+							feedbackIncorreto2: "Resposta incorreta."
+						}
+						,// PERGUNTA 3
+						{
+							titulo: "<strong>3.</strong> Os biocombustíveis geralmente produzem menos emissões de gases de efeito estufa do que os combustíveis fósseis, o que pode ser uma vantagem significativa em mercados com políticas de precificação de carbono ou incentivos para a redução de emissões.",
+							tipo: "trueorfalse",
+							questao: [
+								{
+									alternativa: "<strong>A) </strong>Esta afirmação é verdadeira.",
+									resposta: true,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>B) </strong>Esta afirmação é falsa.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								}
+							],
+							feedbackCorreto: "Parabéns! A afirmação é verdadeira.",
+							feedbackIncorreto1: "Resposta incorreta. A afirmação é verdadeira.",
+							feedbackIncorreto2: "Resposta incorreta. A afirmação é verdadeira."
+						}
+
 					],
 				},
 				{
@@ -1375,107 +1390,105 @@ var json = {
 					perguntas: [
 						// PERGUNTA 1
 						{
-							titulo:
-								"<strong>1.</strong> Marque verdadeiro ou falso para as afirmações a seguir sobre o sistema de produção linear.",
+							titulo: "<strong>1.</strong> Podemos dizer que a descarbonização é:",
+							tipo: "checkbox",
+							questao: [
+								{
+									alternativa: "<strong>A)</strong> um processo de destilação no qual os biocompostos são separados por diferentes pontos de ebulição.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>B)</strong> o uso de combustíveis fósseis, especificamente o diesel e a gasolina.",
+									resposta: false,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>C)</strong> o processo de reduzir ou eliminar as emissões de dióxido de carbono (CO2) e outros gases do efeito estufa (GEE) na atmosfera, com o objetivo de reduzir os impactos das mudanças climáticas.",
+									resposta: true,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								}
+							],
+							tentativas: 0,
+							feedbackCorreto: "Parabéns! Você selecionou a alternativa correta.",
+							feedbackIncorreto1: "Tente novamente.",
+							feedbackIncorreto2: "Resposta incorreta."
+						}
+						,
+						// PERGUNTA 2
+						{
+							titulo: "<strong>2.</strong> Relacione as referências de descarbonização a seguir com seus respectivos benefícios.",
+							tipo: "combobox",
+							opcoes: "Tecnologia e inovação recente na produção de biocombustíveis,Gaseificação,Suécia,Índia",
+							questao: [
+								{
+									alternativa: "<strong>A) </strong>Produz etanol de segunda geração que pode ser produzido a partir de materiais como palha de milho e bagaço de cana-de-açúcar.",
+									resposta: "Tecnologia e inovação recente na produção de biocombustíveis",
+									feedbackpositivo: "Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
+								},
+								{
+									alternativa: "<strong>B) </strong>Converte biomassa em syngas (gás de síntese), que posteriormente pode ser transformado em combustíveis líquidos.",
+									resposta: "Gaseificação",
+									feedbackpositivo: "Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
+								},
+								{
+									alternativa: "<strong>C) </strong>Utiliza o biogás gerado a partir de resíduos orgânicos, destacando-se na produção e no uso de biogás como combustível para transporte e geração de eletricidade.",
+									resposta: "Suécia",
+									feedbackpositivo: "Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
+								},
+								{
+									alternativa: "<strong>D) </strong>Deu um importante passo com a produção de biocombustíveis a partir de uma planta oleaginosa local, que pode crescer em terras marginais e não compete com culturas alimentares.",
+									resposta: "Índia",
+									feedbackpositivo: "Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
+								}
+							],
+							tentativas: 0,
+							feedbackCorreto: "Parabéns! Você fez a correspondência de maneira correta.",
+							feedbackIncorreto1: "Tente novamente.",
+							feedbackIncorreto2: "Resposta incorreta."
+						},// PERGUNTA 3
+						{
+							titulo: "<strong>3.</strong> Indique verdadeiro ou falso para as afirmações a seguir.",
 							tipo: "trueorfalse",
 							questao: [
 								{
-									alternativa:
-										"<strong>A. </strong>É baseado na lógica de produção extrair-produzir-usar-descartar, ou seja, da matéria-prima para a produção, seguindo para o uso até o descarte.",
+									alternativa: "<strong>A) </strong>A descarbonização é fundamental para limitar o aquecimento global a níveis seguros, conforme estipulado no Acordo de Paris, que visa manter o aumento da temperatura global abaixo de 2°C acima dos níveis pré-industriais, com esforços para limitar o aumento a 1,5°C.",
 									resposta: true,
-									feedbacknegativo:
-										"Resposta incorreta. As alternativas a, b e d são verdadeiras e a alternativa c é falsa. ",
-									feedbackpositivo:
-										"Parabéns! Resposta correta. A única alternativa falsa é a c. ",
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
-
 								{
-									alternativa:
-										"<strong>B. </strong>A necessidade de extração de novas matérias-primas é constante, gerando muitos impactos negativos, como o acúmulo de resíduos sem destinação correta.",
+									alternativa: "<strong>B) </strong>Os biocombustíveis contribuem para o processo de descarbonização, pois têm potencial para reduzir significativamente as emissões de gases de efeito estufa (GEE) em comparação com combustíveis fósseis, especialmente quando produzidos a partir de resíduos ou com baixa emissão de carbono.",
 									resposta: true,
-									feedbacknegativo:
-										"Resposta incorreta. As alternativas a, b e d são verdadeiras e a alternativa c é falsa. ",
-									feedbackpositivo:
-										"Parabéns!Resposta correta. A única alternativa falsa é a c. ",
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
-
 								{
-									alternativa:
-										"<strong>C. </strong>É baseado na lógica de produção extrair-produzir-usar-consertar-reutilizar-reciclar-retornar.",
-									resposta: false,
-									feedbacknegativo:
-										"Resposta incorreta. As alternativas a, b e d são verdadeiras e a alternativa c é falsa. ",
-									feedbackpositivo:
-										"Parabéns! Resposta correta. A única alternativa falsa é a c. ",
-								},
-
-								{
-									alternativa:
-										"<strong>D. </strong>Promove externalidades ambientais negativas.",
+									alternativa: "<strong>C) </strong>O CO2 emitido durante a combustão de biocombustíveis é compensado pelo CO2 absorvido pelas plantas durante o crescimento, resultando em um ciclo de carbono mais equilibrado.",
 									resposta: true,
-									feedbacknegativo:
-										"Resposta incorreta. As alternativas a, b e d são verdadeiras e a alternativa c é falsa. ",
-									feedbackpositivo:
-										"Parabéns!Resposta correta. A única alternativa falsa é a c. ",
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
+								{
+									alternativa: "<strong>D) </strong>Vários países e blocos econômicos, como União Europeia, China, Estados Unidos e outros, estabeleceram metas para alcançar a neutralidade de carbono até 2050 ou 2060.",
+									resposta: true,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								}
 							],
-							tentativas: 1,
-							feedbackCorreto:
-								"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental",
-							feedbackIncorreto1: "Tente Novamente",
-							feedbackIncorreto2:
-								"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-						},
-						// PERGUNTA 2
-						{
-							titulo:
-								"<strong>2.</strong> Dentro das externalidades ambientais, temos externalidades positivas e negativas. Externalidades ambientais positivas são benefícios gerados a terceiros por meio da produção ou do uso de um produto ou serviço, e externalidades ambientais negativas são malefícios gerados a terceiros por meio da produção ou do uso de um produto ou serviço, e que não são internalizadas por meio da incorporação nos custos ou por outra forma de compensação. Associe as opções corretamente, indicando se correspondem a uma externalidade ambiental positiva ou negativa.",
-							tipo: "combobox",
-							opcoes:
-								"Externalidade ambiental positiva,Externalidade ambiental negativa",
-							questao: [
-								{
-									alternativa:
-										"<strong>A.</strong> <strong>Ação</strong>: Uso de automóvel a combustão interna movido a gasolina. <br><strong>Efeito</strong>: Emissão de material particulado que gera impactos à saúde.",
-									resposta: "Externalidade ambiental negativa",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: A. Externalidade ambiental negativa / B. Externalidade ambiental positiva / C. Externalidade ambiental negativa / D. Externalidade ambiental negativa.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente a opção a uma externalidade ambiental negativa ou positiva.",
-								},
-								{
-									alternativa:
-										"<strong>B.</strong> <strong>Ação</strong>: Estudar e aprender sobre descarbonização. <br><strong>Efeito</strong>: Orienta tomada de decisão para o enfrentamento dos efeitos das mudanças climáticas.",
-									resposta: "Externalidade ambiental positiva",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: A. Externalidade ambiental negativa / B. Externalidade ambiental positiva / C. Externalidade ambiental negativa / D. Externalidade ambiental negativa.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente a opção a uma externalidade ambiental negativa ou positiva.",
-								},
-								{
-									alternativa:
-										"<strong>C.</strong> <strong>Ação</strong>: Produzir vegetais e frutas utilizando agrotóxicos.<br><strong>Efeito</strong>: Liberação de substâncias adversas que geram alterações nos sistemas do solo e da água.",
-									resposta: "Externalidade ambiental negativa",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: A. Externalidade ambiental negativa / B. Externalidade ambiental positiva / C. Externalidade ambiental negativa / D. Externalidade ambiental negativa.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente a opção a uma externalidade ambiental negativa ou positiva.",
-								},
-								{
-									alternativa:
-										"<strong>D.</strong> <strong>Ação</strong>: Criação de gado na Amazônia.<br><strong>Efeito</strong>: Desmatamento de florestas nativas da Amazônia, levando a alterações nos regimes de chuva, efeitos na biodiversidade e no aquecimento global.",
-									resposta: "Externalidade ambiental negativa",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: A. Externalidade ambiental negativa / B. Externalidade ambiental positiva / C. Externalidade ambiental negativa / D. Externalidade ambiental negativa.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente a opção a uma externalidade ambiental negativa ou positiva.",
-								},
-							],
-							tentativas: 2,
-							feedbackCorreto: "Parabéns",
-							feedbackIncorreto1: "Tente Novamente",
-							feedbackIncorreto2: "Resposta Incorreta",
-						},
+							feedbackCorreto: "Parabéns! Alternativas A, B, C e D são verdadeiras.",
+							feedbackIncorreto1: "Resposta incorreta. Alternativas A, B, C e D são verdadeiras.",
+							feedbackIncorreto2: "Resposta incorreta. Alternativas A, B, C e D são verdadeiras."
+						}
+
+
 					],
 				},
 				{
