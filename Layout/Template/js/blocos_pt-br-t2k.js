@@ -1174,107 +1174,103 @@ var json = {
 					perguntas: [
 						// PERGUNTA 1
 						{
-							titulo:
-								"<strong>1.</strong> Marque verdadeiro ou falso para as afirmações a seguir sobre o sistema de produção linear.",
+							titulo: "<strong>1.</strong> É correto afirmar que o poder calorífico é:",
+							tipo: "checkbox",
+							questao: [
+								{
+									alternativa: "<strong>A)</strong> a unidade de medida usada para determinar a quantidade de energia liberada durante a queima de uma substância.",
+									resposta: true,
+									feedbackpositivo: "Isso mesmo! Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>B)</strong> a unidade de energia produzida para cada unidade de energia investida para produzir.",
+									resposta: false,
+									feedbackpositivo: "Isso mesmo! Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>C)</strong> a forma de demonstrar a eficiência com que uma determinada fonte de energia é convertida em energia utilizável ou útil para uma finalidade específica.",
+									resposta: false,
+									feedbackpositivo: "Isso mesmo! Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								}
+							],
+							tentativas: 0,
+							feedbackCorreto: "Parabéns! Você selecionou a alternativa correta.",
+							feedbackIncorreto1: "Tente novamente.",
+							feedbackIncorreto2: "Resposta incorreta."
+						}
+						,
+						// PERGUNTA 2
+						{
+							titulo: "<strong>2.</strong> Relacione a seguir os combustíveis produzidos a partir de matriz fóssil com os biocombustíveis que equivalem energeticamente a eles.",
+							tipo: "combobox",
+							opcoes: "Querosene de aviação (Jet A),SAF (Combustível sustentável de aviação),Diesel,HVO (Óleo vegetal hidrotratado),Gás natural,Biometano,Etanol,Bioetanol",
+							questao: [
+								{
+									alternativa: "<strong>A) </strong> Querosene de aviação (Jet A)",
+									resposta: "SAF (Combustível sustentável de aviação)",
+									feedbackpositivo: "Isso mesmo! Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
+								},
+								{
+									alternativa: "<strong>B) </strong> Diesel",
+									resposta: "HVO (Óleo vegetal hidrotratado)",
+									feedbackpositivo: "Isso mesmo! Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
+								},
+								{
+									alternativa: "<strong>C) </strong> Gás natural",
+									resposta: "Biometano",
+									feedbackpositivo: "Isso mesmo! Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
+								},
+								{
+									alternativa: "<strong>D) </strong> Etanol",
+									resposta: "Bioetanol",
+									feedbackpositivo: "Isso mesmo! Você fez a correspondência de maneira correta.",
+									feedbacknegativo: "Você não fez a correspondência de maneira correta."
+								}
+							],
+							tentativas: 0,
+							feedbackCorreto: "Parabéns! Você fez a correspondência de maneira correta.",
+							feedbackIncorreto1: "Tente novamente.",
+							feedbackIncorreto2: "Resposta incorreta."
+						}
+						, {
+							titulo: "<strong>3.</strong> Indique verdadeiro ou falso para as afirmações a seguir.",
 							tipo: "trueorfalse",
 							questao: [
 								{
-									alternativa:
-										"<strong>A. </strong>É baseado na lógica de produção extrair-produzir-usar-descartar, ou seja, da matéria-prima para a produção, seguindo para o uso até o descarte.",
-									resposta: true,
-									feedbacknegativo:
-										"Resposta incorreta. As alternativas a, b e d são verdadeiras e a alternativa c é falsa. ",
-									feedbackpositivo:
-										"Parabéns! Resposta correta. A única alternativa falsa é a c. ",
-								},
-
-								{
-									alternativa:
-										"<strong>B. </strong>A necessidade de extração de novas matérias-primas é constante, gerando muitos impactos negativos, como o acúmulo de resíduos sem destinação correta.",
-									resposta: true,
-									feedbacknegativo:
-										"Resposta incorreta. As alternativas a, b e d são verdadeiras e a alternativa c é falsa. ",
-									feedbackpositivo:
-										"Parabéns!Resposta correta. A única alternativa falsa é a c. ",
-								},
-
-								{
-									alternativa:
-										"<strong>C. </strong>É baseado na lógica de produção extrair-produzir-usar-consertar-reutilizar-reciclar-retornar.",
+									alternativa: "<strong>A) </strong>Um combustível com um alto valor de poder calorífico pode gerar menos energia quando queimado em comparação a combustíveis com menor poder calorífico.",
 									resposta: false,
-									feedbacknegativo:
-										"Resposta incorreta. As alternativas a, b e d são verdadeiras e a alternativa c é falsa. ",
-									feedbackpositivo:
-										"Parabéns! Resposta correta. A única alternativa falsa é a c. ",
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
-
 								{
-									alternativa:
-										"<strong>D. </strong>Promove externalidades ambientais negativas.",
+									alternativa: "<strong>B) </strong>O rendimento energético pode ser medido por meio da relação entre as unidades de energia produzidas para cada unidade de energia investida para produzir.",
 									resposta: true,
-									feedbacknegativo:
-										"Resposta incorreta. As alternativas a, b e d são verdadeiras e a alternativa c é falsa. ",
-									feedbackpositivo:
-										"Parabéns!Resposta correta. A única alternativa falsa é a c. ",
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
 								},
+								{
+									alternativa: "<strong>C) </strong>A utilização da energia proveniente dos biocombustíveis permite diversificar a matriz energética.",
+									resposta: true,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								},
+								{
+									alternativa: "<strong>D) </strong>Os biocombustíveis, mesmo com custo produtivo um pouco maior, ainda nos oferecem vantagens, pois sua queima libera o gás dióxido de carbono (CO2), porém essas emissões são consideradas neutras em carbono, uma vez que as plantas usadas na produção de biocombustíveis absorvem CO2 da atmosfera por meio da fotossíntese durante seu processo de crescimento. Dessa forma, ajudam no processo de descarbonização, contribuindo para a mitigação das mudanças climáticas.",
+									resposta: true,
+									feedbackpositivo: "Você selecionou a alternativa correta.",
+									feedbacknegativo: "Você não selecionou a alternativa correta."
+								}
 							],
-							tentativas: 1,
-							feedbackCorreto:
-								"Parabéns! Você associou corretamente cada opção a um aspecto ambiental ou a um impacto ambiental",
-							feedbackIncorreto1: "Tente Novamente",
-							feedbackIncorreto2:
-								"Resposta incorreta. As respostas corretas são: escassez de recursos naturais não renováveis – impacto ambiental; emissão de gases de efeito estufa – aspecto ambiental; intensificação do aquecimento global – impacto ambiental; uso de papel reciclado – aspecto ambiental.",
-						},
-						// PERGUNTA 2
-						{
-							titulo:
-								"<strong>2.</strong> Dentro das externalidades ambientais, temos externalidades positivas e negativas. Externalidades ambientais positivas são benefícios gerados a terceiros por meio da produção ou do uso de um produto ou serviço, e externalidades ambientais negativas são malefícios gerados a terceiros por meio da produção ou do uso de um produto ou serviço, e que não são internalizadas por meio da incorporação nos custos ou por outra forma de compensação. Associe as opções corretamente, indicando se correspondem a uma externalidade ambiental positiva ou negativa.",
-							tipo: "combobox",
-							opcoes:
-								"Externalidade ambiental positiva,Externalidade ambiental negativa",
-							questao: [
-								{
-									alternativa:
-										"<strong>A.</strong> <strong>Ação</strong>: Uso de automóvel a combustão interna movido a gasolina. <br><strong>Efeito</strong>: Emissão de material particulado que gera impactos à saúde.",
-									resposta: "Externalidade ambiental negativa",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: A. Externalidade ambiental negativa / B. Externalidade ambiental positiva / C. Externalidade ambiental negativa / D. Externalidade ambiental negativa.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente a opção a uma externalidade ambiental negativa ou positiva.",
-								},
-								{
-									alternativa:
-										"<strong>B.</strong> <strong>Ação</strong>: Estudar e aprender sobre descarbonização. <br><strong>Efeito</strong>: Orienta tomada de decisão para o enfrentamento dos efeitos das mudanças climáticas.",
-									resposta: "Externalidade ambiental positiva",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: A. Externalidade ambiental negativa / B. Externalidade ambiental positiva / C. Externalidade ambiental negativa / D. Externalidade ambiental negativa.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente a opção a uma externalidade ambiental negativa ou positiva.",
-								},
-								{
-									alternativa:
-										"<strong>C.</strong> <strong>Ação</strong>: Produzir vegetais e frutas utilizando agrotóxicos.<br><strong>Efeito</strong>: Liberação de substâncias adversas que geram alterações nos sistemas do solo e da água.",
-									resposta: "Externalidade ambiental negativa",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: A. Externalidade ambiental negativa / B. Externalidade ambiental positiva / C. Externalidade ambiental negativa / D. Externalidade ambiental negativa.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente a opção a uma externalidade ambiental negativa ou positiva.",
-								},
-								{
-									alternativa:
-										"<strong>D.</strong> <strong>Ação</strong>: Criação de gado na Amazônia.<br><strong>Efeito</strong>: Desmatamento de florestas nativas da Amazônia, levando a alterações nos regimes de chuva, efeitos na biodiversidade e no aquecimento global.",
-									resposta: "Externalidade ambiental negativa",
-									feedbacknegativo:
-										"Resposta incorreta. As respostas corretas são: A. Externalidade ambiental negativa / B. Externalidade ambiental positiva / C. Externalidade ambiental negativa / D. Externalidade ambiental negativa.",
-									feedbackpositivo:
-										"Parabéns! Você associou corretamente a opção a uma externalidade ambiental negativa ou positiva.",
-								},
-							],
-							tentativas: 2,
-							feedbackCorreto: "Parabéns",
-							feedbackIncorreto1: "Tente Novamente",
-							feedbackIncorreto2: "Resposta Incorreta",
-						},
+							feedbackCorreto: "Parabéns! As afirmações B, C, e D são verdadeiras. A afirmação A é falsa.",
+							feedbackIncorreto1: "Resposta incorreta. As afirmações B, C, e D são verdadeiras. A afirmação A é falsa.",
+							feedbackIncorreto2: "Resposta incorreta. As afirmações B, C, e D são verdadeiras. A afirmação A é falsa."
+						}
 					],
 				},
 				{
